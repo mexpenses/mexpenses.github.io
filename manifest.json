@@ -1,0 +1,15 @@
+{
+  "short_name": "Mexpenses",
+  "name": "Mexpenses - Com a gente você tem o melhor controle financeiro em suas mãos.",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffff",
+  "background_color": "#ffffff"
+}
