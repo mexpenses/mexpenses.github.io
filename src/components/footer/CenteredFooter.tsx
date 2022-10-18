@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 
 import { FooterCopyright } from './FooterCopyright';
 import { FooterIconList } from './FooterIconList';
@@ -9,7 +9,7 @@ type ICenteredFooterProps = {
   children: ReactNode;
 };
 
-const CenteredFooter = (props: ICenteredFooterProps) => (
+const CenteredFooter = memo((props: ICenteredFooterProps) =>
   <div className="text-center">
     {props.logo}
 

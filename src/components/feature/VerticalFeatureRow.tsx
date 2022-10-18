@@ -1,4 +1,5 @@
 import className from 'classnames';
+import { memo } from 'react';
 import { useRouter } from 'next/router';
 
 type IVerticalFeatureRowProps = {
@@ -9,7 +10,7 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
 };
 
-const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
+const VerticalFeatureRow = memo((props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
     'mt-20',
     'flex',
@@ -34,6 +35,6 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
     </div>
   );
-};
+});
 
 export { VerticalFeatureRow };

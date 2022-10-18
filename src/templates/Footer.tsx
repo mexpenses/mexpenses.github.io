@@ -1,10 +1,11 @@
+import { memo } from 'react';
 import { Background } from '../components/background/Background';
 import { CenteredFooter } from '../components/footer/CenteredFooter';
 import { Section } from '../components/layout/Section';
 import { Logo } from './Logo';
 import Link from "next/link";
 
-const Footer: Function = (): JSX.Element => (
+const Footer: Function = memo((): JSX.Element =>
     <Background color="bg-gray-100">
         <Section>
             <CenteredFooter

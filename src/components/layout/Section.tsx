@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 
 type ISectionProps = {
   title?: string;
@@ -7,7 +7,7 @@ type ISectionProps = {
   children: ReactNode;
 };
 
-const Section = (props: ISectionProps) => (
+const Section = memo((props: ISectionProps) =>
   <div
     className={`max-w-screen-lg mx-auto px-3 ${
       props.yPadding ? props.yPadding : 'py-16'

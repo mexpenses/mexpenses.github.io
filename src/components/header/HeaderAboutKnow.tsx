@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 
 type IHeroOneButtonProps = {
   title: ReactNode;
@@ -6,7 +6,7 @@ type IHeroOneButtonProps = {
   button: ReactNode;
 };
 
-const HeaderAboutKnow = (props: IHeroOneButtonProps) => (
+const HeaderAboutKnow = memo((props: IHeroOneButtonProps) =>
   <header className="text-center">
     <h1 className="text-5xl text-gray-900 font-bold whitespace-pre-line leading-hero">
       {props.title}

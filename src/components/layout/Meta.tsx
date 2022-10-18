@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
+import { memo } from 'react';
 import { useRouter } from 'next/router';
 
 import { AppConfig } from '../../utils/AppConfig';
@@ -10,7 +11,7 @@ type IMetaProps = {
   canonical?: string | undefined;
 };
 
-const Meta = (props: IMetaProps) => {
+const Meta = memo((props: IMetaProps) => {
   const router = useRouter();
 
   return (
@@ -102,6 +103,6 @@ const Meta = (props: IMetaProps) => {
       />
     </>
   );
-};
+});
 
 export { Meta };

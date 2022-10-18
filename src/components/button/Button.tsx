@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import className from 'classnames';
 
 type IButtonProps = {
@@ -5,7 +6,7 @@ type IButtonProps = {
   children: string;
 };
 
-const Button = (props: IButtonProps) => {
+const Button = memo((props: IButtonProps) => {
   const btnClass = className({
     btn: true,
     'btn-xl': props.xl,
@@ -42,6 +43,6 @@ const Button = (props: IButtonProps) => {
       </style>
     </div>
   );
-};
+});
 
 export { Button };

@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import { AppProps } from 'next/app';
 
 import '../styles/global.css';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
+const MyApp = memo(({ Component, pageProps }: AppProps) =>
   <Component {...pageProps} />
 );
 

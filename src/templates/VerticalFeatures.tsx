@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import { VerticalFeatureRow } from '../components/feature/VerticalFeatureRow';
 import { Section } from '../components/layout/Section';
 
-const VerticalFeatures: Function = (): JSX.Element => (
+const VerticalFeatures: Function = memo((): JSX.Element =>
   <Section
     title="Sobre nossos recursos"
     description="Antes de começar veja um pouco mais das informações logo abaixo para ter uma melhor experiência durante o uso da plataforma."
@@ -21,7 +22,7 @@ const VerticalFeatures: Function = (): JSX.Element => (
     />
     <VerticalFeatureRow
       title="Vença suas Dívidas"
-      description="O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e a lidar com suas dívidas da melhor maneira possível."
+      description="O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível."
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
     />

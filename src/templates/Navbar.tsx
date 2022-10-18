@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import Link from 'next/link';
 
 import { Background } from '../components/background/Background';
@@ -7,7 +8,7 @@ import { Section } from '../components/layout/Section';
 import { NavbarTwoColumns } from '../components/navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
-const Navbar: Function = (): JSX.Element => (
+const Navbar: Function = memo((): JSX.Element =>
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo/>}>

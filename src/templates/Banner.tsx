@@ -1,10 +1,11 @@
+import { memo } from 'react';
 import Link from 'next/link';
 
 import { Button } from '../components/button/Button';
 import { BlockBanner } from '../components/blockBanner/BlockBanner';
 import { Section } from '../components/layout/Section';
 
-const Banner: Function = (): JSX.Element => (
+const Banner: Function = memo((): JSX.Element =>
   <Section>
     <BlockBanner
       title="Quer fazer parte do nosso time e contribuir com a plataforma?"

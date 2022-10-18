@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { AppConfig } from '../../utils/AppConfig';
 
-const FooterCopyright = () => (
+const FooterCopyright = memo(() =>
   <div className="footer-copyright">
     © Copyright {new Date().getFullYear()} <b>{AppConfig.title}</b>
     <style jsx>
