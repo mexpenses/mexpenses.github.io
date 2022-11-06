@@ -13,12 +13,12 @@ const Navbar: Function = memo((): JSX.Element =>
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo/>}>
         <li>
-          <Link href="#">
+          <Link href="https://appmexpenses.github.io/#/auth/login">
             <a>Login</a>
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <Link href="https://appmexpenses.github.io/#/auth/register">
             <a>Registrar-se</a>
           </Link>
         </li>
@@ -34,7 +34,7 @@ const Navbar: Function = memo((): JSX.Element =>
         }
         description="Fique ciente com as faturas de seus cartões, compras e despesas fixas."
         button={
-          <Link href="#">
+          <Link href="https://appmexpenses.github.io/#/auth/login">
             <a>
               <Button xl>Quero conhecer</Button>
             </a>

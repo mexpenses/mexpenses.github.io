@@ -23,12 +23,12 @@ const Footer: Function = memo((): JSX.Element =>
                 }
             >
                 <li>
-                    <Link href="#">
+                    <Link href="/about.pdf">
                         <a>Sobre nós</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://www.linkedin.com/in/hector-rodrigues-da-silva-4073b3191/details/projects/urn:li:fsd_profileProject:(ACoAAC0WRYcBH5p4E_uAow_AyEdG5IBgyPKOwI8,1988667511)/creators/">
+                    <Link href="https://github.com/HectorFront/react-mexpenses-app/graphs/contributors">
                         <a>Colaboradores</a>
                     </Link>
                 </li>
