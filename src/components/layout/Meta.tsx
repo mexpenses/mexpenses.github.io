@@ -71,7 +71,7 @@ const Meta = memo((props: IMetaProps) => {
         <meta name="twitter:app:name:iphone" content="Mexpenses iOS"/>
         <meta name="twitter:app:id:googleplay" content="com.Mexpenses"/>
         <meta name="twitter:app:name:googleplay" content="Mexpenses Android"/>
-        <meta name="twitter:image" content="https://mexpenses.github.io/assets/images/feature3.svg"/>
+        <meta name="twitter:image" content="https://mexpenses.github.io/assets/images/mexpenses-black.png"/>
         <meta name="twitter:title" content="Mexpenses - Controle financeiro."/>
         <meta name="twitter:description" content="Mexpenses - Com a gente você tem o melhor controle financeiro em suas mãos."/>
         <meta property="og:locale" content="pt-BR"/>
@@ -80,10 +80,10 @@ const Meta = memo((props: IMetaProps) => {
         <meta property="og:image:height" content="600"/>
         <meta property="og:image:type" content="image/png"/>
         <meta property="og:url" content="https://mexpenses.github.io"/>
-        <meta property="og:image" content="https://mexpenses.github.io/assets/images/feature3.svg"/>
+        <meta property="og:image" content="https://mexpenses.github.io/assets/images/mexpenses-black.png"/>
         <meta property="og:title" content="Mexpenses - Controle financeiro."/>
         <meta property="og:site_name" content="Mexpenses - Controle financeiro."/>
-        <meta property="og:image:secure_url" content="https://mexpenses.github.io/assets/images/feature3.svg"/>
+        <meta property="og:image:secure_url" content="https://mexpenses.github.io/assets/images/mexpenses-black.png"/>
         <meta property="og:description" content="Mexpenses - Com a gente você tem o melhor controle financeiro em suas mãos."/>
         <script type="application/ld+json">
           {'{"@context":"http://schema.org","@type":"Organization","name":"Mexpenses","url":"https://mexpenses.github.io","address":"Av.Pres.Vargas,2331-JoséRibeiro,Garça-SP,17400-000","sameAs":["https://www.facebook.com/fatecgarca/","https://www.linkedin.com/company/cps-fatecgarca/","https://www.instagram.com/fatecgarca/"]}'}
