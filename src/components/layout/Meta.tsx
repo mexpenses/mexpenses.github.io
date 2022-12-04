@@ -85,6 +85,7 @@ const Meta = memo((props: IMetaProps) => {
         <meta property="og:site_name" content="Mexpenses - Controle financeiro."/>
         <meta property="og:image:secure_url" content="https://mexpenses.github.io/assets/images/mexpenses.jpg"/>
         <meta property="og:description" content="Mexpenses - Com a gente você tem o melhor controle financeiro em suas mãos."/>
+        <meta name="google-site-verification" content="lCNhAmQk9rLMDjhjfyxWtD39ERSRRAKVhB2OwMmPcsw" />
         <script type="application/ld+json">
           {'{"@context":"http://schema.org","@type":"Organization","name":"Mexpenses","url":"https://mexpenses.github.io","address":"Av.Pres.Vargas,2331-JoséRibeiro,Garça-SP,17400-000","sameAs":["https://www.facebook.com/fatecgarca/","https://www.linkedin.com/company/cps-fatecgarca/","https://www.instagram.com/fatecgarca/"]}'}
         </script>
