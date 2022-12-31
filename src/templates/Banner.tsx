@@ -11,7 +11,7 @@ const Banner: Function = memo((): JSX.Element =>
       title="Quer fazer parte do nosso time e contribuir com a plataforma?"
       subtitle="Somos uma plataforma Open-source"
       button={
-        <Link href="https://github.com/HectorFront/react-mexpenses-app/pulls">
+        <Link target="_blank" href="mailto:mexpenses.app@gmail.com">
           <a>
             <Button>Quero contribuir</Button>
           </a>

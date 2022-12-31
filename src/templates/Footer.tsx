@@ -28,13 +28,8 @@ const Footer: Function = memo((): JSX.Element =>
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://github.com/HectorFront/react-mexpenses-app/graphs/contributors">
-                        <a>Colaboradores</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://github.com/HectorFront/react-mexpenses-app">
-                        <a>GitHub</a>
+                    <Link href="/policy.pdf">
+                        <a>Política de Privacidade</a>
                     </Link>
                 </li>
             </CenteredFooter>
