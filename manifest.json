@@ -1,9 +1,9 @@
 {
   "short_name": "Mexpenses",
-  "name": "Mexpenses - Com a gente você tem o melhor controle financeiro GRATUITO dos brasileiros",
+  "name": "Mexpenses - Faça a gestão de todas as suas contas de qualquer instituição bancária",
   "icons": [
     {
-      "src": "assets/favicon.svg",
+      "src": "assets/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
