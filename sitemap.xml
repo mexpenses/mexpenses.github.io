@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-       <loc>https://www.mexpenses.net/</loc>
-       <lastmod>2023-04-08T14:30:00-03:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://www.mexpenses.net/opensearch.xml</loc>
-       <lastmod>2023-04-08T14:30:00-03:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.mexpenses.net/</loc>
+    </url>
+    <url>
+        <loc>https://www.mexpenses.net/opensearch.xml</loc>
+    </url>
+    <url>
+        <loc>https://app.mexpenses.com.br/#/auth/login</loc>
+    </url>
+    <url>
+        <loc>https://app.mexpenses.com.br/#/auth/register/basic</loc>
+    </url>
 </urlset>

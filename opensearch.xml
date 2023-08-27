@@ -1,6 +1,6 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
     <ShortName>Mexpenses</ShortName>
-    <Description>Finanças pessoais de uma forma simples. Crie uma conta agora mesmo e ganhe bônus de 3 Meses Premium sem Cartão de Crédito.</Description>
+    <Description>O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível.</Description>
     <InputEncoding>UTF-8</InputEncoding>
     <Image width="16" height="16" type="image/x-icon">https://www.mexpenses.net/assets/favicon.ico</Image>
     <Url type="text/html" method="get" template="https://www.mexpenses.net/"/>
