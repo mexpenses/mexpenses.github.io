@@ -18,7 +18,7 @@ export const Subscriptions = () => {
                         <span className="mr-2 text-5xl font-extrabold text-green-500">
                             Grátis
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 font-bold">
+                        <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
@@ -112,7 +112,7 @@ export const Subscriptions = () => {
                         Evolua financeiramente e conecte seus bancos
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-3">
-                        <span className="bg-green-600 text-white rounded-3xl font-bold py-1.5 px-3">
+                        <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3">
                             1 mês grátis
                         </span>
                     </p>
@@ -120,7 +120,7 @@ export const Subscriptions = () => {
                         <span className="mr-2 text-5xl font-extrabold text-blue-400">
                             R$ 9,90
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 font-bold">
+                        <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
@@ -230,7 +230,7 @@ export const Subscriptions = () => {
                             />
                             <span className="dark:text-white">
                                 Seus bancos em um único lugar{" "}
-                                <span className="font-bold text-primary-600 dark:text-primary-400">
+                                <span className="font-medium text-primary-600 dark:text-primary-400">
                                     Insira 2 contas
                                 </span>
                             </span>
@@ -276,7 +276,7 @@ export const Subscriptions = () => {
                         Para uma pessoa de negócios e que deseja ter sucesso
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-3">
-                        <span className="bg-green-600 text-white rounded-3xl font-bold py-1.5 px-3">
+                        <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3">
                             1 mês grátis
                         </span>
                     </p>
@@ -284,7 +284,7 @@ export const Subscriptions = () => {
                         <span className="mr-2 text-5xl font-extrabold text-yellow-500">
                             R$ 14,90
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 font-bold">
+                        <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
@@ -409,7 +409,7 @@ export const Subscriptions = () => {
                             />
                             <span className="dark:text-white">
                                 Seus bancos em um único lugar{" "}
-                                <span className="font-bold text-yellow-600 dark:text-yellow-400">
+                                <span className="font-medium text-yellow-600 dark:text-yellow-400">
                                     Insira 4 contas
                                 </span>
                             </span>

@@ -8,24 +8,24 @@ import {useRouter} from "next/router";
 import {Store} from "./storeApp";
 
 const PluggyIA = ({
-                listUser = [
-                  {
-                    name: "Para conectar com a Pluggy",
-                    info: "15+ Bancos",
-                    icon: "/assets/Icon/heroicons_sm-user.svg",
-                  },
-                  {
-                    name: "Exclusivo para os brasileiros",
-                    info: "Brasil",
-                    icon: "/assets/Icon/gridicons_location.svg",
-                  },
-                  {
-                    name: "Servidores na AWS",
-                    info: "Segurança e privacidade",
-                    icon: "/assets/Icon/bx_bxs-server.svg",
-                  },
-                ],
-              }) => {
+                    listUser = [
+                      {
+                        name: "Para conectar com a Pluggy",
+                        info: "15+ Bancos",
+                        icon: "/assets/Icon/heroicons_sm-user.svg",
+                      },
+                      {
+                        name: "Exclusivo para os brasileiros",
+                        info: "Brasil",
+                        icon: "/assets/Icon/gridicons_location.svg",
+                      },
+                      {
+                        name: "Servidores na AWS",
+                        info: "Segurança e privacidade",
+                        icon: "/assets/Icon/bx_bxs-server.svg",
+                      },
+                    ],
+                  }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const router = useRouter();
   return (
@@ -65,13 +65,11 @@ const PluggyIA = ({
           </ScrollAnimationWrapper>
           <div className="w-full">
             <div className="w-full flex flex-col items-center justify-center">
-              <div className="p-5 lg:p-10 ">
-                <h1 className="mb-5 text-4xl text-start text-gray-900 font-bold">Segurança e serviços proporcionados por algumas empresas</h1>
-                <p className="text-secondary text-xl text-start">
-                  Veja algumas das maiores empresas do mundo que estão integradas na <b>Mexpenses</b>.
-                </p>
-              </div>
-              <div className="w-full pb-10 carousel-logos">
+              <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Segurança e serviços proporcionados por algumas empresas</h1>
+              <p className="text-secondary text-xl text-start">
+                Veja algumas das maiores empresas do mundo que estão integradas na <b>Mexpenses</b>.
+              </p>
+              <div className="w-full pt-10 carousel-logos">
                 <a href="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" className="carousel-logo">
                   <img src={`${router.basePath}/assets/amazon_partner.png`} width={100} alt="Amazon"/>
                 </a>
@@ -117,7 +115,7 @@ const PluggyIA = ({
                         <img src={listUsers.icon} className="h-6 w-6" />
                       </div>
                       <div className="flex flex-col">
-                        <p className="text-xl text-black-600 font-bold">
+                        <p className="text-xl text-black-600 font-medium">
                           {listUsers.info}
                         </p>
                         <p className="text-lg text-black-500">{listUsers.name}</p>
@@ -132,15 +130,17 @@ const PluggyIA = ({
             ></div>
           </div>
         </div>
-        <div className="relative overflow-hidden bg-white px-8 md:px-0">
+        <div className="relative overflow-hidden bg-white px-5 md:px-0">
           <div className="pb-20 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Em tempo real <span className="text-purple-600">Transações</span> <span className="text-green-700">Saldos</span> <span className="text-orange-500">Investimentos</span>
+                <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
+                  Em tempo real <span className="text-purple-600">Transações</span><br/>
+                  <span className="text-green-700">Saldos</span><br/>
+                  <span className="text-orange-500">Investimentos</span>
                 </h1>
                 <p className="mt-4 text-xl text-gray-600">
-                  Junte-se ao <span className="font-bold">Open Finance</span> e
+                  Junte-se ao <span className="font-medium">Open Finance</span> e
                   conecte suas contas de forma segura com a <span className='text-pink-600'>Pluggy</span>.
                   Compramos sua dor de ficar saindo de banco em banco para olhar suas finanças, tenha suas contas e despesas <span className="font-semibold">em um único lugar aqui!</span>
                 </p>
@@ -228,7 +228,7 @@ const PluggyIA = ({
                 <a
                     target="_blank"
                     href="https://pluggy.ai"
-                    className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-bold text-white hover:bg-pink-700 mt-5"
+                    className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-medium text-white hover:bg-pink-700 mt-5"
                 >
                   Conhecer a Pluggy
                 </a>
@@ -263,7 +263,7 @@ const PluggyIA = ({
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              <h2 className="text-4xl font-medium tracking-tight text-white sm:text-6xl">
                 <span className="float-left">Experimente uma Inteligência Artificial aprimorada</span>
                 <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right" alt="AI Ingrid"/>
               </h2>
@@ -275,7 +275,7 @@ const PluggyIA = ({
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
                 <a
                     href="https://app.mexpenses.com.br/#/auth/register/premium"
-                    className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-bold text-white hover:bg-pink-700 mt-5"
+                    className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-medium text-white hover:bg-pink-700 mt-5"
                 >
                   Criar uma conta
                 </a>

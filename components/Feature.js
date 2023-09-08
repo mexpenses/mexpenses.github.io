@@ -42,7 +42,7 @@ const Feature = () => {
             <img
                 width={700}
                 alt="Mexpenses Illustration"
-                src={`${router.basePath}/assets/Illustration2.png`}
+                src={`${router.basePath}/assets/Illustration2.webp`}
             />
           </motion.div>
         </ScrollAnimationWrapper>
@@ -80,8 +80,8 @@ const Feature = () => {
           <div className="flex flex-row flex-wrap md:flex-nowrap items-center justify-between visible gap-10">
             <img src={`${router.basePath}/assets/mobile.png`} width={560} alt="App"/>
             <div className="w-full mb-10 text-start">
-              <h1 className="text-3xl font-bold text-black">
-                <span className="font-bold text-blue-600">Em breve</span> conheça nosso aplicativo
+              <h1 className="text-3xl font-medium text-black">
+                <span className="font-medium text-blue-600">Em breve</span> conheça nosso aplicativo
               </h1>
               <div className="mt-6 text-xl leading-9">
                 Estamos trabalhando para que você tenha em seu bolso mais facilidade

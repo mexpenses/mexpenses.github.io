@@ -82,12 +82,13 @@ const Pricing = () => {
             <ScrollAnimationWrapper>
               <motion.h3
                   variants={scrollAnimation}
-                  className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-                Conheça as pessoas que estão fazendo a <b>Mexpenses</b> virar realidade
+                  className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-full"
+              >
+                Conheça as pessoas que fazem a <b>Mexpenses</b> virar realidade
               </motion.h3>
               <motion.p
                   variants={scrollAnimation}
-                  className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
+                  className="leading-normal mx-auto mb-2 mt-4 w-full sm:w-7/12 lg:w-6/12"
               >
                 Você tem o interesse de levar a simplicidade das finanças para todas pessoas? Veja mais informações logo abaixo para entrar em contato conosco.
               </motion.p>
