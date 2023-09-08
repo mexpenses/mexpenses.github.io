@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
-// import react slick
 import Slider from "react-slick";
 import Image from "next/image";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Contributors = ({
-  listTestimoni = [
+  listContributor = [
     {
       name: "Hector Silva",
       image: "/assets/founder.jpg",
@@ -77,13 +76,13 @@ const Contributors = ({
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-        {listTestimoni.map((listTestimonis, index) => (
+        {listContributor.map((listContributors, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="border-2 border-gray-500 hover:border-blue-500 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex flex-row justify-start items-center gap-5">
                   <Image
-                    src={listTestimonis.image}
+                    src={listContributors.image}
                     height={50}
                     width={50}
                     alt="Icon People"
@@ -91,10 +90,10 @@ const Contributors = ({
                   />
                   <div className="flex flex-col text-left">
                     <p className="text-lg text-black-600 capitalize">
-                      {listTestimonis.name}
+                      {listContributors.name}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.office}
+                      {listContributors.office}
                     </p>
                   </div>
                 </div>

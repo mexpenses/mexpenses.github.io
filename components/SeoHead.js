@@ -20,7 +20,6 @@ const SeoHead = (props = {}) => {
 
     return (
         <Head>
-            <title>{meta.title}</title>
             <meta charSet="UTF-8" key="charset" />
             <meta name='robots' content={meta.robots} />
             <meta name="generator" content="N/A"/>
@@ -36,7 +35,7 @@ const SeoHead = (props = {}) => {
             <meta httpEquiv="content-language" content="pt-br, en-US, es-AR, es-MX, es-CL"/>
             <meta name="author" content={meta.author}/>
             <link rel="search" type="application/opensearchdescription+xml" title="Mexpenses" href="/opensearch.xml"/>
-            <meta name="title" content="Mexpenses - Faça a gestão de todas as suas contas de qualquer instituição bancária"/>
+            <meta name="title" content={meta.title}/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"/>
             <meta name="description" content="O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível."/>
@@ -51,7 +50,7 @@ const SeoHead = (props = {}) => {
             <meta name="twitter:app:id:googleplay" content="com.Mexpenses"/>
             <meta name="twitter:app:name:googleplay" content="Mexpenses Android"/>
             <meta name="twitter:image" content="https://www.mexpenses.net/assets/images/mexpenses_preview.png"/>
-            <meta name="twitter:title" content="Mexpenses - Faça a gestão de todas as suas contas de qualquer instituição bancária"/>
+            <meta name="twitter:title" content={meta.title}/>
             <meta name="twitter:description" content="O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível."/>
             {/* Open Graph */}
             <meta property='og:type' content={meta.type} />

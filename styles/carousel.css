@@ -17,10 +17,8 @@
 
 @media screen and (max-width: 1200px) {
     .carousel-logos {
-        flex-wrap: wrap;
-        overflow: auto;
-        padding: 2.5rem;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .carousel-logo {

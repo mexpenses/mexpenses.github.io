@@ -1,14 +1,10 @@
-import React, { useMemo } from "react";
-import Image from "next/image";
+import React from "react";
 import ButtonPrimary from "./misc/ButtonPrimary";
-import {motion} from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import {useRouter} from "next/router";
 import {Store} from "./storeApp";
 
 const PluggyIA = ({
-                    listUser = [
+                    listAbout = [
                       {
                         name: "Para conectar com a Pluggy",
                         info: "15+ Bancos",
@@ -26,7 +22,6 @@ const PluggyIA = ({
                       },
                     ],
                   }) => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const router = useRouter();
   return (
       <>
@@ -37,32 +32,28 @@ const PluggyIA = ({
           <div className="flex flex-row items-center justify-center flex-wrap w-full" style={{ gap: 15 }}>
             <Store/>
           </div>
-          <ScrollAnimationWrapper>
-            <motion.div
-                className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
-                variants={scrollAnimation}>
-              <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-                <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                  Suas contas &<br/>Poder financeiro em um <strong>único lugar!</strong>
-                </h1>
-                <p className="text-black-500 mt-4 mb-6">
-                  Veja nossas ferramentas e crie uma conta de forma <b className="text-green-500">Gratuita</b> ou assine nossos planos para ganhar <b className="text-green-500">1 mês grátis</b>.
-                </p>
-                <a href="https://app.mexpenses.com.br/#/auth/register/basic">
-                  <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
-                </a>
+          <div className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
+            <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
+                Suas contas &<br/>Poder financeiro em um <strong>único lugar!</strong>
+              </h1>
+              <p className="text-black-500 mt-4 mb-6">
+                Veja nossas ferramentas e crie uma conta de forma <b className="text-green-500">Gratuita</b> ou assine nossos planos para ganhar <b className="text-green-500">1 mês grátis</b>.
+              </p>
+              <a href="https://app.mexpenses.com.br/#/auth/register/basic">
+                <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
+              </a>
+            </div>
+            <div className="flex w-full">
+              <div className="h-full w-full">
+                <img
+                    width={700}
+                    alt="Mexpenses Illustration"
+                    src={`${router.basePath}/assets/Illustration1.webp`}
+                />
               </div>
-              <div className="flex w-full">
-                <motion.div className="h-full w-full" variants={scrollAnimation}>
-                  <img
-                      width={700}
-                      alt="Mexpenses Illustration"
-                      src={`${router.basePath}/assets/Illustration1.webp`}
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-          </ScrollAnimationWrapper>
+            </div>
+          </div>
           <div className="w-full">
             <div className="w-full flex flex-col items-center justify-center">
               <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Segurança e serviços proporcionados por algumas empresas</h1>
@@ -85,9 +76,6 @@ const PluggyIA = ({
                 <a href="https://pluggy.ai/" target="_blank" className="carousel-logo">
                   <img src={`${router.basePath}/assets/pluggy_partner.png`} width={100} alt="Pluggy"/>
                 </a>
-                <a href="https://br.tradingview.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/tradingview_partner.png`} width={40} alt="TradingView"/>
-                </a>
                 <a href="https://vercel.com/" target="_blank" className="carousel-logo">
                   <img src={`${router.basePath}/assets/vercel_partner.png`} width={100} alt="Vercel"/>
                 </a>
@@ -97,33 +85,33 @@ const PluggyIA = ({
                 <a href="https://github.com/" target="_blank" className="carousel-logo">
                   <img src={`${router.basePath}/assets/github_partner.png`} width={60} alt="GitHub"/>
                 </a>
+                <a href="https://br.tradingview.com/" target="_blank" className="carousel-logo">
+                  <img src={`${router.basePath}/assets/tradingview_partner.png`} width={40} alt="TradingView"/>
+                </a>
               </div>
             </div>
           </div>
           <div className="relative w-full flex">
-            <ScrollAnimationWrapper
-                className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white z-10">
-              {listUser.map((listUsers, index) => (
-                  <motion.div
-                      className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-full px-4 sm:w-auto mx-auto sm:mx-0"
+            <div className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white z-10">
+              {listAbout.map((listAbouts, index) => (
+                  <div
                       key={index}
-                      custom={{duration: 2 + index}}
-                      variants={scrollAnimation}
+                      className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-full px-4 sm:w-auto mx-auto sm:mx-0"
                   >
                     <div className="flex w-full">
                       <div className="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full">
-                        <img src={listUsers.icon} className="h-6 w-6" />
+                        <img src={listAbouts.icon} className="h-6 w-6" alt="User" />
                       </div>
                       <div className="flex flex-col">
                         <p className="text-xl text-black-600 font-medium">
-                          {listUsers.info}
+                          {listAbouts.info}
                         </p>
-                        <p className="text-lg text-black-500">{listUsers.name}</p>
+                        <p className="text-lg text-black-500">{listAbouts.name}</p>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
               ))}
-            </ScrollAnimationWrapper>
+            </div>
             <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
                 style={{ filter: "blur(114px)" }}

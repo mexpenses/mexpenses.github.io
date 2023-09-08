@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-// Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState("about");
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -82,21 +80,21 @@ const Header = () => {
               </LinkScroll>
               <LinkScroll
                   activeClass="active"
-                  to="testimoni"
+                  to="contributors"
                   spy={true}
                   smooth={true}
                   duration={1000}
                   onSetActive={() => {
-                    setActiveLink("testimoni");
+                    setActiveLink("contributors");
                   }}
                   className={
                       "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                      (activeLink === "testimoni"
+                      (activeLink === "contributors"
                           ? " text-blue-500 animation-active "
                           : " text-black-500 hover:text-blue-500 ")
                   }
               >
-                Contato
+                  Empresa
               </LinkScroll>
             </ul>
             <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
@@ -215,16 +213,16 @@ const Header = () => {
               </LinkScroll>
               <LinkScroll
                   activeClass="active"
-                  to="testimoni"
+                  to="contributors"
                   spy={true}
                   smooth={true}
                   duration={1000}
                   onSetActive={() => {
-                    setActiveLink("testimoni");
+                    setActiveLink("contributors");
                   }}
                   className={
                       "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                      (activeLink === "testimoni"
+                      (activeLink === "contributors"
                           ? "  border-blue-500 text-blue-500"
                           : " border-transparent ")
                   }
@@ -243,7 +241,7 @@ const Header = () => {
                       d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                   />
                 </svg>
-                Contato
+                Empresa
               </LinkScroll>
             </ul>
           </div>
