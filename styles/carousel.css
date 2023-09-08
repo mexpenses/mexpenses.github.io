@@ -1,0 +1,44 @@
+.carousel-logos {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-logo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 20s linear infinite;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel-logos {
+        flex-wrap: wrap;
+        overflow: auto;
+        padding: 2.5rem;
+        justify-content: center;
+    }
+
+    .carousel-logo {
+        animation: none;
+        width: auto !important;
+    }
+
+    .carousel-logo img {
+        height: auto;
+        width: 120px !important;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(100% * 16.5));
+    }
+    100% {
+        transform: translateX(calc(-100% * 16.5));
+    }
+}
