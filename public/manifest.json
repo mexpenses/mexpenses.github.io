@@ -3,7 +3,7 @@
   "name": "O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível.",
   "icons": [
     {
-      "src": "/favicon/favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

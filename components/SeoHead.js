@@ -99,7 +99,7 @@ const SeoHead = (props = {}) => {
             <meta name='msapplication-TileColor' content='#3c81fa' />
             <meta
                 name='msapplication-TileImage'
-                content='/favicon/ms-icon-144x144.png'
+                content='favicon.png'
             />
             <meta name='theme-color' content='#3c81fa' />
         </Head>
@@ -110,80 +110,80 @@ const favicons = [
     {
         rel: 'apple-touch-icon',
         sizes: '57x57',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '60x60',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '72x72',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '76x76',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '114x114',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '120x120',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '144x144',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '152x152',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'mask-icon',
-        href: '/favicon/favicon.ico',
+        href: '/favicon.ico',
         color: '#3c81fa',
     },
     {
         rel: 'icon',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'icon',
         type: 'image/png',
         sizes: '96x96',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'icon',
         type: 'image/png',
         sizes: '192x192',
-        href: '/favicon/favicon.png',
+        href: '/favicon.png',
     },
     {
         rel: 'manifest',
