@@ -98,14 +98,14 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Contato</p>
             <ul className="text-black-500">
-              <a target="_blank" href="https://wa.link/71kl40">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
-                  Atendimento WhatsApp{" "}
-                </li>
-              </a>
+              {/*<a target="_blank" href="https://wa.link/71kl40">*/}
+              {/*  <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">*/}
+              {/*    Atendimento WhatsApp{" "}*/}
+              {/*  </li>*/}
+              {/*</a>*/}
               <a target="_blank" href="mailto:mexpenses.app@gmail.com">
                 <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
-                  Contato por e-mail{" "}
+                  Entrar em contato por e-mail{" "}
                 </li>
               </a>
             </ul>

@@ -212,22 +212,22 @@ const Policy = memo(() => {
                                                 src={`${router.basePath}/assets/email.png`}
                                                 className="h-5 w-auto object-cover object-center"
                                             />
-                                            &nbsp;Contato por e-mail
+                                            &nbsp;Entrar em contato por e-mail
                                         </b>
                                     </Link>
                                 </p>
-                                <p className="mt-3">
-                                    <Link href="https://wa.link/71kl40">
-                                        <b className="flex items-center justify-start m-0 text-green-600 hover:text-green-500 font-medium cursor-pointer" title="Atendimento WhatsApp">
-                                            <img
-                                                alt="WhatsApp"
-                                                src={`${router.basePath}/assets/whatsapp.png`}
-                                                className="h-5 w-5 object-cover object-center"
-                                            />
-                                            &nbsp;Atendimento WhatsApp
-                                        </b>
-                                    </Link>
-                                </p>
+                                {/*<p className="mt-3">*/}
+                                {/*    <Link href="https://wa.link/71kl40">*/}
+                                {/*        <b className="flex items-center justify-start m-0 text-green-600 hover:text-green-500 font-medium cursor-pointer" title="Atendimento WhatsApp">*/}
+                                {/*            <img*/}
+                                {/*                alt="WhatsApp"*/}
+                                {/*                src={`${router.basePath}/assets/whatsapp.png`}*/}
+                                {/*                className="h-5 w-5 object-cover object-center"*/}
+                                {/*            />*/}
+                                {/*            &nbsp;Atendimento WhatsApp*/}
+                                {/*        </b>*/}
+                                {/*    </Link>*/}
+                                {/*</p>*/}
                             </div>
                         </div>
                     </div>
