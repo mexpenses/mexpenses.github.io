@@ -435,7 +435,7 @@ export const Subscriptions = () => {
                                 alt="Subscription"
                             />
                             <span>
-                                Visualização <b>Mercados de Ações USA</b>{" "}
+                                Visualização <b>Mercados de Ações dos EUA e BRASIL</b>{" "}
                                 Real-Time
                             </span>
                         </li>
