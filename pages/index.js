@@ -12,16 +12,6 @@ export default function Home() {
             </Head>
             <PluggyIA />
             <Feature />
-            <div className="w-full flex justify-center items-center bg-gradient-to-r from-sky-500 to-indigo-500 p-5 flex-row flex-wrap gap-5">
-                <iframe
-                    width={500}
-                    height={650}
-                    frameBorder="0"
-                    allowFullScreen=""
-                    title="Publicação incorporada"
-                    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7117153490774204416"
-                />
-            </div>
             <Pricing />
         </Layout>
     );

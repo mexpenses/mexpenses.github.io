@@ -224,6 +224,13 @@ const PluggyIA = ({
             </div>
           </div>
         </div>
+        <video
+            loop
+            muted
+            autoPlay
+            width="100%"
+            src={`${router.basePath}/assets/publicity.mp4`}
+        />
         <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
           <div
               className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
