@@ -1,9 +1,9 @@
 import {Head} from "next/document";
 
 const defaultMeta = {
-    title: 'Mexpenses - Suas contas & Poder financeiro em um único lugar!',
+    title: 'Mexpenses - Saia das planilhas e venha ter um brilho financeiro!',
     siteName: 'Mexpenses',
-    description: 'O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível.',
+    description: 'Saia das planilhas e venha ter um brilho financeiro!',
     url: 'https://www.mexpenses.net',
     type: 'website',
     robots: 'follow, index',
@@ -38,7 +38,7 @@ const SeoHead = (props = {}) => {
             <meta name="title" content={meta.title}/>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"/>
-            <meta name="description" content="O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível."/>
+            <meta name="description" content="Saia das planilhas e venha ter um brilho financeiro!"/>
             <meta name="keywords" content="gestão financeira com chatgpt,chatgpt,mexpenses com chat chatgpt,chatgpt no mexpenses,login chatgpt,gestão financeira gratuita,controle financeiro gratuito,finanças grátis,site de finanças grátis,finanças brasileiras,gestão financeira dos brasileiros,mexpenses,mexpenses controle financeiro,mexpenses website,site mexpenses,aplicação mexpenses,controle financeiro,controlar dinheiro,fatec garça,fatec,tcc controle financeiro,tcc fatec garça,tcc mexpenses,ingrid mexpenses,hector mexpenses,maycon mexpenses,yara mexpenses"/>
             {/* Twitter */}
             <meta name="twitter:site" content="@mexpenses"/>
@@ -51,7 +51,7 @@ const SeoHead = (props = {}) => {
             <meta name="twitter:app:name:googleplay" content="Mexpenses Android"/>
             <meta name="twitter:image" content="https://www.mexpenses.net/assets/images/mexpenses_preview.png"/>
             <meta name="twitter:title" content={meta.title}/>
-            <meta name="twitter:description" content="O Mexpenses unifica suas contas e cartões em um só lugar, fazendo você economizar e lidar com suas dívidas da melhor maneira possível."/>
+            <meta name="twitter:description" content="Saia das planilhas e venha ter um brilho financeiro!"/>
             {/* Open Graph */}
             <meta property='og:type' content={meta.type} />
             <meta property='og:site_name' content={meta.siteName} />

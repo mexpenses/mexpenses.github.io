@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-col items-start">
             <LogoMexpenses className="h-8 w-auto mb-6" />
             <p className="mb-4">
-              <strong className="font-medium">Mexpenses</strong> Faça a gestão de todas as suas contas de qualquer instituição bancária.
+              <strong className="font-medium">Mexpenses</strong> Saia das planilhas e venha ter um brilho financeiro!
             </p>
             <div className="flex flex-row flex-wrap justify-center mb-3" style={{ gap: 20 }}>
               <li className="flex items-center justify-center m-0 cursor-pointer">

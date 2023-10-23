@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <Layout>
             <Head>
-                <title>Mexpenses - Suas contas & Poder financeiro em um único lugar!</title>
+                <title>Mexpenses - Saia das planilhas e venha ter um brilho financeiro!</title>
             </Head>
             <PluggyIA />
             <Feature />
