@@ -14,7 +14,7 @@ const features = [
   "Bancos mais próximos de você",
   "Exportar dados em arquivo CSV para Excel",
   "Análises de receitas, investimentos e despesas",
-  "Despesas fixas mensais, parceladas e na data de sua escolha",
+  "Despesas fixas, variáveis, parceladas e na data de sua escolha",
   "Conectar suas contas bancárias com a Pluggy para visualização",
   "Converse e receba dicas diárias com a Inteligência Artificial Ingrid",
   "Em breve perfil de consumo",

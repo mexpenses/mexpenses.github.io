@@ -30,7 +30,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de despesas fixas e categorias</span>
+                            <span>Cadastro de despesas fixas, variáveis e categorias</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
@@ -132,7 +132,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de despesas fixas e categorias</span>
+                            <span>Cadastro de despesas fixas, variáveis e categorias</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
@@ -219,7 +219,7 @@ export const Subscriptions = () => {
                                 alt="Subscription"
                             />
                             <span>
-                                Cadastro de parcelas nas despesas fixas
+                                Cadastro de parcelas nas despesas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3">
@@ -296,7 +296,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de despesas fixas e categorias</span>
+                            <span>Cadastro de despesas fixas, variáveis e categorias</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
@@ -377,7 +377,7 @@ export const Subscriptions = () => {
                                 alt="Subscription"
                             />
                             <span>
-                                Cadastro de parcelas nas despesas fixas
+                                Cadastro de parcelas nas despesas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3">
