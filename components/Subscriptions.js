@@ -30,28 +30,19 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de despesas fixas, variáveis e categorias</span>
+                            <span>Cadastro de categorias com despesas fixas, variáveis e recorrentes</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de bancos</span>
+                            <span>Gerenciar bancos</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Gerenciar entradas e saídas dos saldos</span>
+                            <span>Gerenciar entradas e saídas bancárias</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de cartões</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Cadastro de fatura{" "}
-                                <span className="font-semibold">
-                                    vinculada no cartão
-                                </span>
-                            </span>
+                            <span>Gerenciar cartões de crédito com suas faturas</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
@@ -132,28 +123,19 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de despesas fixas, variáveis e categorias</span>
+                            <span>Cadastro de categorias com despesas fixas, variáveis e recorrentes</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de bancos</span>
+                            <span>Gerenciar bancos</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Gerenciar entradas e saídas dos saldos</span>
+                            <span>Gerenciar entradas e saídas bancárias</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de cartões</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Cadastro de fatura{" "}
-                                <span className="font-semibold">
-                                    vinculada no cartão
-                                </span>
-                            </span>
+                            <span>Gerenciar cartões de crédito com suas faturas</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
@@ -200,7 +182,7 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Subscription"
                             />
-                            <span>Visualização detalhada das faturas</span>
+                            <span>Visualização e análise de faturas com <span className="font-semibold">Inteligência Artificial Ingrid</span></span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <img
@@ -296,28 +278,19 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de despesas fixas, variáveis e categorias</span>
+                            <span>Cadastro de categorias com despesas fixas, variáveis e recorrentes</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de bancos</span>
+                            <span>Gerenciar bancos</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Gerenciar entradas e saídas dos saldos</span>
+                            <span>Gerenciar entradas e saídas bancárias</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
-                            <span>Cadastro de cartões</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Cadastro de fatura{" "}
-                                <span className="font-semibold">
-                                    vinculada no cartão
-                                </span>
-                            </span>
+                            <span>Gerenciar cartões de crédito com suas faturas</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
@@ -358,7 +331,7 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Subscription"
                             />
-                            <span>Visualização detalhada das faturas</span>
+                            <span>Visualização e análise de faturas com <span className="font-semibold">Inteligência Artificial Ingrid</span></span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <img
@@ -436,7 +409,7 @@ export const Subscriptions = () => {
                             />
                             <span>
                                 Visualização <b>Mercados de Ações dos EUA e BRASIL</b>{" "}
-                                Real-Time
+                                em tempo real
                             </span>
                         </li>
                         <li className="flex items-center space-x-3">
@@ -446,7 +419,7 @@ export const Subscriptions = () => {
                                 alt="Subscription"
                             />
                             <span>
-                                Exportar dados em arquivo <b>CSV para Excel</b>
+                                Exportar dados financeiros em <b>CSV para Excel</b>
                             </span>
                         </li>
                         <li className="flex items-center space-x-3">
@@ -457,7 +430,7 @@ export const Subscriptions = () => {
                             />
                             <span>
                                 Visualização <b>B3: A Bolsa do Brasil</b>{" "}
-                                Real-Time
+                                em tempo real
                             </span>
                         </li>
                         <li className="flex items-center space-x-3">

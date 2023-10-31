@@ -2,25 +2,24 @@ import React from "react";
 import {useRouter} from "next/router";
 
 const features = [
-  "Gerenciar faturas",
-  "Gerenciar cartões de crédito",
-  "Visualizar criptomoedas",
-  "Visualizar taxas de juros",
-  "Suporte WhatsApp",
+  "Gerenciar cartões de crédito com suas faturas",
+  "Análise de faturas com Inteligência Artificial Ingrid",
   "Cálculadora de impostos",
-  "Visualizar Bolsa de valores Ibovespa",
   "Entradas e saídas bancárias",
-  "Notificações de vencimentos",
-  "Bancos mais próximos de você",
-  "Exportar dados em arquivo CSV para Excel",
+  "Notificações de vencimentos das faturas",
+  "Mapa com bancos mais próximos de você",
+  "Exportar dados financeiros em CSV para Excel",
   "Análises de receitas, investimentos e despesas",
-  "Despesas fixas, variáveis, parceladas e na data de sua escolha",
-  "Conectar suas contas bancárias com a Pluggy para visualização",
+  "Categorias com despesas fixas, variáveis, parceladas e recorrentes",
+  "Conexão de contas bancárias com Open Finance da Pluggy",
   "Converse e receba dicas diárias com a Inteligência Artificial Ingrid",
+  "Mercado de Ações em tempo real",
+  "Criptomoedas e taxas de juros em tempo real",
+  "Suporte via WhatsApp",
   "Em breve perfil de consumo",
   "Em breve definir metas financeiras",
   "Em breve histórico com filtro de pesquisa sobre entradas, saídas e muito mais",
-  "Veja mais nas tabelas de assinaturas..."
+  "E MUITO MAIS... Veja nossas tabelas de assinaturas logo abaixo!"
 ];
 
 const Feature = () => {
