@@ -2,79 +2,207 @@ import React from "react";
 import {useRouter} from "next/router";
 
 const features = [
-  "Gerenciar cartões de crédito com suas faturas",
-  "Análise de faturas com Inteligência Artificial Ingrid",
-  "Cálculadora de impostos",
-  "Entradas e saídas bancárias",
-  "Notificações de vencimentos das faturas",
-  "Mapa com bancos mais próximos de você",
-  "Exportar dados financeiros em CSV para Excel",
-  "Análises de receitas, investimentos e despesas",
-  "Categorias com despesas fixas, variáveis, parceladas e recorrentes",
-  "Conexão de contas bancárias com Open Finance da Pluggy",
-  "Converse e receba dicas diárias com a Inteligência Artificial Ingrid",
-  "Mercado de Ações em tempo real",
-  "Criptomoedas e taxas de juros em tempo real",
+  "Criptomoedas",
+  "Taxas de juros",
+  "Mercado de Ações",
+  "Entradas e saídas",
+  "Controle de faturas",
   "Suporte via WhatsApp",
-  "Em breve perfil de consumo",
-  "Em breve definir metas financeiras",
-  "Em breve histórico com filtro de pesquisa sobre entradas, saídas e muito mais",
-  "E MUITO MAIS... Veja nossas tabelas de assinaturas logo abaixo!"
+  "Análises financeiras",
+  "Controle de despesas",
+  "Inteligência Artificial",
+  "Cálculadora de impostos",
+  "Exportar dados para Excel",
+  "Open Finance com a Pluggy",
+  "Bancos mais próximos da sua localização",
+  "<span class='font-bold text-blue-600'>E MUITO MAIS...</span>"
 ];
 
 const Feature = () => {
   const router = useRouter();
 
   return (
-      <div
-          className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-          id="feature"
-      >
-        <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-          <div className="flex w-full justify-end">
-            <div className="h-full w-full p-4">
+      <>
+        <div className="bg-white">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Sim, não somos só mais um app de finanças!
+              </h2>
+              <p className="mt-4 text-gray-500">
+                Estamos aqui para te proporcionar algo além do controle financeiro.
+                Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial, onde ela irá realizar análises,
+                apontar erros e soluções para que você possa estar tendo evoluções notáveis na sua saúde financeira.&nbsp;
+                <span className="font-bold text-blue-600">Invista em você e sinta-se abraçado com a gente!</span>
+              </p>
+              <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                <div className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">Controle Financeiro e Open Finance</dt>
+                  <dd className="mt-2 text-sm text-gray-500">
+                    Além de fazer o controle de seus gastos, tenha contas reais conectadas para visualização de forma segura
+                    e simples, através de nossa integração com a <span className="font-bold">Pluggy</span>.
+                  </dd>
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">Acesso multiplataforma</dt>
+                  <dd className="mt-2 text-sm text-gray-500">
+                    Você irá acessar a mesma conta tanto na web como no nosso futuro aplicativo sem cobranças.
+                  </dd>
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">Criptomoedas</dt>
+                  <dd className="mt-2 text-sm text-gray-500">Acompanhe as criptomoedas mais negociadas pelos principais bancos digitais.</dd>
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">Inteligência Artificial</dt>
+                  <dd className="mt-2 text-sm text-gray-500">
+                    Tenha de forma automática dicas diárias e individuais com a Ingrid, por meio de nossa integração em tempo real com seus dados.
+                  </dd>
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">Mercado de Ações</dt>
+                  <dd className="mt-2 text-sm text-gray-500">
+                    Acompanhe grandes e médias empresas no mercado da Ibovespa e Nasdaq em tempo real.
+                  </dd>
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <dt className="font-medium text-gray-900">Imposto de Renda</dt>
+                  <dd className="mt-2 text-sm text-gray-500">
+                    <span className="font-bold">Está com dúvidas sobre os descontos da sua folha de pagamento?</span> Calcule de forma exata
+                    os valores do <span className="font-bold">INSS e IRRF</span> com base no seu salário bruto e dependentes.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
               <img
-                  width={700}
-                  alt="Mexpenses Illustration"
-                  src={`${router.basePath}/assets/Illustration2.webp`}
+                  src={`${router.basePath}/assets/topic_1.jpg`}
+                  alt="Sinta-se abraçado"
+                  className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
+              />
+              <img
+                  alt="Luxo"
+                  src={`${router.basePath}/assets/topic_2.jpg`}
+                  className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
+              />
+              <img
+                  alt="Sonhos"
+                  src={`${router.basePath}/assets/topic_3.jpg`}
+                  className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
+              />
+              <img
+                  alt="Carreira e negócios"
+                  src={`${router.basePath}/assets/topic_4.webp`}
+                  className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
               />
             </div>
           </div>
-          <div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12">
-            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              Tudo que você precisa para sua gestão financeira
-            </h3>
-            <b className="my-2 text-black-500">
-              A Mex te entrega
-            </b>
-            <ul className="text-black-500 self-start list-inside ml-8">
-              {features.map((feature, i) =>
-                  <li
-                      key={i}
-                      className="relative circle-check custom-list py-1"
-                  >
-                    {feature}
-                  </li>
-
-              )}
-            </ul>
-          </div>
         </div>
-        <div className="xl:px-32">
-          <div className="flex flex-row flex-wrap md:flex-nowrap items-center justify-between visible gap-10">
-            <img src={`${router.basePath}/assets/mobile.png`} width={560} alt="App"/>
-            <div className="w-full mb-10 text-start">
-              <h1 className="text-3xl font-medium text-black">
-                <span className="font-medium text-blue-600">Em breve</span> conheça nosso aplicativo
-              </h1>
-              <div className="mt-6 text-xl leading-9">
-                Estamos trabalhando para que você tenha em seu bolso mais facilidade
-                e controle de suas finanças em qualquer lugar. Seja após sair de um mercado, loja, lanchonete e etc.
+        <div className="bg-gray-100">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+              <h2 className="text-2xl font-bold text-gray-900">A plataforma ideal?</h2>
+              <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                <div className="group relative">
+                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img
+                        src={`${router.basePath}/assets/description_1.jpg`}
+                        alt="Simplicidade"
+                        className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-sm text-gray-500">
+                    <span className="absolute inset-0" />
+                    Simplicidade
+                  </h3>
+                  <p className="text-base font-semibold text-gray-900">
+                    Controle e foque somente no necessário
+                  </p>
+                </div>
+                <div className="group relative">
+                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img
+                        alt="IA Ingrid"
+                        src={`${router.basePath}/assets/description_2.jpg`}
+                        className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-sm text-gray-500">
+                    <span className="absolute inset-0" />
+                    Confusões em ideias
+                  </h3>
+                  <p className="text-base font-semibold text-gray-900">
+                    Aplique as dicas da Ingrid em tempo real
+                  </p>
+                </div>
+                <div className="group relative">
+                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img
+                        alt="Sem complicações"
+                        src={`${router.basePath}/assets/description_3.jpg`}
+                        className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-sm text-gray-500">
+                    <span className="absolute inset-0" />
+                    Dificuldades não existem
+                  </h3>
+                  <p className="text-base font-semibold text-gray-900">
+                    Rápido aprendizado no uso da plataforma
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div
+            className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
+            id="feature"
+        >
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
+            <div className="flex w-full justify-end">
+              <div className="h-full w-full p-4">
+                <img
+                    width={700}
+                    alt="Mexpenses Illustration"
+                    src={`${router.basePath}/assets/Illustration2.webp`}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12">
+              <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+                Tudo que você precisa para sua gestão financeira
+              </h3>
+              <b className="my-2 text-black-500">
+                A Mex te entrega
+              </b>
+              <ul className="text-black-500 self-start list-inside ml-8">
+                {features.map((feature, i) =>
+                    <li
+                        key={i}
+                        className="relative circle-check custom-list py-1"
+                        dangerouslySetInnerHTML={{ __html: feature }}
+                    />
+                )}
+              </ul>
+            </div>
+          </div>
+          <div className="xl:px-32">
+            <div className="flex flex-row flex-wrap md:flex-nowrap items-center justify-between visible gap-10">
+              <img src={`${router.basePath}/assets/mobile.png`} width={560} alt="App"/>
+              <div className="w-full mb-10 text-start">
+                <h1 className="text-3xl font-medium text-black">
+                  <span className="font-medium text-blue-600">Em breve</span> conheça nosso aplicativo
+                </h1>
+                <div className="mt-6 text-xl leading-9">
+                  Estamos trabalhando para que você tenha em seu bolso mais facilidade
+                  e controle de suas finanças em qualquer lugar. Seja após sair de um mercado, loja, lanchonete e etc.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
   );
 };
 

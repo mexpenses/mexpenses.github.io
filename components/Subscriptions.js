@@ -117,65 +117,9 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Calculadora de Impostos</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Cadastro de categorias com despesas fixas, variáveis e recorrentes</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar bancos</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar entradas e saídas bancárias</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar cartões de crédito com suas faturas</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Analise de forma intuitiva gráficos de despesas,
-                                saldos bancários, faturas de cartão de crédito e
-                                muito mais...
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Alertas sobre faturas que irão vencer ou que
-                                ultrapassaram sua renda e data de vencimento
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Visualização de taxas de juros{" "}
-                                <span className="font-semibold">
-                                    SELIC / CDI / IPCA
-                                </span>
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Visualização de criptomoedas mais negociadas do{" "}
-                                <span className="font-semibold">
-                                    Nubank e PicPay
-                                </span>
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Suporte <b>WhatsApp</b> horário de expediente
-                            </span>
-                        </li>
+                        <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                            +Grátis
+                        </span>
                         <li className="flex items-center space-x-3">
                             <img
                                 src={`${router.basePath}/assets/badge-check.svg`}
@@ -272,108 +216,12 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Calculadora de Impostos</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Cadastro de categorias com despesas fixas, variáveis e recorrentes</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar bancos</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar entradas e saídas bancárias</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar cartões de crédito com suas faturas</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Analise de forma intuitiva gráficos de despesas,
-                                saldos bancários, faturas de cartão de crédito e
-                                muito mais...
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Alertas sobre faturas que irão vencer ou que
-                                ultrapassaram sua renda e data de vencimento
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Visualização de taxas de juros{" "}
-                                <span className="font-semibold">
-                                    SELIC / CDI / IPCA
-                                </span>
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>
-                                Visualização de criptomoedas mais negociadas do{" "}
-                                <span className="font-semibold">
-                                    Nubank e PicPay
-                                </span>
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>Visualização e análise de faturas com <span className="font-semibold">Inteligência Artificial Ingrid</span></span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Veja no mapa bancos mais próximos de você
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Cadastro de parcelas nas despesas
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span className="opacity-70">
-                                <b>Em breve</b> Definir metas financeiras
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span className="opacity-70">
-                                <b>Em breve</b> Histórico com filtro de pesquisa
-                                sobre Entradas, Saídas e muito mais
-                            </span>
-                        </li>
+                        <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                            +Grátis
+                        </span>
+                        <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl mx-2">
+                            +Basic
+                        </span>
                         <li className="flex items-center space-x-3">
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
