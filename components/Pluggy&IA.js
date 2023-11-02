@@ -26,7 +26,7 @@ const PluggyIA = ({
   return (
       <>
         <div
-            className="max-w-screen-xl mt-24 px-8 xl:px-5 mx-auto"
+            className="max-w-screen-xl mt-40 px-8 xl:px-5 mx-auto"
             id="about"
         >
           <div className="flex flex-row items-center justify-center flex-wrap w-full" style={{ gap: 15 }}>
