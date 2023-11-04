@@ -72,10 +72,7 @@ export const Subscriptions = () => {
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
                             <span>
-                                Visualização de criptomoedas mais negociadas do{" "}
-                                <span className="font-semibold">
-                                    Nubank e PicPay
-                                </span>
+                                Visualização de criptomoedas mais negociadas em tempo real
                             </span>
                         </li>
                         <li className="flex items-center space-x-3">
