@@ -25,6 +25,9 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
+                        <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                            + Grátis
+                        </span>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
                             <span>Calculadora de Impostos</span>
@@ -116,8 +119,11 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
-                            +Grátis
+                    <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                            + Grátis
+                        </span>
+                        <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl mx-2">
+                            + Basic
                         </span>
                         <li className="flex items-center space-x-3">
                             <img
@@ -217,10 +223,13 @@ export const Subscriptions = () => {
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
-                            +Grátis
+                            + Grátis
                         </span>
                         <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl mx-2">
-                            +Basic
+                            + Basic
+                        </span>
+                        <span className="py-1 px-3 bg-orange-500 text-xl font-bold text-white rounded-xl">
+                            + Premium
                         </span>
                         <li className="flex items-center space-x-3">
                             <img
