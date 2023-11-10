@@ -49,7 +49,7 @@ const SeoHead = (props = {}) => {
             <meta name="twitter:app:name:iphone" content="Mexpenses iOS"/>
             <meta name="twitter:app:id:googleplay" content="com.Mexpenses"/>
             <meta name="twitter:app:name:googleplay" content="Mexpenses Android"/>
-            <meta name="twitter:image" content="https://www.mexpenses.net/assets/images/mexpenses_preview.png"/>
+            <meta name="twitter:image" content="https://www.mexpenses.net/assets/mexpenses_preview.png"/>
             <meta name="twitter:title" content={meta.title}/>
             <meta name="twitter:description" content="Saia das planilhas e venha ter um brilho financeiro!"/>
             {/* Open Graph */}
@@ -63,8 +63,8 @@ const SeoHead = (props = {}) => {
             <meta property="og:image:height" content="600"/>
             <meta property="og:image:type" content="image/png"/>
             <meta property="og:url" content="https://www.mexpenses.net"/>
-            <meta property="og:image" content="https://www.mexpenses.net/assets/images/mexpenses_preview.png"/>
-            <meta property="og:image:secure_url" content="https://www.mexpenses.net/assets/images/mexpenses_preview.png"/>
+            <meta property="og:image" content="https://www.mexpenses.net/assets/mexpenses_preview.png"/>
+            <meta property="og:image:secure_url" content="https://www.mexpenses.net/assets/mexpenses_preview.png"/>
             <meta name="google-site-verification" content="lCNhAmQk9rLMDjhjfyxWtD39ERSRRAKVhB2OwMmPcsw"/>
             <script
                 type="application/ld+json"
