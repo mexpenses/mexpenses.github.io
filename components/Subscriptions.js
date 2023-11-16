@@ -25,9 +25,11 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
-                            + Grátis
-                        </span>
+                        <div className="w-full flex flex-row items-center flex-wrap gap-2">
+                            <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                                Grátis
+                            </span>
+                        </div>
                         <li className="flex items-center space-x-3">
                             <CheckIcon />
                             <span>Calculadora de Impostos</span>
@@ -102,10 +104,10 @@ export const Subscriptions = () => {
                         </span>
                     </h3>
                     <p className="text-gray-700 sm:text-lg dark:text-gray-400">
-                        Evolua financeiramente e conecte seus bancos
+                        Evolua financeiramente com IA e Open Finance
                     </p>
-                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-3">
-                        <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3">
+                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
+                        <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
                             1 mês grátis
                         </span>
                     </p>
@@ -119,12 +121,14 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                    <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
-                            + Grátis
-                        </span>
-                        <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl mx-2">
-                            + Basic
-                        </span>
+                        <div className="w-full flex flex-row items-center flex-wrap gap-2">
+                            <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                                Grátis
+                            </span>
+                                <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl">
+                                + Basic
+                            </span>
+                        </div>
                         <li className="flex items-center space-x-3">
                             <img
                                 src={`${router.basePath}/assets/badge-check.svg`}
@@ -207,8 +211,8 @@ export const Subscriptions = () => {
                     <p className="text-gray-700 sm:text-lg dark:text-gray-400">
                         Para uma pessoa de negócios e que deseja ter sucesso
                     </p>
-                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-3">
-                        <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3">
+                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
+                        <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
                             1 mês grátis
                         </span>
                     </p>
@@ -222,15 +226,17 @@ export const Subscriptions = () => {
                     </div>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
-                            + Grátis
-                        </span>
-                        <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl mx-2">
-                            + Basic
-                        </span>
-                        <span className="py-1 px-3 bg-orange-500 text-xl font-bold text-white rounded-xl">
-                            + Premium
-                        </span>
+                        <div className="w-full flex flex-row items-center flex-wrap gap-2">
+                            <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                                Grátis
+                            </span>
+                            <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl">
+                                Basic
+                            </span>
+                            <span className="py-1 px-3 bg-orange-500 text-xl font-bold text-white rounded-xl">
+                                + Premium
+                            </span>
+                        </div>
                         <li className="flex items-center space-x-3">
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
