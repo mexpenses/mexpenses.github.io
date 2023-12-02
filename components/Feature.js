@@ -92,7 +92,7 @@ const Feature = () => {
               />
               <img
                   alt="Carreira e negócios"
-                  src={`${router.basePath}/assets/topic_4.webp`}
+                  src={`${router.basePath}/assets/topic_4.jpg`}
                   className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
               />
             </div>

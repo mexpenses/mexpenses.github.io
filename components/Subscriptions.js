@@ -1,6 +1,17 @@
 import { CheckIcon } from "./misc/checkIcon";
 import { useRouter } from "next/router";
 import React from "react";
+import Lottie from 'react-lottie';
+import * as SadBasicAnimation from '../public/assets/sad_basic.json';
+import * as ClickBasicAnimation from '../public/assets/click_basic.json';
+
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+    }
+};
 
 export const Subscriptions = () => {
     const router = useRouter();
@@ -96,7 +107,14 @@ export const Subscriptions = () => {
                     </a>
                 </div>
                 {/* Pricing Card */}
-                <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div className="absolute top-0 right-0">
+                        <Lottie
+                            width={150}
+                            height={150}
+                            options={{...defaultOptions, animationData: SadBasicAnimation }}
+                        />
+                    </div>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Basic&nbsp;
                         <span className="py-1 px-3 bg-blue-500 text-white rounded-xl">
@@ -125,7 +143,7 @@ export const Subscriptions = () => {
                             <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                                <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl">
                                 + Basic
                             </span>
                         </div>
@@ -199,9 +217,16 @@ export const Subscriptions = () => {
                     >
                         Assinar
                     </a>
+                    <div className="absolute left-0">
+                        <Lottie
+                            width={160}
+                            height={160}
+                            options={{...defaultOptions, animationData: ClickBasicAnimation }}
+                        />
+                    </div>
                 </div>
                 {/* Pricing Card */}
-                <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Premium&nbsp;
                         <span className="py-1 px-3 bg-yellow-500 text-white rounded-xl">

@@ -51,8 +51,9 @@ const PluggyIA = ({
               <div className="h-full w-full">
                 <img
                     width={700}
+                    className="rounded-3xl"
                     alt="Mexpenses Illustration"
-                    src={`${router.basePath}/assets/Illustration1.webp`}
+                    src={`${router.basePath}/assets/sad_and_happy.jpg`}
                 />
               </div>
             </div>
@@ -263,7 +264,7 @@ const PluggyIA = ({
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-4xl font-medium tracking-tight text-white sm:text-6xl">
                 <span className="float-left">Experimente uma Inteligência Artificial aprimorada</span>
-                <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right" alt="AI Ingrid"/>
+                <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right ml-3" alt="AI Ingrid"/>
               </h2>
               <p className="mt-6 text-lg leading-8 text-white">
                 Estamos empolgados em apresentar a Inteligência Artificial <b>Ingrid</b>, que está na <b>Mexpenses</b> para ajudar os usuários com suas finanças e aprender sobre vários pontos de acordo com seus dados. Experimente agora criando uma conta <b>Premium</b>.
