@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
             <ul className="text-black-500">
-              <a target="_blank" href="https://pluggy.ai/blog/open-banking">
+              <a target="_blank" href="https://pluggy.ai/open-finance">
                 <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
                   Open Finance{" "}
                 </li>
