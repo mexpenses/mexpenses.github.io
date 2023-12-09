@@ -127,7 +127,8 @@ const PluggyIA = ({
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
-                  Em tempo real <span className="text-purple-600">Transações</span><br/>
+                  Visualize tudo de forma simples!<br/>
+                  <span className="text-purple-600">Transações</span><br/>
                   <span className="text-green-700">Saldos</span><br/>
                   <span className="text-orange-500">Investimentos</span>
                 </h1>
@@ -162,8 +163,8 @@ const PluggyIA = ({
                         </div>
                         <div className="h-44 w-44 overflow-hidden rounded-lg">
                           <img
-                              alt="BB"
-                              src={`${router.basePath}/assets/bb.png`}
+                              alt="Mercado Pago"
+                              src={`${router.basePath}/assets/mercado_pago.jpg`}
                               className="h-full w-full object-cover object-center"
                           />
                         </div>
@@ -222,7 +223,7 @@ const PluggyIA = ({
                     href="https://pluggy.ai"
                     className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-medium text-white hover:bg-pink-700 mt-5"
                 >
-                  Conhecer a Pluggy
+                  Veja nossa parceria Pluggy
                 </a>
               </div>
             </div>
@@ -263,7 +264,7 @@ const PluggyIA = ({
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h2 className="text-4xl font-medium tracking-tight text-white sm:text-6xl">
-                <span className="float-left">Experimente uma Inteligência Artificial aprimorada</span>
+                <span className="float-left mb-5">Inteligência Artificial para te auxiliar nas economias!</span>
                 <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right ml-3" alt="AI Ingrid"/>
               </h2>
               <p className="mt-6 text-lg leading-8 text-white">

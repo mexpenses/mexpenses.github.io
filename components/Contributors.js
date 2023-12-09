@@ -18,11 +18,6 @@ const Contributors = ({
       office: "Diretora de Tecnologia (CTO)",
     },
     {
-      name: "Caio Teodoro",
-      image: "/assets/contributor_5.jpg",
-      office: "Diretor de Negócios (CBO)",
-    },
-    {
       name: "Maycon Moreira",
       image: "/assets/contributor_2.jpeg",
       office: "Cofundador",
