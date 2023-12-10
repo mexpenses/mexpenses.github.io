@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import React from "react";
 import Lottie from 'react-lottie';
 import * as SadBasicAnimation from '../public/assets/sad_basic.json';
-import * as ClickBasicAnimation from '../public/assets/click_basic.json';
 
 const defaultOptions = {
     loop: true,
@@ -217,13 +216,6 @@ export const Subscriptions = () => {
                     >
                         Assinar
                     </a>
-                    <div className="absolute left-0">
-                        <Lottie
-                            width={160}
-                            height={160}
-                            options={{...defaultOptions, animationData: ClickBasicAnimation }}
-                        />
-                    </div>
                 </div>
                 {/* Pricing Card */}
                 <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">

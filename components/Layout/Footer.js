@@ -105,7 +105,7 @@ const Footer = () => {
               {/*</a>*/}
               <a target="_blank" href="mailto:mexpenses.app@gmail.com">
                 <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
-                  Entrar em contato por e-mail{" "}
+                  Entrar em contato por <span className="inline-block">e-mail</span>{" "}
                 </li>
               </a>
             </ul>

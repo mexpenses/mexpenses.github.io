@@ -41,7 +41,7 @@ const PluggyIA = ({
                 +Inteligência Artificial
               </h2>
               <p className="text-black-500 mt-4 mb-6">
-                Veja nossas ferramentas e crie uma conta de forma <b className="text-green-600">Gratuita</b> ou assine nossos planos para ganhar <b className="text-green-600">1 mês grátis</b>.
+                Veja nossas ferramentas para controle financeiro pessoal e crie uma conta de forma <b className="text-green-600">Gratuita</b> ou assine nossos planos para ganhar <b className="text-green-600">1 mês grátis</b>.
               </p>
               <a href="https://app.mexpenses.com.br/#/auth/register/basic">
                 <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
@@ -60,7 +60,7 @@ const PluggyIA = ({
           </div>
           <div className="w-full">
             <div className="w-full flex flex-col items-center justify-center">
-              <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Segurança e serviços proporcionados por algumas empresas</h1>
+              <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Segurança e serviços financeiros garantidos</h1>
               <p className="text-secondary text-xl text-start">
                 Veja algumas das maiores empresas do mundo que estão integradas na <b>Mexpenses</b>.
               </p>
