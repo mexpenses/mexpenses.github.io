@@ -173,7 +173,7 @@ const PluggyIA = ({
                         <div className="h-44 w-44 overflow-hidden rounded-lg">
                           <img
                               alt="Itaú"
-                              src={`${router.basePath}/assets/itau.png`}
+                              src={`${router.basePath}/assets/itau.webp`}
                               className="h-full w-full object-cover object-center"
                           />
                         </div>
