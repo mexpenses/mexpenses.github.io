@@ -15,7 +15,7 @@ const Contributors = ({
     {
       name: "Ingrid Matuques",
       image: "/assets/cto.png",
-      office: "Diretora de Tecnologia (CTO)",
+      office: "(CTO) Diretora de Tecnologia",
     },
     {
       name: "Maycon Moreira",
@@ -84,10 +84,10 @@ const Contributors = ({
                     className="rounded-full"
                   />
                   <div className="flex flex-col text-left">
-                    <p className="text-lg text-black-600 capitalize">
+                    <p className="text-lg text-black-600">
                       {listContributors.name}
                     </p>
-                    <p className="text-sm text-black-500 capitalize">
+                    <p className="text-sm text-black-500">
                       {listContributors.office}
                     </p>
                   </div>

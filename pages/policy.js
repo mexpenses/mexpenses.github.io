@@ -87,10 +87,10 @@ const Policy = memo(() => {
                                                 <li>Diagnóstico</li>
                                                 <li>Identificado­res</li>
                                                 <li>Informações de uso</li>
-                                                <li>Histórico de navegação</li>
                                                 <li>Informações financeiras</li>
                                                 <li>Informações de contato</li>
                                                 <li>Informações confidenciais</li>
+                                                <li>Histórico de navegação da plataforma</li>
                                             </ul>
                                         </span>
                                     </li>

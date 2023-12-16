@@ -111,6 +111,7 @@ export const Subscriptions = () => {
                         <Lottie
                             width={150}
                             height={150}
+                            isClickToPauseDisabled
                             options={{...defaultOptions, animationData: SadBasicAnimation }}
                         />
                     </div>
