@@ -77,11 +77,11 @@ const Contributors = ({
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex flex-row justify-start items-center gap-5">
                   <Image
-                    src={listContributors.image}
                     height={50}
                     width={50}
                     alt="Icon People"
                     className="rounded-full"
+                    src={listContributors.image}
                   />
                   <div className="flex flex-col text-left">
                     <p className="text-lg text-black-600">
