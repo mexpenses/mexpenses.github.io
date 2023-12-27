@@ -33,6 +33,7 @@ export const Subscriptions = () => {
                             /Mês
                         </span>
                     </div>
+                    <span className="mb-5 font-extrabold text-green-500">Não fique aqui para sempre amigo(a)</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -126,7 +127,7 @@ export const Subscriptions = () => {
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
-                            1 mês grátis
+                            1 mês é grátis!
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
@@ -137,6 +138,7 @@ export const Subscriptions = () => {
                             /Mês
                         </span>
                     </div>
+                    <span className="mb-5 font-extrabold text-blue-400">É baratinho, preço de um pastélzinho</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -231,7 +233,7 @@ export const Subscriptions = () => {
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
-                            1 mês grátis
+                            1 mês é grátis!
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
@@ -242,6 +244,7 @@ export const Subscriptions = () => {
                             /Mês
                         </span>
                     </div>
+                    <span className="mb-5 font-extrabold text-yellow-500">Preço de um lanchinho não faz falta</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
