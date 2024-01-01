@@ -45,7 +45,7 @@ const Footer = () => {
                 </Link>
               </li>
             </div>
-            <p className="text-gray-400">© {new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
+            <p className="text-gray-400">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
           </div>
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
