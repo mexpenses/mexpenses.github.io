@@ -55,6 +55,47 @@ li.circle-check:before {
   @apply bg-blue-500 rounded-l-full rounded-r-full w-12;
 }
 
+.text-animation-colors {
+  color: transparent;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+          90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(238, 100, 10, 1) 7%,
+          rgba(210, 169, 39, 1) 14%,
+          rgba(234, 252, 62, 1) 21%,
+          rgba(134, 248, 82, 1) 28%,
+          rgba(99, 245, 156, 1) 35%,
+          rgba(87, 241, 215, 1) 42%,
+          rgba(75, 216, 237, 1) 49%,
+          rgba(66, 158, 239, 1) 56%,
+          rgba(57, 74, 241, 1) 63%,
+          rgba(126, 45, 244, 1) 70%,
+          rgba(162, 84, 247, 1) 77%,
+          rgba(229, 117, 249, 1) 84%,
+          rgba(251, 103, 164, 1) 91%,
+          rgba(253, 127, 190, 1) 97%,
+          rgba(255, 0, 191, 1) 100%
+  );
+  background-size: 500%;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  animation: color-change 10s infinite ease-in-out;
+}
+
+@keyframes color-change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
 /* purgecss end ignore */
 @tailwind utilities;
 /* purgecss start ignore */

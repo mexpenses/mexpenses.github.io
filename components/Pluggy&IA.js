@@ -37,8 +37,8 @@ const PluggyIA = ({
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
                 Saia das planilhas e venha ter um <strong className="text-green-600">brilho financeiro!</strong>
               </h1>
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-600 leading-normal mt-5">
-                +Inteligência Artificial
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-animation-colors leading-normal mt-5" style={{ lineHeight: 'normal' }}>
+                & Inteligência Artificial
               </h2>
               <p className="text-black-500 mt-4 mb-6">
                 Veja nossas ferramentas para controle financeiro pessoal e crie uma conta de forma <b className="text-green-600">Gratuita</b> ou assine nossos planos para ganhar <b className="text-green-600">1 mês grátis</b>.
