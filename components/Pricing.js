@@ -63,7 +63,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex flex-col w-full my-16" id="contributors">
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-full">
-                        Conheça as pessoas que fazem a <b>Mexpenses</b> virar realidade
+                        Conheça as pessoas que fizeram a <b>Mexpenses</b> virar realidade
                     </h3>
                     <p
                         className="leading-normal mx-auto mb-2 mt-4 w-full sm:w-7/12 lg:w-6/12"

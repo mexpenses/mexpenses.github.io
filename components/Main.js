@@ -3,25 +3,37 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import {useRouter} from "next/router";
 import {Store} from "./storeApp";
 
-const PluggyIA = ({
-                    listAbout = [
-                      {
-                        name: "Para conectar com a Pluggy",
-                        info: "15+ Bancos",
-                        icon: "/assets/Icon/heroicons_sm-user.svg",
-                      },
-                      {
-                        name: "Exclusivo para os brasileiros",
-                        info: "Brasil",
-                        icon: "/assets/Icon/gridicons_location.svg",
-                      },
-                      {
-                        name: "Servidores na AWS",
-                        info: "Segurança e privacidade",
-                        icon: "/assets/Icon/bx_bxs-server.svg",
-                      },
-                    ],
-                  }) => {
+const Main = ({ listAbout = [
+  {
+    name: "Para conectar com a Pluggy",
+    info: "15+ Bancos",
+    icon: "/assets/Icon/heroicons_sm-user.svg",
+  },
+  {
+    name: "Exclusivo para os brasileiros",
+    info: "Brasil",
+    icon: "/assets/Icon/gridicons_location.svg",
+  },
+  {
+    name: "Servidores na AWS",
+    info: "Segurança e privacidade",
+    icon: "/assets/Icon/bx_bxs-server.svg",
+  },
+] }) => {
+  const stats = [
+    { id: 1, name: 'Sem educação financeira no Brasil', cls: 'text-dark-900', value: '+150 milhões' },
+    { id: 2, name: 'Saia dos 150 milhões e mude agora!',  cls: 'text-dark-900', value: 'Seja diferente' },
+    { id: 3, name: 'Evolua cada vez mais e saia do comodismo', cls: 'text-gray-900', value: 'Não desista...' },
+  ];
+  const links = [
+    { name: 'Criar conta Premium', href: 'https://app.mexpenses.com.br/#/auth/register/premium' }
+  ];
+  const stats_assistant = [
+    { name: 'Geração de relatórios', value: 'Em tempo real' },
+    { name: 'Dicas financeiras', value: '98% aplicáveis' },
+    { name: 'Mentora financeira', value: '24hr por dia' },
+    { name: 'Dicas geradas', value: '+3.000' },
+  ];
   const router = useRouter();
   return (
       <>
@@ -34,14 +46,14 @@ const PluggyIA = ({
           </div>
           <div className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
             <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
                 Saia das planilhas e venha ter um <strong className="text-green-600">brilho financeiro!</strong>
               </h1>
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-animation-colors leading-normal mt-5" style={{ lineHeight: 'normal' }}>
                 & Inteligência Artificial
               </h2>
-              <p className="text-black-500 mt-4 mb-6">
-                Veja nossas ferramentas para controle financeiro pessoal e crie uma conta de forma <b className="text-green-600">Gratuita</b> ou assine nossos planos para ganhar <b className="text-green-600">1 mês grátis</b>.
+              <p className="text-black-500 mt-4 mb-6 text-lg">
+                Tenha o controle financeiro criando uma conta <b className="text-green-600">Gratuita</b> ou assine nossos planos para ganhar <b className="text-animation-colors">mais benefícios e 1 mês grátis</b>
               </p>
               <a href="https://app.mexpenses.com.br/#/auth/register/basic">
                 <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
@@ -123,20 +135,20 @@ const PluggyIA = ({
           </div>
         </div>
         <div className="relative overflow-hidden bg-white px-5 md:px-0">
-          <div className="pb-20 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+          <div className="pb-20 pt-16 sm:pt-24 lg:pb-48 lg:pt-40">
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
-                  Visualize tudo de forma simples!<br/>
+                  <span className="text-blue-600">Com a Mex veja</span><br/>
                   <span className="text-purple-600">Transações</span><br/>
                   <span className="text-green-700">Saldos</span><br/>
-                  <span className="text-orange-500">Investimentos</span>
+                  <span className="text-orange-500">Investimentos</span><br/>
+                  <span className="text-pink-600">e muito mais...</span>
                 </h1>
-                <p className="mt-4 text-xl text-gray-600">
-                  Junte-se ao <span className="font-medium">Open Finance</span> e
-                  conecte suas contas de forma segura com a <span className='text-pink-600'>Pluggy</span>.
-                  Compramos sua dor de ficar saindo de banco em banco para olhar suas finanças, tenha suas contas e despesas <span className="font-semibold">em um único lugar aqui!</span>
-                </p>
+                <div className="mt-4 text-xl text-gray-600">
+                  Compramos sua dor de ficar saindo de banco em banco para olhar suas finanças,
+                  tenha suas transações <span className="font-semibold">em um único lugar aqui!</span>
+                </div>
               </div>
               <div>
                 {/* Decorative image grid */}
@@ -218,15 +230,22 @@ const PluggyIA = ({
                     </div>
                   </div>
                 </div>
-                <a
-                    target="_blank"
-                    href="https://pluggy.ai"
-                    className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-medium text-white hover:bg-pink-700 mt-5"
-                >
-                  Veja nossa parceria Pluggy
-                </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="bg-white pb-24 sm:pb-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+              {stats.map((stat) => (
+                  <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt className="text-base leading-7">{stat.name}</dt>
+                    <dd className={`order-first text-3xl font-semibold tracking-tight sm:text-5xl ${stat.cls}`}>
+                      {stat.value}
+                    </dd>
+                  </div>
+              ))}
+            </dl>
           </div>
         </div>
         <video
@@ -236,7 +255,7 @@ const PluggyIA = ({
             width="100%"
             src={`${router.basePath}/assets/publicity.mp4`}
         />
-        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <div className="relative isolate bg-gradient-to-l from-indigo-900 overflow-hidden bg-gray-900 py-24 sm:py-32">
           <div
               className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
               aria-hidden="true"
@@ -263,23 +282,31 @@ const PluggyIA = ({
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="text-4xl font-medium tracking-tight text-white sm:text-6xl">
-                <span className="float-left mb-5">Inteligência Artificial para te auxiliar nas economias!</span>
-                <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right ml-3" alt="AI Ingrid"/>
+              <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                Inteligência Artificial para te auxiliar nas economias!
               </h2>
-              <p className="mt-6 text-lg leading-8 text-white">
-                Estamos empolgados em apresentar a Inteligência Artificial <b>Ingrid</b>, que está na <b>Mexpenses</b> para ajudar os usuários com suas finanças e aprender sobre vários pontos de acordo com seus dados. Experimente agora criando uma conta <b>Premium</b>.
+              <p className="mt-6 text-lg leading-8 text-gray-300">
+                <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right ml-3" alt="AI Ingrid"/>
+                Estamos empolgados em apresentar a Inteligência Artificial <b>Ingrid</b>, que está na <b>Mexpenses</b> para ajudar os usuários com
+                suas finanças e aprender sobre vários pontos de acordo com seus dados. Experimente agora criando uma conta <b>Premium</b>.
               </p>
             </div>
             <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                <a
-                    href="https://app.mexpenses.com.br/#/auth/register/premium"
-                    className="inline-block rounded-md border border-transparent bg-pink-600 px-8 py-3 text-center font-medium text-white hover:bg-pink-700 mt-5"
-                >
-                  Criar uma conta
-                </a>
+                {links.map((link) => (
+                    <a key={link.name} href={link.href}>
+                      {link.name} <span aria-hidden="true">&rarr;</span>
+                    </a>
+                ))}
               </div>
+              <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                {stats_assistant.map((stat) => (
+                    <div key={stat.name} className="flex flex-col-reverse">
+                      <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
+                      <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
+                    </div>
+                ))}
+              </dl>
             </div>
           </div>
         </div>
@@ -287,4 +314,4 @@ const PluggyIA = ({
   );
 };
 
-export default PluggyIA;
+export default Main;

@@ -1,5 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import {useRouter} from "next/router";
+import CTO from '../public/assets/cto.png';
+import Logo from '../public/assets/mexpenses-black.svg';
 
 const features = [
   "Criptomoedas",
@@ -11,13 +14,12 @@ const features = [
   "Controle de Faturas",
   "Controle de Despesas",
   "Análises financeiras",
-  "Inteligência Artificial",
   "Suporte via WhatsApp",
   "Calculadora de impostos",
   "Exportar dados para Excel",
   "Open Finance com a Pluggy",
   "Bancos mais próximos da sua localização",
-  "<span class='font-bold text-blue-600'>E MUITO MAIS...</span>"
+  "Inteligência Artificial para geração de relatórios<br/><span class='font-bold text-blue-600'>E MUITO MAIS...</span>"
 ];
 
 const Feature = () => {
@@ -25,11 +27,36 @@ const Feature = () => {
 
   return (
       <>
+        <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+          <div className="mx-auto max-w-2xl lg:max-w-4xl">
+            <Logo className="w-auto mx-auto h-12"/>
+            <figure className="mt-10">
+              <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                <p>
+                  “Acreditamos que é possível mudar a realidade financeira das pessoas, através das
+                  ferramentas e Inteligência Artificial do nosso Software.”
+                </p>
+              </blockquote>
+              <figcaption className="mt-10 flex items-center justify-center flex-col">
+                <Image src={CTO} width={50} height={50} className="mx-auto rounded-full" alt="Logo"/>
+                <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                  <div className="font-semibold text-gray-900">Ingrid Matuques</div>
+                  <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
+                    <circle cx={1} cy={1} r={1} />
+                  </svg>
+                  <div className="text-gray-600">CTO da Mexpenses</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
         <div className="bg-white">
           <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Sim, não somos só mais um app de finanças!
+                NÃO somos só mais um app!
               </h2>
               <p className="mt-4 text-gray-500">
                 Estamos aqui para te proporcionar algo além do controle financeiro.
