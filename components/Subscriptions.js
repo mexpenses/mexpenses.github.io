@@ -41,60 +41,64 @@ export const Subscriptions = () => {
                                 Grátis
                             </span>
                         </div>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Calculadora de Impostos</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Cadastro de categorias com despesas fixas, variáveis e recorrentes</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar bancos</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar entradas e saídas bancárias</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <CheckIcon />
-                            <span>Gerenciar cartões de crédito com suas faturas</span>
-                        </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <CheckIcon />
                             <span>
-                                Analise de forma intuitiva gráficos de despesas,
-                                saldos bancários, faturas de cartão de crédito e
-                                muito mais...
+                                <b>Cadastro de categorias:</b>  Organize suas despesas de forma simples.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <CheckIcon />
                             <span>
-                                Alertas sobre faturas que irão vencer ou que
-                                ultrapassaram sua renda e data de vencimento
+                                <b>Calculadora de Impostos:</b>  Calcule seus impostos de forma rápida e fácil.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <CheckIcon />
                             <span>
-                                Visualização de taxas de juros{" "}
-                                <span className="font-semibold">
-                                    SELIC / CDI / IPCA
-                                </span>
+                                <b>Visualização de taxas de juros:</b>  Acompanhe as taxas de juros do mercado.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <CheckIcon />
                             <span>
-                                Visualização de criptomoedas mais negociadas em tempo real
+                                <b>Gerenciamento de bancos:</b>  Controle suas contas bancárias em um só lugar.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <CheckIcon />
                             <span>
-                                Suporte <b>WhatsApp</b> horário de expediente
+                                <b>Análise de dados:</b>  Visualize seus dados financeiros de forma clara e intuitiva.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <CheckIcon />
+                            <span>
+                                <b>Gerenciamento de cartões de crédito:</b>  Controle suas faturas de cartão de crédito.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <CheckIcon />
+                            <span>
+                                <b>Visualização de criptomoedas:</b>  Acompanhe as principais criptomoedas do mercado.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <CheckIcon />
+                            <span>
+                                <b>Gerenciamento de entradas e saídas:</b>  Acompanhe seu dinheiro de forma detalhada.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <CheckIcon />
+                            <span>
+                                <b>Suporte WhatsApp:</b>  Entre em contato com o suporte pelo WhatsApp durante o horário de expediente.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <CheckIcon />
+                            <span>
+                                <b>Alertas de faturas:</b>  Receba alertas sobre faturas que estão vencendo ou que ultrapassaram seu limite de crédito.
                             </span>
                         </li>
                     </ul>
@@ -149,66 +153,64 @@ export const Subscriptions = () => {
                                 + Basic
                             </span>
                         </div>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>Visualização e análise de faturas com <span className="font-semibold">Inteligência Artificial Ingrid</span></span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Veja no mapa bancos mais próximos de você
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check.svg`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Cadastro de parcelas nas despesas
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <img
                                 src={`${router.basePath}/assets/badge-check.svg`}
                                 className="w-5"
                                 alt="Subscription"
                             />
                             <span className="dark:text-white">
-                                Seus bancos em um único lugar{" "}
-                                <span className="font-medium text-primary-600 dark:text-primary-400">
-                                    Insira 2 contas
-                                </span>
+                                <b>Open Finance:</b> Insira 2 contas reais.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check.svg`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Bancos mais próximos:</b> Encontre bancos perto de você.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check.svg`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Cadastro de parcelas:</b> Organize suas despesas em parcelas.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
                             <img
                                 src={`${router.basePath}/assets/badge-check.svg`}
                                 className="w-5"
                                 alt="Subscription"
                             />
                             <span className="opacity-70">
-                                <b>Em breve</b> Definir metas financeiras
+                                <b>Em breve:</b> Veja seu histórico de gastos com filtros de pesquisa.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <img
                                 src={`${router.basePath}/assets/badge-check.svg`}
                                 className="w-5"
                                 alt="Subscription"
                             />
                             <span className="opacity-70">
-                                <b>Em breve</b> Histórico com filtro de pesquisa
-                                sobre Entradas, Saídas e muito mais
+                                <b>Em breve:</b> Defina metas financeiras para alcançar seus objetivos.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check.svg`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Análise de faturas:</b> Veja suas faturas de forma clara e intuitiva com Inteligência Artificial.
                             </span>
                         </li>
                     </ul>
@@ -258,85 +260,74 @@ export const Subscriptions = () => {
                                 + Premium
                             </span>
                         </div>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
                                 alt="Subscription"
                             />
                             <span className="dark:text-white">
-                                Seus bancos em um único lugar{" "}
-                                <span className="font-medium text-yellow-600 dark:text-yellow-400">
-                                    Insira 4 contas
-                                </span>
+                                <b>Open Finance:</b> Insira 4 contas reais.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Suporte <b>WhatsApp</b>{" "}
-                                <b className="text-yellow-600 dark:text-yellow-400">
-                                    24 horas
-                                </b>{" "}
-                                por dia
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Visualização <b>Mercados de Ações dos EUA e BRASIL</b>{" "}
-                                em tempo real
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Exportar dados financeiros em <b>CSV para Excel</b>
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Visualização <b>B3: A Bolsa do Brasil</b>{" "}
-                                em tempo real
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
-                            <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
-                                className="w-5"
-                                alt="Subscription"
-                            />
-                            <span>
-                                Converse com a{" "}
-                                <b>Inteligência Artificial Ingrid</b> e receba
-                                dicas diárias de acordo com seus dados
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3">
+                        <li className="flex items-center space-x-3 text-sm">
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
                                 alt="Subscription"
                             />
                             <span className="opacity-70">
-                                <b>Em breve</b> Perfil de consumo
+                                <b>Em breve:</b> Você poderá visualizar seu perfil de consumo.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>B3 (Bolsa do Brasil) em tempo real:</b> Acompanhe a B3 em tempo real.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Dados financeiros em CSV:</b> Exporte seus dados financeiros para o Excel.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Suporte WhatsApp 24h:</b> Entre em contato com o suporte pelo WhatsApp a qualquer hora.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Mercados de ações em tempo real:</b> Acompanhe os mercados de ações dos EUA e do Brasil em tempo real.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
+                            <span>
+                                <b>Dicas da Ingrid:</b> Converse com a Inteligência Artificial Ingrid e receba dicas diárias de acordo com seus dados.
                             </span>
                         </li>
                     </ul>
