@@ -109,7 +109,10 @@ const Header = () => {
               </a>
             </div>
           </nav>
-            <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+            <div
+                onClick={() => window.location = "#pricing"}
+                className="relative bg-black hover:bg-gray-800 flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 cursor-pointer"
+            >
                 <div
                     aria-hidden="true"
                     className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -135,8 +138,8 @@ const Header = () => {
                     />
                 </div>
                 <div className="flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-2">
-                    <p className="text-sm leading-6 text-gray-900">
-                        <strong className="font-semibold">Em pleno {new Date().getFullYear()}</strong>
+                    <p className="text-sm leading-6 text-white">
+                        <strong className="font-semibold">Assine Premium</strong>
                         <svg
                             viewBox="0 0 2 2"
                             className="mx-2 inline h-0.5 w-0.5 fill-current"
@@ -144,7 +147,7 @@ const Header = () => {
                         >
                             <circle cx={1} cy={1} r={1} />
                         </svg>
-                        E você ainda não utiliza a Mexpenses para controlar seus gastos?
+                        Você no controle sem limites
                     </p>
                 </div>
             </div>

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9e758a1d-53fb-4ca6-a6d2-f0995327dae2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Subscriptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/sad_basic.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705167918942</updated>
       <workItem from="1705167920258" duration="11329000" />
-      <workItem from="1705248515293" duration="1654000" />
+      <workItem from="1705248515293" duration="11240000" />
     </task>
     <servers />
   </component>

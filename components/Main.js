@@ -53,7 +53,8 @@ const Main = ({ listAbout = [
                 & Inteligência Artificial
               </h2>
               <p className="text-black-500 mt-4 mb-6 text-lg">
-                Tenha o controle financeiro criando uma conta <b className="text-green-600">Gratuita</b> ou assine nossos planos para ganhar <b className="text-animation-colors">mais benefícios e 1 mês grátis</b>
+                Tenha o controle criando uma conta <strong className="text-green-600">gratuita</strong> ou
+                assine nossos planos para ganhar mais benefícios com <strong className="text-animation-colors">1 mês grátis.</strong>
               </p>
               <a href="https://app.mexpenses.com.br/#/auth/register/basic">
                 <ButtonPrimary>Quero criar uma conta</ButtonPrimary>

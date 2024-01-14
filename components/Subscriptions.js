@@ -2,7 +2,7 @@ import { CheckIcon } from "./misc/checkIcon";
 import { useRouter } from "next/router";
 import React from "react";
 import Lottie from 'react-lottie';
-import * as SadBasicAnimation from '../public/assets/sad_basic.json';
+import * as AnimationRecommended from '../public/assets/animation_recommended.json';
 
 const defaultOptions = {
     loop: true,
@@ -112,12 +112,12 @@ export const Subscriptions = () => {
                 </div>
                 {/* Pricing Card */}
                 <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <div className="absolute top-0 right-0">
+                    <div className="absolute right-0" style={{ top: -40 }}>
                         <Lottie
-                            width={150}
-                            height={150}
+                            width={100}
+                            height={100}
                             isClickToPauseDisabled
-                            options={{...defaultOptions, animationData: SadBasicAnimation }}
+                            options={{...defaultOptions, animationData: AnimationRecommended }}
                         />
                     </div>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
@@ -231,7 +231,7 @@ export const Subscriptions = () => {
                         </span>
                     </h3>
                     <p className="text-gray-700 sm:text-lg dark:text-gray-400">
-                        Para uma pessoa de negócios e que deseja ter sucesso
+                        Você no controle sem limites
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
