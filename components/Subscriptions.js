@@ -18,7 +18,7 @@ export const Subscriptions = () => {
         <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6">
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
                 {/* Pricing Card */}
-                <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Free
                     </h3>
@@ -26,14 +26,14 @@ export const Subscriptions = () => {
                         Crie uma conta para conhecer a plataforma
                     </p>
                     <div className="flex justify-center items-baseline my-8">
-                        <span className="mr-2 text-5xl font-extrabold text-green-500">
+                        <span className="mr-2 text-5xl font-extrabold text-green-600">
                             Grátis
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-green-500">Não fique aqui para sempre amigo(a)</span>
+                    <span className="mb-5 font-extrabold text-green-600">Não fique aqui para sempre amigo(a)</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -111,7 +111,7 @@ export const Subscriptions = () => {
                     </a>
                 </div>
                 {/* Pricing Card */}
-                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <div className="absolute right-0" style={{ top: -40 }}>
                         <Lottie
                             width={100}
@@ -135,14 +135,14 @@ export const Subscriptions = () => {
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
-                        <span className="mr-2 text-5xl font-extrabold text-blue-400">
+                        <span className="mr-2 text-5xl font-extrabold text-blue-500">
                             R$ 9,90
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-blue-400">É baratinho, preço de um pastélzinho</span>
+                    <span className="mb-5 font-extrabold text-blue-500">É baratinho, preço de um pastélzinho</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -223,10 +223,10 @@ export const Subscriptions = () => {
                     </a>
                 </div>
                 {/* Pricing Card */}
-                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Premium&nbsp;
-                        <span className="py-1 px-3 bg-yellow-500 text-white rounded-xl">
+                        <span className="py-1 px-3 bg-orange-500 text-white rounded-xl">
                             Super poderes
                         </span>
                     </h3>
@@ -239,14 +239,14 @@ export const Subscriptions = () => {
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
-                        <span className="mr-2 text-5xl font-extrabold text-yellow-500">
+                        <span className="mr-2 text-5xl font-extrabold text-orange-500">
                             R$ 14,90
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-yellow-500">Preço de um lanchinho não faz falta</span>
+                    <span className="mb-5 font-extrabold text-orange-500">Preço de um lanchinho não faz falta</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -334,7 +334,7 @@ export const Subscriptions = () => {
                     <a
                         target="_blank"
                         href="https://app.mexpenses.com.br/#/auth/register/premium"
-                        className="text-white bg-yellow-600 hover:bg-yellow-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+                        className="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
                     >
                         Assinar
                     </a>
