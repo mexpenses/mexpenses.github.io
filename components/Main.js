@@ -31,7 +31,7 @@ const Main = ({ listAbout = [
   const stats_assistant = [
     { name: 'Geração de relatórios', value: 'Em tempo real' },
     { name: 'Dicas financeiras', value: '98% aplicáveis' },
-    { name: 'Mentora financeira', value: '24hr por dia' },
+    { name: 'Mentora financeira', value: '24h por dia' },
     { name: 'Dicas geradas', value: '+3.000' },
   ];
   const router = useRouter();
