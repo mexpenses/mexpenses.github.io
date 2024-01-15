@@ -15,7 +15,7 @@ const defaultOptions = {
 export const Subscriptions = () => {
     const router = useRouter();
     return (
-        <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6" id="pricing">
+        <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6">
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
                 {/* Pricing Card */}
                 <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-gray-100 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">

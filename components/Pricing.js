@@ -8,7 +8,7 @@ const Pricing = () => {
 
     return (
         <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14">
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full" id="pricing">
                 <h3
                     className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-center"
                 >

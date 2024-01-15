@@ -111,7 +111,7 @@ const Header = () => {
           </nav>
             <div
                 onClick={() => window.location = "#pricing"}
-                className="relative bg-black hover:bg-gray-800 flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 cursor-pointer"
+                className="relative bg-black hover:bg-blue-500 flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 cursor-pointer select-none"
             >
                 <div
                     aria-hidden="true"
