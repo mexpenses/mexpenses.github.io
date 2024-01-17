@@ -47,7 +47,7 @@ const Main = ({ listAbout = [
           <div className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
             <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
-                Saia das planilhas e venha ter um <strong className="text-green-600">brilho financeiro!</strong>
+                Saia das planilhas e venha ter um <strong className="text-green-600">Brilho financeiro!</strong>
               </h1>
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-animation-colors leading-normal mt-5" style={{ lineHeight: 'normal' }}>
                 & Inteligência Artificial
@@ -64,7 +64,6 @@ const Main = ({ listAbout = [
               <div className="h-full w-full">
                 <img
                     width={700}
-                    className="rounded-3xl"
                     alt="Mexpenses Illustration"
                     src={`${router.basePath}/assets/sad_and_happy.jpg`}
                 />
@@ -73,37 +72,37 @@ const Main = ({ listAbout = [
           </div>
           <div className="w-full">
             <div className="w-full flex flex-col items-center justify-center">
-              <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Segurança e serviços financeiros garantidos</h1>
+              <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
               <p className="text-secondary text-xl text-start">
-                Veja algumas das maiores empresas do mundo que estão integradas na <b>Mexpenses</b>.
+                Dê uma olhada abaixo para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro
               </p>
               <div className="w-full pt-10 carousel-logos">
                 <a href="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/amazon_partner.png`} width={100} alt="Amazon"/>
+                  <img src={`${router.basePath}/assets/amazon_partner.png`} alt="Amazon"/>
                 </a>
                 <a href="https://about.google/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/google_partner.png`} width={100} alt="Google"/>
+                  <img src={`${router.basePath}/assets/google_partner.png`} alt="Google"/>
                 </a>
                 <a href="https://about.meta.com/br/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/meta_partner.png`} width={100} alt="Meta"/>
+                  <img src={`${router.basePath}/assets/meta_partner.png`} alt="Meta"/>
                 </a>
                 <a href="https://stripe.com/br" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/stripe_partner.png`} width={50} alt="Stripe"/>
+                  <img src={`${router.basePath}/assets/stripe_partner.png`} alt="Stripe"/>
                 </a>
                 <a href="https://pluggy.ai/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/pluggy_partner.png`} width={100} alt="Pluggy"/>
+                  <img src={`${router.basePath}/assets/pluggy_partner.png`} alt="Pluggy"/>
                 </a>
                 <a href="https://vercel.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/vercel_partner.png`} width={100} alt="Vercel"/>
+                  <img src={`${router.basePath}/assets/vercel_partner.png`} alt="Vercel"/>
                 </a>
                 <a href="https://openai.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/open_ai_partner.png`} width={200} alt="OpenAI"/>
+                  <img src={`${router.basePath}/assets/open_ai_partner.png`} alt="OpenAI"/>
                 </a>
                 <a href="https://github.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/github_partner.png`} width={60} alt="GitHub"/>
+                  <img src={`${router.basePath}/assets/github_partner.png`} alt="GitHub"/>
                 </a>
                 <a href="https://br.tradingview.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/tradingview_partner.png`} width={40} alt="TradingView"/>
+                  <img src={`${router.basePath}/assets/tradingview_partner.png`} alt="TradingView"/>
                 </a>
               </div>
             </div>
@@ -140,7 +139,7 @@ const Main = ({ listAbout = [
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
-                  <span className="text-blue-600">Com a Mex veja</span><br/>
+                  <span className="text-blue-600">Veja sem medo</span><br/>
                   <span className="text-purple-600">Transações</span><br/>
                   <span className="text-green-700">Saldos</span><br/>
                   <span className="text-orange-500">Investimentos</span><br/>

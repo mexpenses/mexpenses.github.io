@@ -27,8 +27,9 @@
     }
 
     .carousel-logo img {
+        width: 100px;
         height: auto;
-        width: 120px !important;
+        max-width: 100%;
     }
 }
 
