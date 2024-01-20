@@ -209,6 +209,16 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Subscription"
                             />
+                            <span className="dark:text-white">
+                                <b>Histórico mensal:</b> Veja o histórico de pagamentos das despesas recorrentes.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check.png`}
+                                className="w-5"
+                                alt="Subscription"
+                            />
                             <span>
                                 <b>Análise de faturas:</b> Veja suas faturas de forma clara e intuitiva com Inteligência Artificial.
                             </span>
