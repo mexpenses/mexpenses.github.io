@@ -99,12 +99,12 @@ const Header = () => {
             </ul>
             <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
               <a
-                  href="https://app.mexpenses.com.br/#/auth/login"
+                  href="https://app.mexpenses.com.br/auth/login"
                   className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-500 transition-all"
               >
                 Login
               </a>
-              <a href="https://app.mexpenses.com.br/#/auth/register/basic">
+              <a href="https://app.mexpenses.com.br/auth/register/basic">
                 <ButtonOutline>Criar conta</ButtonOutline>
               </a>
             </div>

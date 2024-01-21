@@ -6,12 +6,12 @@
         <loc>https://www.mexpenses.net/opensearch.xml</loc>
     </url>
     <url>
-        <loc>https://app.mexpenses.com.br/#/auth/login</loc>
+        <loc>https://app.mexpenses.com.br/auth/login</loc>
     </url>
     <url>
-        <loc>https://app.mexpenses.com.br/#/auth/register/basic</loc>
+        <loc>https://app.mexpenses.com.br/auth/register/basic</loc>
     </url>
     <url>
-        <loc>https://app.mexpenses.com.br/#/auth/recovery</loc>
+        <loc>https://app.mexpenses.com.br/auth/recovery</loc>
     </url>
 </urlset>

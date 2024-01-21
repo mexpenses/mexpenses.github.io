@@ -26,7 +26,7 @@ const Main = ({ listAbout = [
     { id: 3, name: 'Evolua cada vez mais e saia do comodismo', cls: 'text-gray-900', value: 'Não desista...' },
   ];
   const links = [
-    { name: 'Criar conta Premium', href: 'https://app.mexpenses.com.br/#/auth/register/premium' }
+    { name: 'Criar conta Premium', href: 'https://app.mexpenses.com.br/auth/register/premium' }
   ];
   const stats_assistant = [
     { name: 'Geração de relatórios', value: 'Em tempo real' },
@@ -56,7 +56,7 @@ const Main = ({ listAbout = [
                 Tenha o controle criando uma conta <strong className="text-green-600">gratuita</strong> ou
                 assine nossos planos para ganhar mais benefícios com <strong className="text-animation-colors">1 mês grátis.</strong>
               </p>
-              <a href="https://app.mexpenses.com.br/#/auth/register/basic">
+              <a href="https://app.mexpenses.com.br/auth/register/basic">
                 <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
               </a>
             </div>
