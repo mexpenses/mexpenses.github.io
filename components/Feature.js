@@ -350,7 +350,7 @@ const Feature = () => {
                     Perfil de consumo
                   </h3>
                   <p className="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                    Está com dúvidas aonde você está gastando mais de uma forma geral? Vamos separar de forma simples e visual para você identificar aonde está saindo seu dinheiro.
+                    Está com dúvidas aonde você mais está gastando? Vamos separar de forma simples e visual para você identificar aonde está saindo seu dinheiro.
                   </p>
                   <a className="inline-block">
                     <span className="text-indigo-500 dark:text-blue-300">Em breve</span>
