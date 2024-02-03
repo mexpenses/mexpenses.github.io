@@ -206,7 +206,7 @@ const Policy = memo(() => {
                                     em contato com nosso Encarregado de Proteção de Dados Pessoais, por meio dos seguintes canais:</p>
                                 <p className="mt-6">
                                     <Link href="mailto:mexpenses.app@gmail.com">
-                                        <b className="flex items-center justify-start m-0 text-blue-600 hover:text-blue-500 font-medium cursor-pointer" title="mexpenses.app@gmail.com">
+                                        <b className="flex items-center justify-start m-0 text-indigo-600 hover:text-indigo-500 font-medium cursor-pointer" title="mexpenses.app@gmail.com">
                                             <img
                                                 alt="E-mail"
                                                 src={`${router.basePath}/assets/email.png`}

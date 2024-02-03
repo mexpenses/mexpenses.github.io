@@ -6,8 +6,15 @@ import Link from "next/link";
 const Footer = () => {
   const router = useRouter();
   return (
-      <div className="bg-white-300 pt-44 pb-24">
-        <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4">
+      <div className="bg-white-300 pt-24 pb-24">
+        <video
+            loop
+            muted
+            autoPlay
+            width="100%"
+            src={`${router.basePath}/assets/publicity.mp4`}
+        />
+        <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4 mt-20">
           <div className="flex flex-col items-start">
             <LogoMexpenses className="h-8 w-auto mb-6" />
             <p className="mb-4">
@@ -51,12 +58,12 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
             <ul className="text-black-500">
               <a target="_blank" href="https://pluggy.ai/open-finance">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Open Finance{" "}
                 </li>
               </a>
               <Link href="/policy">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Política de privacidade{" "}
                 </li>
               </Link>
@@ -66,12 +73,12 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Pagamentos</p>
             <ul className="text-black-500">
               <a target="_blank" href="https://stripe.com/br/customers">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Relatos de clientes{" "}
                 </li>
               </a>
               <a target="_blank" href="https://stripe.com/br/privacy">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Privacidade e Termos{" "}
                 </li>
               </a>
@@ -81,17 +88,17 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Produtos</p>
             <ul className="text-black-500 ">
               <a target="_blank" href="https://app.mexpenses.com.br/auth/register/basic">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Conta digital{" "}
                 </li>
               </a>
               <a target="_blank" href="https://pluggy.ai/pluggy-connect">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Conectores bancários{" "}
                 </li>
               </a>
-              <li className="my-2 hover:text-blue-500 cursor-pointer transition-al">
-                <b className="text-blue-600">Em breve</b> Blog{" "}
+              <li className="my-2 hover:text-indigo-500 cursor-pointer transition-al">
+                <b className="text-indigo-600">Em breve</b> Blog{" "}
               </li>
             </ul>
           </div>
@@ -99,12 +106,12 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Contato</p>
             <ul className="text-black-500">
               {/*<a target="_blank" href="https://wa.link/71kl40">*/}
-              {/*  <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">*/}
+              {/*  <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">*/}
               {/*    Atendimento WhatsApp{" "}*/}
               {/*  </li>*/}
               {/*</a>*/}
               <a target="_blank" href="mailto:mexpenses.app@gmail.com">
-                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Entrar em contato por <span className="inline-block">e-mail</span>{" "}
                 </li>
               </a>

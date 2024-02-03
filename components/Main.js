@@ -5,7 +5,7 @@ import {Store} from "./storeApp";
 
 const Main = ({ listAbout = [
   {
-    name: "Para conectar com a Pluggy",
+    name: "Open Finance",
     info: "15+ Bancos",
     icon: "/assets/Icon/heroicons_sm-user.svg",
   },
@@ -115,7 +115,7 @@ const Main = ({ listAbout = [
                       className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-full px-4 sm:w-auto mx-auto sm:mx-0"
                   >
                     <div className="flex w-full">
-                      <div className="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full">
+                      <div className="flex items-center justify-center bg-indigo-100 w-12 h-12 mr-6 rounded-full">
                         <img src={listAbouts.icon} className="h-6 w-6" alt="User" />
                       </div>
                       <div className="flex flex-col">
@@ -139,11 +139,10 @@ const Main = ({ listAbout = [
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
-                  <span className="text-blue-600">Veja sem medo</span><br/>
+                  <span className="text-indigo-600">Veja sem medo</span><br/>
+                  <span className="text-orange-500">Investimentos</span><br/>
                   <span className="text-purple-600">Transações</span><br/>
                   <span className="text-green-700">Saldos</span><br/>
-                  <span className="text-orange-500">Investimentos</span><br/>
-                  <span className="text-pink-600">e muito mais...</span>
                 </h1>
                 <div className="mt-4 text-xl text-gray-600">
                   Compramos sua dor de ficar saindo de banco em banco para olhar suas finanças,
@@ -248,13 +247,6 @@ const Main = ({ listAbout = [
             </dl>
           </div>
         </div>
-        <video
-            loop
-            muted
-            autoPlay
-            width="100%"
-            src={`${router.basePath}/assets/publicity.mp4`}
-        />
         <div className="relative isolate bg-gradient-to-l from-indigo-900 overflow-hidden bg-gray-900 py-24 sm:py-32">
           <div
               className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

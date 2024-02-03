@@ -16,7 +16,7 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                 <button
                     style={{ zIndex: 500 }}
                     onClick={() => setPlaying(null)}
-                    className="absolute font-extrabold bg-blue-500 p-3 text-white rounded-full w-10 h-10 left-5 top-5 flex items-center justify-center"
+                    className="absolute font-extrabold bg-indigo-500 p-3 text-white rounded-full w-10 h-10 left-5 top-5 flex items-center justify-center"
                 >
                     ↩
                 </button>
@@ -115,25 +115,25 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                     <div className="text-slate-400 mt-6 text-md">
                         <div className="flex">
                             <p className="w-36 font-bold">Directors</p>
-                            <p className="text-blue-300 truncate">
+                            <p className="text-indigo-300 truncate">
                                 Hector Silva
                             </p>
                         </div>
                         <div className="flex">
                             <p className="w-36 font-bold">Starring</p>
-                            <p className="text-blue-300 truncate">
+                            <p className="text-indigo-300 truncate">
                                 Hector Silva e Ingrid Matuques
                             </p>
                         </div>
                         <div className="flex">
                             <p className="w-36 font-bold">Genres</p>
-                            <p className="text-blue-300 truncate">
+                            <p className="text-indigo-300 truncate">
                                 Romance, Drama e Aventura
                             </p>
                         </div>
                         <div className="flex">
                             <p className="w-36 font-bold">Subtitles</p>
-                            <p className="text-blue-300 truncate">
+                            <p className="text-indigo-300 truncate">
                                 Português
                             </p>
                         </div>
@@ -141,12 +141,12 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                             <p className="w-36 font-bold">
                                 Audio languages
                             </p>
-                            <p className="text-blue-300">English</p>
+                            <p className="text-indigo-300">English</p>
                         </div>
                         <div className="flex">
                             <p className="truncate text-lg mt-2">
                                 This is made by&nbsp;
-                                <span className="text-blue-300">
+                                <span className="text-indigo-300">
                                         Hector Silva
                                     </span>
                                 . All rights reserved to Mexpenses.

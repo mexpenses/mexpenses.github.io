@@ -107,7 +107,7 @@ export const Subscriptions = () => {
                         href="https://app.mexpenses.com.br/auth/register/free"
                         className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
                     >
-                        Teste <span className="font-bold uppercase">Grátis</span>
+                        Teste <span className="font-bold uppercase">gratuitamente</span>
                     </a>
                 </div>
                 {/* Pricing Card */}
@@ -122,7 +122,7 @@ export const Subscriptions = () => {
                     </div>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Basic&nbsp;
-                        <span className="py-1 px-3 bg-blue-500 text-white rounded-xl">
+                        <span className="py-1 px-3 bg-indigo-500 text-white rounded-xl">
                             Recomendado
                         </span>
                     </h3>
@@ -135,21 +135,21 @@ export const Subscriptions = () => {
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
-                        <span className="mr-2 text-5xl font-extrabold text-blue-500">
+                        <span className="mr-2 text-5xl font-extrabold text-indigo-500">
                             R$ 9,90
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /Mês
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-blue-500">É baratinho, preço de um pastélzinho</span>
+                    <span className="mb-5 font-extrabold text-indigo-500">É baratinho, preço de um pastélzinho</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
                             <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-indigo-500 text-xl font-bold text-white rounded-xl">
                                 + Basic
                             </span>
                         </div>
@@ -227,7 +227,7 @@ export const Subscriptions = () => {
                     <a
                         target="_blank"
                         href="https://app.mexpenses.com.br/auth/register/basic"
-                        className="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
+                        className="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
                     >
                         Assinar
                     </a>
@@ -263,7 +263,7 @@ export const Subscriptions = () => {
                             <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-blue-500 text-xl font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-indigo-500 text-xl font-bold text-white rounded-xl">
                                 Basic
                             </span>
                             <span className="py-1 px-3 bg-orange-500 text-xl font-bold text-white rounded-xl">

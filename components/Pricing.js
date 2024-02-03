@@ -9,24 +9,22 @@ const Pricing = () => {
     return (
         <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14">
             <div className="flex flex-col w-full" id="pricing">
-                <h3
-                    className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-center"
-                >
-                    Antes de começar veja nossas assinaturas
-                </h3>
-                <p
-                    className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-                >
-                    Comece com uma conta e viva uma nova experiência <b>Mex</b>
-                </p>
+                <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
+                        Antes de começar veja nossas assinaturas
+                    </h3>
+                    <p className="leading-normal text-left my-2 w-10/12 sm:w-7/12 lg:w-6/12">
+                        Comece com uma conta e viva uma nova experiência <b>Mex</b>
+                    </p>
+                </div>
                 <Subscriptions/>
             </div>
             <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
                 <div className="flex flex-col w-full my-16">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
                         Seus dados estão seguros
                     </h3>
-                    <p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">
+                    <p className="leading-normal text-left my-2 w-10/12 sm:w-7/12 lg:w-6/12">
                         Garantimos a segurança dos seus dados por estar hospedado em um dos maiores players de servidores do mundo,
                         veja abaixo algumas das milhares de empresas que utilizam serviços da Amazon Web Services no mundo todo.
                     </p>
@@ -62,11 +60,11 @@ const Pricing = () => {
                     </div>
                 </div>
                 <div className="flex flex-col w-full my-16" id="contributors">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-full">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-full text-left">
                         Conheça as pessoas que fizeram a <b>Mexpenses</b> virar realidade
                     </h3>
                     <p
-                        className="leading-normal mx-auto mb-2 mt-4 w-full sm:w-7/12 lg:w-6/12"
+                        className="leading-normal text-left mx-auto mb-2 mt-4 w-full"
                     >
                         Você tem o interesse de levar a simplicidade das finanças para todas pessoas? Veja mais informações logo abaixo para entrar em contato conosco.
                     </p>

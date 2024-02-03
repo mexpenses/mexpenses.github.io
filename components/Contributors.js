@@ -73,7 +73,7 @@ const Contributors = ({
       >
         {listContributor.map((listContributors, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-blue-500 transition-all rounded-lg p-8 flex flex-col">
+            <div className="border-2 border-gray-500 hover:border-indigo-500 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex flex-row justify-start items-center gap-5">
                   <Image
@@ -100,13 +100,13 @@ const Contributors = ({
       <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white transition-all text-blue-500 cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-indigo-500 border hover:bg-indigo-500 hover:text-white transition-all text-indigo-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
             <ArrowBack className="h-6 w-6 " />
           </div>
           <div
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white transition-all text-blue-500 cursor-pointer"
+            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-indigo-500 border hover:bg-indigo-500 hover:text-white transition-all text-indigo-500 cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
             <ArrowNext className="h-6 w-6" />

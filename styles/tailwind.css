@@ -16,7 +16,7 @@ html {
   content: "";
   height: 2px;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  @apply w-0 bg-blue-500 left-1/2 block bottom-0 absolute;
+  @apply w-0 bg-indigo-500 left-1/2 block bottom-0 absolute;
 }
 .animation-active:after {
   @apply left-0 w-full;
@@ -49,10 +49,10 @@ li.circle-check:before {
   @apply inline-block;
 }
 .slick-dots span {
-  @apply bg-blue-500;
+  @apply bg-indigo-500;
 }
 .slick-dots .slick-active span {
-  @apply bg-blue-500 rounded-l-full rounded-r-full w-12;
+  @apply bg-indigo-500 rounded-l-full rounded-r-full w-12;
 }
 
 .text-animation-colors {
