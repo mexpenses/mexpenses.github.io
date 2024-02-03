@@ -170,8 +170,8 @@ const Feature = () => {
           </div>
         </div>
         <div
-            className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-10 mx-auto"
             id="feature"
+            className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-10 mx-auto"
         >
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12">
             <div className="flex w-full justify-end">
@@ -184,7 +184,7 @@ const Feature = () => {
               </div>
             </div>
             <div className="flex flex-col ml-auto w-full lg:w-9/12">
-              <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+              <h3 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white mb-5">
                 Tudo que você precisa
               </h3>
               <ul className="text-black-500 self-start list-inside ml-8">
@@ -220,14 +220,14 @@ const Feature = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" className="w-12" width={512} height={512} alt="burger illustration" />
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                    Planejamento
+                    Etapa 1
                   </h5>
                   <p className="text-gray-600 dark:text-gray-300">
                     Aqui você está organizando seus gastos na plataforma.
                   </p>
                 </div>
                 <a className="flex items-center justify-between group-hover:text-secondary">
-                  <span className="text-sm">Etapa 1</span>
+                  <span className="text-sm">Planejamento</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                     <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
                   </svg>
@@ -239,14 +239,14 @@ const Feature = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" className="w-12" width={512} height={512} alt="burger illustration" />
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                    Música para seus ouvidos
+                    Etapa 2
                   </h5>
                   <p className="text-gray-600 dark:text-gray-300">
                     Você está notando uma grande diferença na visão das suas finanças.
                   </p>
                 </div>
                 <a className="flex items-center justify-between group-hover:text-secondary">
-                  <span className="text-sm">Etapa 2</span>
+                  <span className="text-sm">Música para seus ouvidos</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                     <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
                   </svg>
@@ -258,14 +258,14 @@ const Feature = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" className="w-12" width={512} height={512} alt="burger illustration" />
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                    Especialista
+                    Etapa 3
                   </h5>
                   <p className="text-gray-600 dark:text-gray-300">
                     Acabou de se tornar um especialista nas economias e controle do seu dinheiro.
                   </p>
                 </div>
                 <a className="flex items-center justify-between group-hover:text-secondary">
-                  <span className="text-sm">Etapa 3</span>
+                  <span className="text-sm">Especialista</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                     <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
                   </svg>
@@ -277,14 +277,14 @@ const Feature = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" className="w-12" width={512} height={512} alt="burger illustration" />
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                    O tempo é um luxo
+                    Última etapa
                   </h5>
                   <p className="text-gray-600 dark:text-gray-300">
                     Os 30 minutos que você gastava para organizar suas finanças se torna apenas 5 minutos.
                   </p>
                 </div>
-                <a href="#" className="flex items-center justify-between group-hover:text-secondary">
-                  <span className="text-sm">Última etapa</span>
+                <a className="flex items-center justify-between group-hover:text-secondary">
+                  <span className="text-sm">O tempo é um luxo</span>
                 </a>
               </div>
             </div>
@@ -296,7 +296,7 @@ const Feature = () => {
                 Estamos trabalhando constantemente para simplificar tudo.
               </p>
             </div>
-            <div className="flex flex-row flex-wrap md:flex-nowrap items-center justify-between visible gap-10 mb-14">
+            <div className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-between visible gap-10 mb-14">
               <img src={`${router.basePath}/assets/mobile.png`} width={560} alt="App"/>
               <div className="w-full mb-10 text-start">
                 <h1 className="text-3xl font-medium text-black">
