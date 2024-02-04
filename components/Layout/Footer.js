@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   const router = useRouter();
   return (
-      <div className="bg-white-300 pt-24 pb-24">
+      <div className="bg-white-300 pb-24">
         <video
             loop
             muted

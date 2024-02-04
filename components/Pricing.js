@@ -59,7 +59,7 @@ const Pricing = () => {
                         />
                     </div>
                 </div>
-                <div className="flex flex-col w-full my-16" id="contributors">
+                <div className="flex flex-col w-full mt-16" id="contributors">
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-full text-left">
                         Conheça as pessoas que fizeram a <b>Mexpenses</b> virar realidade
                     </h3>
@@ -72,22 +72,16 @@ const Pricing = () => {
                         <Contributors />
                     </div>
                     <div className="relative w-full mt-16">
-                        <div>
-                            <div className="absolute rounded-xl py-8 sm:py-14 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white">
-                                <div className="flex flex-col text-left w-full sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                                    <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                                        Quer participar da nossa ideia?
-                                    </h5>
-                                    <p>Fale conosco e seja um de nossos parceiros nos mandando um e-mail.</p>
-                                </div>
-                                <a target="_blank" href="mailto:mexpenses.app@gmail.com">
-                                    <ButtonPrimary>Manda e-mail</ButtonPrimary>
-                                </a>
+                        <div className="rounded-xl w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white">
+                            <div className="flex flex-col text-left w-full sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+                                <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                                    Quer participar da nossa ideia?
+                                </h5>
+                                <p>Fale conosco e seja um de nossos parceiros nos mandando um e-mail.</p>
                             </div>
-                            <div
-                                className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-                                style={{ filter: "blur(114px)" }}
-                            ></div>
+                            <a target="_blank" href="mailto:mexpenses.app@gmail.com">
+                                <ButtonPrimary>Manda e-mail</ButtonPrimary>
+                            </a>
                         </div>
                     </div>
                 </div>
