@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e758a1d-53fb-4ca6-a6d2-f0995327dae2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/public/assets/publicity.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/publicity.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/topic_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Subscriptions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
       <workItem from="1707132215221" duration="14000" />
       <workItem from="1707159259949" duration="519000" />
       <workItem from="1707161131406" duration="597000" />
+      <workItem from="1707835896342" duration="1227000" />
     </task>
     <servers />
   </component>

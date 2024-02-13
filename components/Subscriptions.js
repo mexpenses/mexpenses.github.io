@@ -19,6 +19,7 @@ export const Subscriptions = () => {
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
                 {/* Pricing Card */}
                 <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div id="free" className="absolute" style={{ top: -150 }}/>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Free
                     </h3>
@@ -112,6 +113,7 @@ export const Subscriptions = () => {
                 </div>
                 {/* Pricing Card */}
                 <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div id="basic" className="absolute" style={{ top: -150 }}/>
                     <div className="absolute right-0" style={{ top: -40 }}>
                         <Lottie
                             width={100}
@@ -234,6 +236,7 @@ export const Subscriptions = () => {
                 </div>
                 {/* Pricing Card */}
                 <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div id="premium" className="absolute" style={{ top: -150 }}/>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Premium&nbsp;
                         <span className="py-1 px-3 bg-orange-500 text-white rounded-xl">
