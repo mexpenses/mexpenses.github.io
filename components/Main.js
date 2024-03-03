@@ -7,17 +7,17 @@ const Main = ({ listAbout = [
   {
     name: "Open Finance",
     info: "15+ Bancos",
-    icon: "/assets/Icon/heroicons_sm-user.svg",
+    icon: "/assets/Icon/bank.png",
   },
   {
     name: "Exclusivo para os brasileiros",
     info: "Brasil",
-    icon: "/assets/Icon/gridicons_location.svg",
+    icon: "/assets/Icon/brasil.png",
   },
   {
     name: "Servidores na AWS",
     info: "Segurança e privacidade",
-    icon: "/assets/Icon/bx_bxs-server.svg",
+    icon: "/assets/Icon/aws.png",
   },
 ] }) => {
   const stats = [
@@ -116,7 +116,7 @@ const Main = ({ listAbout = [
                   >
                     <div className="flex w-full">
                       <div className="flex items-center justify-center bg-indigo-100 w-12 h-12 mr-6 rounded-full">
-                        <img src={listAbouts.icon} className="h-6 w-6" alt="User" />
+                        <img src={listAbouts.icon} width={25} alt={listAbouts.name} />
                       </div>
                       <div className="flex flex-col">
                         <p className="text-xl text-black-600 font-medium">
