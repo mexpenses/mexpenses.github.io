@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e758a1d-53fb-4ca6-a6d2-f0995327dae2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/Icon/aws.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Icon/bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Icon/brasil.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main.js" afterDir="false" />
     </list>
@@ -73,7 +76,7 @@
       <workItem from="1708914908541" duration="32000" />
       <workItem from="1709409780096" duration="292000" />
       <workItem from="1709436893886" duration="8000" />
-      <workItem from="1709507414360" duration="1079000" />
+      <workItem from="1709507414360" duration="1757000" />
     </task>
     <servers />
   </component>
