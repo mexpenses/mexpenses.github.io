@@ -144,9 +144,13 @@ const Main = ({ listAbout = [
                   <span className="text-purple-600">Transações</span><br/>
                   <span className="text-green-700">Saldos</span><br/>
                 </h1>
-                <div className="mt-4 text-xl text-gray-600">
-                  Compramos sua dor de ficar saindo de banco em banco para olhar suas finanças,
-                  tenha suas transações <span className="font-semibold">em um único lugar aqui!</span>
+                <div className="mt-4 text-xl text-gray-600 flex flex-col">
+                  <span>Compramos sua dor de ficar saindo de banco em banco para olhar seus extratos financeiros.</span>
+                  <small className="mt-5">
+                    Saiba mais sobre nossa parceira&nbsp;
+                    <a href="https://www.pluggy.ai/" target="_blank" className="font-bold hover:opacity-80 text-red-500">Pluggy</a> que
+                    disponibiliza o Open Finance de forma segura.
+                  </small>
                 </div>
               </div>
               <div>

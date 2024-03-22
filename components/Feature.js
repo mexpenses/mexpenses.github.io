@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import {useRouter} from "next/router";
-import CTO from '../public/assets/cto.png';
+import CTO from '../public/assets/cto.jpg';
 import Logo from '../public/assets/mexpenses-black.svg';
 
 const features = [

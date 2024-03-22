@@ -14,7 +14,7 @@ const Contributors = ({
     },
     {
       name: "Ingrid Matuques",
-      image: "/assets/cto.png",
+      image: "/assets/cto.jpg",
       office: "(CTO) Diretora de Tecnologia",
     },
     {
