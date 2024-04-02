@@ -150,7 +150,7 @@ const Header = () => {
                             >
                                 <circle cx={1} cy={1} r={1} />
                             </svg>
-                            Inteligência Artificial e Open Finance
+                            Inteligência Artificial com Open Finance
                         </p>
                     </div>
                 </LinkScroll>

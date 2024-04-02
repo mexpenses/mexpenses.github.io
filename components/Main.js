@@ -47,14 +47,14 @@ const Main = ({ listAbout = [
           <div className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
             <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
-                Saia das planilhas e venha ter um <strong className="text-green-600">Brilho financeiro!</strong>
+                Troque suas planilhas com <strong className="text-green-900">complexidades</strong>
               </h1>
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-animation-colors leading-normal mt-5" style={{ lineHeight: 'normal' }}>
-                & Inteligência Artificial
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl text-indigo-600 font-normal leading-normal mt-5" style={{ lineHeight: 'normal' }}>
+                 Por simplicidade
               </h2>
               <p className="text-black-500 mt-4 mb-6 text-lg">
-                Tenha o controle criando uma conta <strong className="text-green-600">gratuita</strong> ou
-                assine nossos planos para ganhar mais benefícios com <strong className="text-animation-colors">1 mês grátis.</strong>
+                Tenha uma breve experiência criando uma conta gratuita ou
+                assine para simplificar de verdade suas finanças com <strong className="text-green-900">1 mês grátis</strong>
               </p>
               <a href="https://app.mexpenses.com.br/auth/register/basic">
                 <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
