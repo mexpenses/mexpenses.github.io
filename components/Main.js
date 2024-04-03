@@ -57,7 +57,7 @@ const Main = ({ listAbout = [
                 assine para simplificar de verdade suas finanças com <strong className="text-green-900">1 mês grátis</strong>
               </p>
               <a href="https://app.mexpenses.com.br/auth/register/basic">
-                <ButtonPrimary>Quero criar uma conta</ButtonPrimary>
+                <ButtonPrimary>Experimente Grátis</ButtonPrimary>
               </a>
             </div>
             <div className="flex w-full">
