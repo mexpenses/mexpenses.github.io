@@ -4,6 +4,7 @@ import ButtonOutline from "../misc/ButtonOutline.";
 import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 
 const Header = () => {
+    const [hideBanner, setHideBanner] = useState(false);
     const [activeLink, setActiveLink] = useState("about");
     const [scrollActive, setScrollActive] = useState(false);
     useEffect(() => {
@@ -13,17 +14,13 @@ const Header = () => {
     }, []);
     return (
         <>
-            <header
-                className={
-                    "fixed top-0 w-full  z-30 bg-white transition-all " +
-                    (scrollActive ? " shadow-md pt-0" : " pt-4")
-                }
-            >
+            <header className="fixed top-0 w-full  z-30 bg-white transition-all shadow-md pt-0">
                 <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
                     <div className="col-start-1 col-end-2 flex items-center">
-                        <LogoMexpenses className="h-8 w-auto" />
+                        <LogoMexpenses className="h-8 w-auto hidden lg:block" />
+                        <img src="/assets/mexpenses-icon.png" className="h-8 w-auto block lg:hidden" alt="Mexpenses"/>
                     </div>
-                    <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
+                    <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
                         <LinkScroll
                             activeClass="active"
                             to="about"
@@ -109,55 +106,66 @@ const Header = () => {
                         </a>
                     </div>
                 </nav>
-                <LinkScroll
-                    spy
-                    smooth
-                    to="basic"
-                    duration={1000}
-                    className="relative bg-black hover:bg-indigo-500 flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 cursor-pointer select-none"
-                >
-                    <div
-                        aria-hidden="true"
-                        className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+                <div className={`relative bg-black hover:bg-indigo-500 ${hideBanner ? "hidden" : "flex"} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
+                    <LinkScroll
+                        spy
+                        smooth
+                        to="basic"
+                        duration={1000}
+                        className="w-full"
                     >
                         <div
-                            className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
-                            style={{
-                                clipPath:
-                                    "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
-                            }}
-                        />
-                    </div>
-                    <div
-                        className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
-                        aria-hidden="true"
-                    >
+                            aria-hidden="true"
+                            className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+                        >
+                            <div
+                                className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+                                style={{
+                                    clipPath:
+                                        "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
+                                }}
+                            />
+                        </div>
                         <div
-                            className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
-                            style={{
-                                clipPath:
-                                    "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
-                            }}
-                        />
-                    </div>
-                    <div className="flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-2">
-                        <p className="text-xs leading-6 text-white">
-                            <strong className="font-semibold">Assine Basic</strong>
-                            <svg
-                                viewBox="0 0 2 2"
-                                aria-hidden="true"
-                                className="mx-2 inline h-0.5 w-0.5 fill-current"
-                            >
-                                <circle cx={1} cy={1} r={1} />
+                            className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+                            aria-hidden="true"
+                        >
+                            <div
+                                className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+                                style={{
+                                    clipPath:
+                                        "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
+                                }}
+                            />
+                        </div>
+                        <div className="flex flex-row w-full gap-x-4 gap-y-2 px-6 py-2.5 sm:px-3.5">
+                            <p className="text-xs leading-6 text-white w-full flex items-center justify-center">
+                                <strong className="font-semibold">Assine Basic</strong>
+                                <svg
+                                    viewBox="0 0 2 2"
+                                    aria-hidden="true"
+                                    className="mx-2 inline h-0.5 w-0.5 fill-current"
+                                >
+                                    <circle cx={1} cy={1} r={1} />
+                                </svg>
+                                Inteligência Artificial com Open Finance
+                            </p>
+                        </div>
+                    </LinkScroll>
+                    <div className="absolute right-0">
+                        <button type="button" className="p-3 focus-visible:outline-offset-[-4px]" onClick={() => setHideBanner(true)}>
+                            <span className="sr-only">Dismiss</span>
+                            <svg className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
+                                 aria-hidden="true">
+                                <path
+                                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/>
                             </svg>
-                            Inteligência Artificial com Open Finance
-                        </p>
+                        </button>
                     </div>
-                </LinkScroll>
+                </div>
             </header>
             {/* Mobile Navigation */}
-
-            <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
+            <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 shadow-t">
                 <div className="bg-white sm:px-3">
                     <ul className="flex w-full justify-between items-center text-black-500">
                         <LinkScroll

@@ -2,6 +2,7 @@ import React from "react";
 import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 import {useRouter} from "next/router";
 import Link from "next/link";
+import {Store} from "../storeApp";
 
 const Footer = () => {
   const router = useRouter();
@@ -53,6 +54,9 @@ const Footer = () => {
               </li>
             </div>
             <p className="text-gray-400">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
+            <div className="flex flex-row items-center justify-start flex-wrap w-full mt-5 gap-2">
+              <Store/>
+            </div>
           </div>
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>

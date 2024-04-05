@@ -20,28 +20,28 @@ export const Store = () => {
     if (isAndroid) {
         return (
             <>
-                <img key="GooglePlay" src={`${router.basePath}/assets/google_play.png`} width={150} alt="Google Play"/>
+                <img key="GooglePlay" src={`${router.basePath}/assets/google_play.png`} width={120} alt="Google Play" className="opacity-80"/>
                 <Link href="https://app.mexpenses.com.br/auth/register/basic" target="_blank">
-                    <img src={`${router.basePath}/assets/web_app.png`} width={135} alt="Web App" className="cursor-pointer"/>
+                    <img src={`${router.basePath}/assets/web_app.png`} width={110} alt="Web App" className="cursor-pointer"/>
                 </Link>
             </>
         )
     } else if (isIOS) {
         return (
             <>
-                <img key="AppStore" src={`${router.basePath}/assets/app_store.png`} style={{ border: '1px solid #80807f', borderRadius: 5 }} width={135} alt="App Store"/>
+                <img key="AppStore" src={`${router.basePath}/assets/app_store.png`} style={{ border: '1px solid #80807f', borderRadius: 5 }} className="opacity-80" width={110} alt="App Store"/>
                 <Link href="https://app.mexpenses.com.br/auth/register/basic" target="_blank">
-                    <img src={`${router.basePath}/assets/web_app.png`} width={135} alt="Web App" className="cursor-pointer"/>
+                    <img src={`${router.basePath}/assets/web_app.png`} width={110} alt="Web App" className="cursor-pointer"/>
                 </Link>
             </>
         )
     } else if(isPC){
         return (
             <>
-                <img key="GooglePlay" src={`${router.basePath}/assets/google_play.png`} width={150} alt="Google Play"/>
-                <img key="AppStore" src={`${router.basePath}/assets/app_store.png`} style={{ border: '1px solid #80807f', borderRadius: 5 }} width={135} alt="App Store"/>
+                <img key="GooglePlay" src={`${router.basePath}/assets/google_play.png`} width={120} alt="Google Play" className="opacity-80"/>
+                <img key="AppStore" src={`${router.basePath}/assets/app_store.png`} style={{ border: '1px solid #80807f', borderRadius: 5 }} className="opacity-80" width={110} alt="App Store"/>
                 <Link href="https://app.mexpenses.com.br/auth/register/basic" target="_blank">
-                    <img src={`${router.basePath}/assets/web_app.png`} width={135} alt="Web App" className="cursor-pointer"/>
+                    <img src={`${router.basePath}/assets/web_app.png`} width={110} alt="Web App" className="cursor-pointer"/>
                 </Link>
             </>
         )

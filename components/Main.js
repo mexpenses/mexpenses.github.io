@@ -1,22 +1,21 @@
 import React from "react";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import {useRouter} from "next/router";
-import {Store} from "./storeApp";
 
 const Main = ({ listAbout = [
   {
-    name: "Open Finance",
-    info: "15+ Bancos",
+    name: "+15 Bancos para conectar",
+    info: "Open Finance",
     icon: "/assets/Icon/bank.png",
   },
   {
-    name: "Exclusivo para os brasileiros",
-    info: "Brasil",
+    name: "Exclusivo para brasileiros",
+    info: "Para quem?",
     icon: "/assets/Icon/brasil.png",
   },
   {
     name: "Servidores na AWS",
-    info: "Segurança e privacidade",
+    info: "Segurança garantida",
     icon: "/assets/Icon/aws.png",
   },
 ] }) => {
@@ -38,20 +37,15 @@ const Main = ({ listAbout = [
   return (
       <>
         <div
-            className="max-w-screen-xl mt-40 px-8 xl:px-5 mx-auto"
             id="about"
+            className="max-w-screen-xl mt-28 lg:mt-24 px-8 xl:px-5 mx-auto"
         >
-          <div className="flex flex-row items-center justify-center flex-wrap w-full" style={{ gap: 15 }}>
-            <Store/>
-          </div>
           <div className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
             <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
-                Troque suas planilhas com <strong className="text-green-900">complexidades</strong>
+                Troque suas planilhas com <strong className="text-green-900">complexidades</strong><br/>
+                <span className="text-indigo-600 font-normal leading-normal">Por simplicidade</span>
               </h1>
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl text-indigo-600 font-normal leading-normal mt-5" style={{ lineHeight: 'normal' }}>
-                 Por simplicidade
-              </h2>
               <p className="text-black-500 mt-4 mb-6 text-lg">
                 Tenha uma breve experiência criando uma conta gratuita ou
                 assine para simplificar de verdade suas finanças com <strong className="text-green-900">1 mês grátis</strong>
@@ -116,7 +110,7 @@ const Main = ({ listAbout = [
                   >
                     <div className="flex w-full">
                       <div className="flex items-center justify-center bg-indigo-100 w-12 h-12 mr-6 rounded-full">
-                        <img src={listAbouts.icon} width={25} alt={listAbouts.name} />
+                        <img src={listAbouts.icon} width={30} alt={listAbouts.name} />
                       </div>
                       <div className="flex flex-col">
                         <p className="text-xl text-black-600 font-medium">
@@ -139,96 +133,95 @@ const Main = ({ listAbout = [
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
-                  <span className="text-indigo-600">Veja sem medo</span><br/>
-                  <span className="text-orange-500">Investimentos</span><br/>
-                  <span className="text-purple-600">Transações</span><br/>
-                  <span className="text-green-700">Saldos</span><br/>
+                  <span className="text-black">Veja sem medo</span><br/>
+                  <span className="text-indigo-950">Investimentos</span><br/>
+                  <span className="text-indigo-800">Transações</span><br/>
+                  <span className="text-indigo-600">Saldos</span><br/>
                 </h1>
                 <div className="mt-4 text-xl text-gray-600 flex flex-col">
                   <span>Compramos sua dor de ficar saindo de banco em banco para olhar seus extratos financeiros.</span>
                   <small className="mt-5">
                     Saiba mais sobre nossa parceira&nbsp;
-                    <a href="https://www.pluggy.ai/" target="_blank" className="font-bold hover:opacity-80 text-red-500">Pluggy</a> que
+                    <a href="https://www.pluggy.ai/" target="_blank" className="font-bold hover:opacity-80 text-indigo-950">Pluggy</a> que
                     disponibiliza o Open Finance de forma segura.
                   </small>
                 </div>
               </div>
-              <div>
-                {/* Decorative image grid */}
-                <div
-                    aria-hidden="true"
-                    className="pointer-events-none lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-                >
-                  <div className="lg:absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                    <div className="flex items-center space-x-6 lg:space-x-8">
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Nubank"
-                              src={`${router.basePath}/assets/nubank.png`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Wise"
-                              src={`${router.basePath}/assets/wise.webp`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Mercado Pago"
-                              src={`${router.basePath}/assets/mercado_pago.jpg`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
+              {/* Decorative image grid */}
+              <div
+                  aria-hidden="true"
+                  className="pointer-events-none lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+              >
+                <div className="lg:absolute transform sm:left-1/2 sm:top-0 sm:translate-x-0 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                  <div className="absolute w-screen h-full bg-gradient-to-l from-white"/>
+                  <div className="flex items-center space-x-6 lg:space-x-8">
+                    <div className="relative grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Nubank"
+                            src={`${router.basePath}/assets/nubank.png`}
+                            className="h-full w-full object-cover object-center"
+                        />
                       </div>
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Itaú"
-                              src={`${router.basePath}/assets/itau.webp`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Santander"
-                              className="h-full w-full object-cover object-center"
-                              src={`${router.basePath}/assets/santander.png`}
-                          />
-                        </div>
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="XP Investimentos"
-                              src={`${router.basePath}/assets/xp.png`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Wise"
+                            src={`${router.basePath}/assets/wise.webp`}
+                            className="h-full w-full object-cover object-center"
+                        />
                       </div>
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Inter"
-                              src={`${router.basePath}/assets/inter.png`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Bradesco"
-                              src={`${router.basePath}/assets/bradesco.png`}
-                              className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-44 w-44 overflow-hidden rounded-lg">
-                          <img
-                              alt="Rico"
-                              className="h-full w-full object-cover object-center"
-                              src={`${router.basePath}/assets/rico.jpg`}
-                          />
-                        </div>
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Mercado Pago"
+                            src={`${router.basePath}/assets/mercado_pago.jpg`}
+                            className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Itaú"
+                            src={`${router.basePath}/assets/itau.webp`}
+                            className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Santander"
+                            className="h-full w-full object-cover object-center"
+                            src={`${router.basePath}/assets/santander.png`}
+                        />
+                      </div>
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="XP Investimentos"
+                            src={`${router.basePath}/assets/xp.png`}
+                            className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Inter"
+                            src={`${router.basePath}/assets/inter.png`}
+                            className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Bradesco"
+                            src={`${router.basePath}/assets/bradesco.png`}
+                            className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
+                        <img
+                            alt="Rico"
+                            className="h-full w-full object-cover object-center"
+                            src={`${router.basePath}/assets/rico.jpg`}
+                        />
                       </div>
                     </div>
                   </div>

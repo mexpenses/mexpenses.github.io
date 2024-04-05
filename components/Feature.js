@@ -72,7 +72,8 @@ const Feature = () => {
                 <div className="border-t border-gray-200 pt-4">
                   <dt className="font-medium text-gray-900">Open Finance</dt>
                   <dd className="mt-2 text-sm text-gray-500">
-                    Conecte contas reais para visualizar transações, por meio de nossa conciliação bancária com a <span className="font-bold">Pluggy</span>.
+                    Conecte contas reais para visualizar transações, por meio de nossa conciliação bancária
+                    com a <a href="https://www.pluggy.ai/" target="_blank" className="font-bold hover:opacity-80 text-indigo-950">Pluggy</a>.
                   </dd>
                 </div>
                 <div className="border-t border-gray-200 pt-4">
