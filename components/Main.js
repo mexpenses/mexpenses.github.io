@@ -4,7 +4,7 @@ import {useRouter} from "next/router";
 
 const Main = ({ listAbout = [
   {
-    name: "+15 Bancos para conectar",
+    name: "+15 Bancos disponíveis",
     info: "Open Finance",
     icon: "/assets/Icon/bank.png",
   },
