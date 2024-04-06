@@ -1,6 +1,6 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
     <ShortName>Mexpenses</ShortName>
-    <Description>Saia das planilhas e venha ter um brilho financeiro!</Description>
+    <Description>Troque suas planilhas com complexidades por simplicidade.</Description>
     <InputEncoding>UTF-8</InputEncoding>
     <Image width="16" height="16" type="image/x-icon">https://www.mexpenses.net/assets/favicon.ico</Image>
     <Url type="text/html" method="get" template="https://www.mexpenses.net/"/>

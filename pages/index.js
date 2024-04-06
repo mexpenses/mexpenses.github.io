@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <Layout>
             <Head>
-                <title>Mexpenses - Saia das planilhas e venha ter um brilho financeiro!</title>
+                <title>Mexpenses - Troque suas planilhas com complexidades por simplicidade.</title>
             </Head>
             <Main />
             <Feature />
