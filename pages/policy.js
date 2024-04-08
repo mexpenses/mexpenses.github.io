@@ -99,7 +99,7 @@ const Policy = memo(() => {
                                     Os dados fornecidos por nossos usuários são coletados com as seguintes finalidades:
                                 </h2>
                                 <p className="mt-6">
-                                    Utilizamos as informações coletadas com o objetivo de proporcionar uma experiência personalizada, incluindo anúncios que serão adicionados muito em breve, juntamente com outras finalidades que são explicadas em detalhes a seguir.
+                                    Utilizamos as informações coletadas com o objetivo de proporcionar uma experiência personalizada, incluindo anúncios discretos que serão adicionados muito em breve, juntamente com outras finalidades que são explicadas em detalhes a seguir.
                                     As informações utilizadas para tais finalidades são processadas automaticamente por nossos sistemas. No entanto, em alguns casos, também realizamos uma análise manual para acessar e analisar essas informações.
                                     Em determinadas situações, com o intuito de utilizar menos informações relacionadas a usuários individuais, desidentificamos, agregamos ou anonimizamos as informações, de forma que elas não possam identificá-lo(a). Utilizamos essas informações da mesma maneira que as suas, conforme descrito nesta seção.
                                 </p>

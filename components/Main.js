@@ -125,8 +125,8 @@ const Main = ({ listAbout = [
             ></div>
           </div>
         </div>
-        <div className="relative overflow-hidden bg-white px-5 md:px-0">
-          <div className="pb-20 pt-16 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div className="relative overflow-hidden bg-white px-5 md:px-0" id="feature">
+          <div className="pb-20 sm:pt-24 lg:pb-48 lg:pt-40">
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
@@ -139,7 +139,7 @@ const Main = ({ listAbout = [
                   <span>Compramos sua dor de ficar saindo de banco em banco para olhar seus extratos financeiros.</span>
                   <small className="mt-5">
                     Saiba mais sobre nossa parceira&nbsp;
-                    <a href="https://www.pluggy.ai/" target="_blank" className="font-bold hover:opacity-80 text-indigo-950">Pluggy</a> que
+                    <a href="https://www.pluggy.ai/" target="_blank" className="font-bold hover:opacity-80 text-indigo-950 underline">Pluggy</a> que
                     disponibiliza o Open Finance de forma segura.
                   </small>
                 </div>
@@ -282,15 +282,13 @@ const Main = ({ listAbout = [
               </p>
             </div>
             <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                <a
-                    target="_blank"
-                    href="https://app.mexpenses.com.br/auth/register/premium"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Assinar <span className="font-bold uppercase">agora</span>
-                </a>
-              </div>
+              <a
+                  target="_blank"
+                  href="https://app.mexpenses.com.br/auth/register/premium"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Assinar <span className="font-bold uppercase">agora</span>
+              </a>
               <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
                 {stats_assistant.map((stat) => (
                     <div key={stat.name} className="flex flex-col-reverse">
