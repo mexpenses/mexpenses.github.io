@@ -1,11 +1,10 @@
 import React from "react";
-import ButtonPrimary from "./misc/ButtonPrimary";
 import Maps from "../public/assets/HugeGlobal.svg";
 import { Subscriptions } from "./Subscriptions";
 
 const Pricing = () => {
     return (
-        <div className="bg-gradient-to-b from-white-300 to-white-500 w-full pt-14">
+        <div className="bg-gradient-to-b from-white-300 to-white-500 w-full pt-20">
             <div className="flex flex-col w-full" id="pricing">
                 <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">

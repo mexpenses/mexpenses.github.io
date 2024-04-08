@@ -108,7 +108,7 @@ export const Subscriptions = () => {
                         href="https://app.mexpenses.com.br/auth/register/free"
                         className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
                     >
-                        Teste <span className="font-bold uppercase">gratuitamente</span>
+                        Teste gratuitamente
                     </a>
                 </div>
                 {/* Pricing Card */}
@@ -229,7 +229,7 @@ export const Subscriptions = () => {
                     <a
                         target="_blank"
                         href="https://app.mexpenses.com.br/auth/register/basic"
-                        className="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
+                        className="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar
                     </a>
@@ -347,7 +347,7 @@ export const Subscriptions = () => {
                     <a
                         target="_blank"
                         href="https://app.mexpenses.com.br/auth/register/premium"
-                        className="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+                        className="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar
                     </a>

@@ -24,14 +24,11 @@ const Main = ({ listAbout = [
     { id: 2, name: 'Saia dos 150 milhões e mude agora!',  cls: 'text-dark-900', value: 'Seja diferente' },
     { id: 3, name: 'Evolua cada vez mais e saia do comodismo', cls: 'text-gray-900', value: 'Não desista...' },
   ];
-  const links = [
-    { name: 'Criar conta Premium', href: 'https://app.mexpenses.com.br/auth/register/premium' }
-  ];
   const stats_assistant = [
     { name: 'Geração de relatórios', value: 'Em tempo real' },
     { name: 'Dicas financeiras', value: '98% aplicáveis' },
     { name: 'Mentora financeira', value: '24h por dia' },
-    { name: 'Dicas geradas', value: '+3.000' },
+    { name: 'Dicas geradas', value: '+4.000' },
   ];
   const router = useRouter();
   return (
@@ -275,18 +272,24 @@ const Main = ({ listAbout = [
                 Inteligência Artificial para te auxiliar nas economias!
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                <img src={`${router.basePath}/assets/ai_ingrid.png`} className="w-24 h-24 object-cover object-center float-right ml-3" alt="AI Ingrid"/>
-                Estamos empolgados em apresentar a Inteligência Artificial <b>Ingrid</b>, que está na <b>Mexpenses</b> para ajudar os usuários com
-                suas finanças e aprender sobre vários pontos de acordo com seus dados. Experimente agora criando uma conta <b>Premium</b>.
+                <img
+                    alt="AI Ingrid"
+                    src={`${router.basePath}/assets/ai_ingrid.png`}
+                    className="w-24 h-24 object-cover object-center float-right ml-3"
+                />
+                <b>Assinatura Premium</b> apresenta a Inteligência Artificial <b>Ingrid</b>, que irá lhe ajudar a
+                tomar as melhores decisões financeiras de acordo com seus gastos do dia a dia.
               </p>
             </div>
             <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                {links.map((link) => (
-                    <a key={link.name} href={link.href}>
-                      {link.name} <span aria-hidden="true">&rarr;</span>
-                    </a>
-                ))}
+                <a
+                    target="_blank"
+                    href="https://app.mexpenses.com.br/auth/register/premium"
+                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Assinar <span className="font-bold uppercase">agora</span>
+                </a>
               </div>
               <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
                 {stats_assistant.map((stat) => (
