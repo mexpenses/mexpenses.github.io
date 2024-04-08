@@ -1,13 +1,11 @@
 import React from "react";
-import Contributors from "./Contributors";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import Maps from "../public/assets/HugeGlobal.svg";
 import { Subscriptions } from "./Subscriptions";
 
 const Pricing = () => {
-
     return (
-        <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14">
+        <div className="bg-gradient-to-b from-white-300 to-white-500 w-full pt-14">
             <div className="flex flex-col w-full" id="pricing">
                 <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
@@ -24,8 +22,8 @@ const Pricing = () => {
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
                         Seus dados estão seguros
                     </h3>
-                    <p className="leading-normal text-left my-2 w-10/12 sm:w-7/12 lg:w-6/12">
-                        Garantimos a segurança dos seus dados por estar hospedado em um dos maiores players de servidores do mundo,
+                    <p className="leading-normal text-left my-2 w-full">
+                        Garantimos a sua segurança por não te obrigar a registrar qualquer informação que seja sensível. Todos os dados estão armazenados em um dos maiores players de servidores do mundo,
                         veja abaixo algumas das milhares de empresas que utilizam serviços da Amazon Web Services no mundo todo.
                     </p>
                     <div className="py-12 w-full px-8 mt-16">
@@ -57,32 +55,6 @@ const Pricing = () => {
                             className="h-12 w-auto mt-2 lg:mt-0"
                             alt=""
                         />
-                    </div>
-                </div>
-                <div className="flex flex-col w-full mt-16" id="contributors">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-full text-left">
-                        Conheça as pessoas que fizeram a <b>Mexpenses</b> virar realidade
-                    </h3>
-                    <p
-                        className="leading-normal text-left mx-auto mb-2 mt-4 w-full"
-                    >
-                        Você tem o interesse de levar a simplicidade das finanças para todas pessoas? Veja mais informações logo abaixo para entrar em contato conosco.
-                    </p>
-                    <div className="w-full flex flex-col py-12">
-                        <Contributors />
-                    </div>
-                    <div className="relative w-full mt-16">
-                        <div className="rounded-xl w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white">
-                            <div className="flex flex-col text-left w-full sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-                                <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                                    Quer participar da nossa ideia?
-                                </h5>
-                                <p>Fale conosco e seja um de nossos parceiros nos mandando um e-mail.</p>
-                            </div>
-                            <a target="_blank" href="mailto:mexpenses.app@gmail.com">
-                                <ButtonPrimary>Manda e-mail</ButtonPrimary>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

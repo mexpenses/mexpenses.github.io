@@ -3,6 +3,7 @@ import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 import {useRouter} from "next/router";
 import Link from "next/link";
 import {Store} from "../storeApp";
+import ButtonPrimary from "../misc/ButtonPrimary";
 
 const Footer = () => {
   const router = useRouter();
@@ -15,41 +16,62 @@ const Footer = () => {
             width="100%"
             src={`${router.basePath}/assets/publicity.mp4`}
         />
-        <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4 mt-20">
+        <div className="relative max-w-screen-xl px-6 sm:px-8 lg:px-10 mt-14 mx-auto">
+          <div className="rounded-xl w-full flex flex-col sm:flex-row justify-start sm:justify-between z-10 bg-white">
+            <div className="flex flex-col text-left w-full sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
+              <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+                Quer entrar em contato?
+              </h5>
+              <p className="mt-2">Fale conosco nos enviando um e-mail.</p>
+            </div>
+            <a target="_blank" href="mailto:mexpenses.app@gmail.com">
+              <ButtonPrimary>Enviar e-mail</ButtonPrimary>
+            </a>
+          </div>
+        </div>
+        <div
+            className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-10 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4 mt-20">
           <div className="flex flex-col items-start">
-            <LogoMexpenses className="h-8 w-auto mb-6" />
+            <LogoMexpenses className="h-8 w-auto mb-6"/>
             <p className="mb-4">
-              <strong className="font-medium">Mexpenses</strong> Troque suas planilhas com complexidades por simplicidade.
+              <strong className="font-medium">Mexpenses</strong> Troque suas planilhas com complexidades por
+              simplicidade.
             </p>
-            <div className="flex flex-row flex-wrap justify-center mb-3" style={{ gap: 20 }}>
+            <div className="flex flex-row flex-wrap justify-center mb-3" style={{gap: 20}}>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.youtube.com/@Mexpenses">
-                  <img src={`${router.basePath}/assets/youtube.png`} className="hover:scale-110 transition-all rounded-full" width={35} alt="YouTube"/>
+                  <img src={`${router.basePath}/assets/youtube.png`}
+                       className="hover:scale-110 transition-all rounded-full" width={35} alt="YouTube"/>
                 </Link>
               </li>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.instagram.com/mexpenses">
-                  <img src={`${router.basePath}/assets/instagram.png`} className="hover:scale-110 transition-all rounded-full" width={35} alt="Instagram"/>
+                  <img src={`${router.basePath}/assets/instagram.png`}
+                       className="hover:scale-110 transition-all rounded-full" width={35} alt="Instagram"/>
                 </Link>
               </li>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.threads.net/@mexpenses">
-                  <img src={`${router.basePath}/assets/threads.webp`} className="hover:scale-110 transition-all rounded-full" width={35} alt="Threads"/>
+                  <img src={`${router.basePath}/assets/threads.webp`}
+                       className="hover:scale-110 transition-all rounded-full" width={35} alt="Threads"/>
                 </Link>
               </li>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.tiktok.com/@mexpenses">
-                  <img src={`${router.basePath}/assets/tiktok.webp`} className="hover:scale-110 transition-all rounded-full" width={35} alt="TikTok"/>
+                  <img src={`${router.basePath}/assets/tiktok.webp`}
+                       className="hover:scale-110 transition-all rounded-full" width={35} alt="TikTok"/>
                 </Link>
               </li>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.facebook.com/profile.php?id=100090266616695">
-                  <img src={`${router.basePath}/assets/facebook.png`} className="hover:scale-110 transition-all rounded-full" width={35} alt="Facebook"/>
+                  <img src={`${router.basePath}/assets/facebook.png`}
+                       className="hover:scale-110 transition-all rounded-full" width={35} alt="Facebook"/>
                 </Link>
               </li>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.linkedin.com/company/mexpenses">
-                  <img src={`${router.basePath}/assets/in.png`} className="hover:scale-110 transition-all rounded-full" width={35} alt="LinkedIn"/>
+                  <img src={`${router.basePath}/assets/in.png`} className="hover:scale-110 transition-all rounded-full"
+                       width={35} alt="LinkedIn"/>
                 </Link>
               </li>
             </div>

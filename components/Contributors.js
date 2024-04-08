@@ -1,34 +1,11 @@
 import React, { useState } from "react";
 
-import Slider from "react-slick";
 import Image from "next/image";
+import Slider from "react-slick";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
-const Contributors = ({
-  listContributor = [
-    {
-      name: "Hector Silva",
-      image: "/assets/founder.jpg",
-      office: "CEO & Fundador",
-    },
-    {
-      name: "Ingrid Matuques",
-      image: "/assets/cto.jpg",
-      office: "(CTO) Diretora de Tecnologia",
-    },
-    {
-      name: "Maycon Moreira",
-      image: "/assets/contributor_2.jpeg",
-      office: "Cofundador",
-    },
-    {
-      name: "Yara Leodoro",
-      image: "/assets/contributor_3.jpg",
-      office: "Cofundadora",
-    },
-  ],
-}) => {
+const Contributors = () => {
   const settings = {
     dots: true,
     customPaging: function (i) {
