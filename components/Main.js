@@ -65,7 +65,7 @@ const Main = ({ listAbout = [
             <div className="w-full flex flex-col items-center justify-center">
               <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
               <p className="text-secondary text-xl text-start">
-                Dê uma olhada abaixo para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro
+                Dê uma olhada para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro
               </p>
               <div className="w-full pt-10 carousel-logos">
                 <a href="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" className="carousel-logo">
