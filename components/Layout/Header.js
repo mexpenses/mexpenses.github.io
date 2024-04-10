@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
@@ -6,12 +6,6 @@ import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 const Header = () => {
     const [hideBanner, setHideBanner] = useState(false);
     const [activeLink, setActiveLink] = useState("about");
-    const [scrollActive, setScrollActive] = useState(false);
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setScrollActive(window.scrollY > 20);
-        });
-    }, []);
     return (
         <>
             <header className="fixed top-0 w-full  z-30 bg-white transition-all shadow-md pt-0">
@@ -266,7 +260,7 @@ const Header = () => {
                         </LinkScroll>
                         <LinkScroll
                             activeClass="active"
-                            to="contributors"
+                            to="company"
                             spy
                             smooth
                             duration={1000}
