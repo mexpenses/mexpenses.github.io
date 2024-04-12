@@ -46,7 +46,7 @@ const Feature = () => {
                   Inteligência Artificial
                 </dt>
                 <dd className="mt-2 text-sm text-gray-500">
-                  Tenha dicas diárias e individuais com a Ingrid, por meio de nossa integração em tempo real com seus
+                  Tenha dicas semanais e individuais com a Ingrid, por meio de nossa integração em tempo real com seus
                   dados.
                 </dd>
               </div>

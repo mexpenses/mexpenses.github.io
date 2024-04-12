@@ -340,7 +340,7 @@ export const Subscriptions = () => {
                                 alt="Subscription"
                             />
                             <span>
-                                <b>Dicas da Ingrid:</b> Converse com a Inteligência Artificial Ingrid e receba dicas diárias de acordo com seus dados.
+                                <b>Dicas da Ingrid:</b> Converse com a Inteligência Artificial Ingrid e receba semanais de acordo com seus dados.
                             </span>
                         </li>
                     </ul>
