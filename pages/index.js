@@ -1,8 +1,8 @@
+import Head from "next/head";
+import Main from "../components/Main";
 import Feature from "../components/Feature";
 import Pricing from "../components/Pricing";
-import Main from "../components/Main";
 import Template from "../components/Layout/Template";
-import Head from "next/head";
 
 export default function Home() {
     return (
