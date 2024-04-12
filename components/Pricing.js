@@ -31,22 +31,22 @@ const Pricing = () => {
                     <div className="w-full flex justify-center items-center">
                         <div className="flex justify-start items-center gap-5 lg:gap-20 mt-4 flex-wrap lg:flex-nowrap">
                             <img
-                                src="/assets/Icon/amazon.png"
+                                src="/assets/amazon.png"
                                 className="w-40"
                                 alt="Amazon"
                             />
                             <img
-                                src="/assets/Icon/netflix.png"
+                                src="/assets/netflix.png"
                                 className="w-40"
                                 alt="Netflix"
                             />
                             <img
-                                src="/assets/Icon/discord.png"
+                                src="/assets/discord.png"
                                 className="w-40"
                                 alt="Discord"
                             />
                             <img
-                                src="/assets/Icon/spotify.png"
+                                src="/assets/spotify.png"
                                 className="w-40"
                                 alt="Spotify"
                             />

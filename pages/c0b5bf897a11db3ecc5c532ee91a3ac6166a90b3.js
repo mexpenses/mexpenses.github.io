@@ -1,12 +1,9 @@
 import X from "../public/assets/x.jpg";
 import {memo, useEffect, useState} from "react";
 import Head from "next/head";
+import {encryptWithBase64, decryptWithBase64, S3_STORAGE} from "../utils/keys";
 
 const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
-    const S3_STORAGE = {
-        1: "https://general-storage-mexpenses.s3.amazonaws.com/Eps1.0_como_eu_te_vejo.mp4.mp4",
-        2: "https://general-storage-mexpenses.s3.amazonaws.com/Eps2.0_retrospectiva_2022-2023.mp4.mp4",
-    };
     const [playing, setPlaying] = useState(null);
     const [isLogged, setIsLogged] = useState(false);
 
@@ -24,7 +21,7 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                     style={{ height: "100vh" }}
                     className="flex items-center justify-center bg-black"
                 >
-                    <video autoPlay controls className="h-full w-full" src={S3_STORAGE[playing]}/>
+                    <video autoPlay controls className="h-full w-full" src={decryptWithBase64(S3_STORAGE[playing])}/>
                 </div>
             </>
         );
@@ -71,13 +68,7 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                             </span>
                     </div>
                     <p className="mt-4 text-lg">
-                        "Essência Única" nos leva para o mundo cativante de
-                        Ingrid Matuques, uma mulher cuja singularidade a
-                        torna um verdadeiro tesouro. A série desvenda as
-                        camadas da vida de Ingrid, focando em seu charme
-                        único, autocuidado excepcional e o amor especial que
-                        ela nutre por Hector Silva, um homem completamente
-                        obcecado por ela.
+                        {decryptWithBase64("IkVzc+puY2lhINpuaWNhIiBub3MgbGV2YSBwYXJhIG8gbXVuZG8gY2F0aXZhbnRlIGRlIEluZ3JpZCBNYXR1cXVlcywgdW1hIG11bGhlciBjdWphIHNpbmd1bGFyaWRhZGUgYSB0b3JuYSB1bSB2ZXJkYWRlaXJvIHRlc291cm8uIEEgc+lyaWUgZGVzdmVuZGEgYXMgY2FtYWRhcyBkYSB2aWRhIGRlIEluZ3JpZCwgZm9jYW5kbyBlbSBzZXUgY2hhcm1lIPpuaWNvLCBhdXRvY3VpZGFkbyBleGNlcGNpb25hbCBlIG8gYW1vciBlc3BlY2lhbCBxdWUgZWxhIG51dHJlIHBvciBIZWN0b3IgU2lsdmEsIHVtIGhvbWVtIGNvbXBsZXRhbWVudGUgb2JjZWNhZG8gcG9yIGVsYS4=")}
                     </p>
                     <div className="flex flex-wrap lg:flex-nowrap items-center mt-6">
                         <button
@@ -90,22 +81,22 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                             <span className="truncate">Grátis</span>
                         </button>
                         <button
-                            onClick={() => setPlaying(1)}
+                            onClick={() => setPlaying("a2V5XzE=")}
                             className="bg-slate-700 py-3 flex flex-col px-5 rounded-sm shadow-sm mr-2.5 mb-3"
                         >
                                 <span className="truncate">
-                                    Eps1.0_como_eu_te_vejo.mp4
+                                    {decryptWithBase64("RXBzMS4wX2NvbW9fZXVfdGVfdmVqby5tcDQ=")}`
                                 </span>
                             <span className="truncate">
                                     <b>UHD</b>
                                 </span>
                         </button>
                         <button
-                            onClick={() => setPlaying(2)}
+                            onClick={() => setPlaying("a2V5XzI=")}
                             className="bg-slate-700 py-3 flex flex-col px-5 rounded-sm shadow-sm mr-2.5 mb-3"
                         >
                                 <span className="truncate">
-                                    Eps2.0_retrospectiva_2022-2023.mp4
+                                    {decryptWithBase64("RXBzMi4wX3JldHJvc3BlY3RpdmFfMjAyMi0yMDIzLm1wNA==")}
                                 </span>
                             <span className="truncate">
                                     <b>UHD</b>
@@ -149,7 +140,7 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
                                 <span className="text-indigo-300">
                                         Hector Silva
                                     </span>
-                                . All rights reserved to Mexpenses.
+                                . All rights reserved to Hector Silva.
                             </p>
                         </div>
                     </div>
@@ -159,11 +150,13 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
     };
 
     const Login = () => {
+        const key_1 = 'ZDE1NDkyM2UtY2I5Yi00ZmQwLTg4YWQtNGIyOWY3YTE4NjE3';
         const [secretFirst, setSecretFrist] = useState('');
         const [secretSecond, setSecretSecond] = useState('');
+        const key_2 = 'YTA4Y2YwNGQ5OWYwNzUyNmU4YzU0OTBjMGVlMTBjOTM0ZjY5YWM0YjUzMDI3NGRjNmYyYThhMDhjNTA2MzUyMDg2MWFmNDVlOWRiZjJlMjQ=';
 
         const validateLogin = () => {
-            if (secretFirst === 'd154923e-cb9b-4fd0-88ad-4b29f7a18617' && secretSecond === '495b07d7-d05c-416d-abc6-a6049d61105e') {
+            if (secretFirst === (decryptWithBase64(key_1)) && secretSecond === (decryptWithBase64(key_2))) {
                 setIsLogged(true);
             }
         };
@@ -179,9 +172,6 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
 
         return (
             <>
-                <Head>
-                    <title>Login</title>
-                </Head>
                 <div className="container-login absolute w-full h-full overflow-hidden">
                     <div className="top-abstract"/>
                     <div className="bottom-abstract"/>
@@ -210,7 +200,7 @@ const C0b5bf897a11db3ecc5c532ee91a3ac6166a90b3 = memo(() => {
         return (
             <>
                 <Head>
-                    <title>Hello Senhora Robô</title>
+                    <title>{decryptWithBase64("SGVsbG8gU2VuaG9yYSBSb2L0")}</title>
                 </Head>
                 {playing ? <Player/> : <Content/>}
             </>

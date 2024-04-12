@@ -1,22 +1,22 @@
 import React from "react";
-import ButtonPrimary from "./misc/ButtonPrimary";
+import ButtonPrimary from "./Buttons/ButtonPrimary";
 import {useRouter} from "next/router";
 
 const Main = ({ listAbout = [
   {
     name: "+15 Bancos disponíveis",
     info: "Open Finance",
-    icon: "/assets/Icon/bank.png",
+    icon: "/assets/bank.png",
   },
   {
     name: "Exclusivo para brasileiros",
     info: "Para quem?",
-    icon: "/assets/Icon/brasil.png",
+    icon: "/assets/brasil.png",
   },
   {
     name: "Servidores na AWS",
     info: "Segurança garantida",
-    icon: "/assets/Icon/aws.png",
+    icon: "/assets/aws.png",
   },
 ] }) => {
   const stats = [

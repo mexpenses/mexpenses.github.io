@@ -2,8 +2,8 @@ import React from "react";
 import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 import {useRouter} from "next/router";
 import Link from "next/link";
-import {Store} from "../storeApp";
-import ButtonPrimary from "../misc/ButtonPrimary";
+import {Store} from "../Store";
+import ButtonPrimary from "../Buttons/ButtonPrimary";
 
 const Footer = () => {
   const router = useRouter();

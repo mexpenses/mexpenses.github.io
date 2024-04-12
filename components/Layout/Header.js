@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
+import ButtonOutline from "../Buttons/ButtonOutline.";
 import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
 
 const Header = () => {

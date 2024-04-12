@@ -1,4 +1,3 @@
-import { CheckIcon } from "./misc/checkIcon";
 import { useRouter } from "next/router";
 import React from "react";
 import Lottie from 'react-lottie';
@@ -43,61 +42,101 @@ export const Subscriptions = () => {
                             </span>
                         </div>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Cadastro de categorias:</b>  Organize suas despesas de forma simples.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Calculadora de Impostos:</b>  Calcule seus impostos de forma rápida e fácil.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Visualização de taxas de juros:</b>  Acompanhe as taxas de juros do mercado.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Gerenciamento de bancos:</b>  Controle suas contas bancárias em um só lugar.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Análise de dados:</b>  Visualize seus dados financeiros de forma clara e intuitiva.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Gerenciamento de cartões de crédito:</b>  Controle suas faturas de cartão de crédito.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Visualização de criptomoedas:</b>  Acompanhe as principais criptomoedas do mercado.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Gerenciamento de entradas e saídas:</b>  Acompanhe seu dinheiro de forma detalhada.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Suporte WhatsApp:</b>  Entre em contato com o suporte pelo WhatsApp durante o horário de expediente.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
-                            <CheckIcon />
+                            <img
+                                src={`${router.basePath}/assets/checklist.svg`}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Alertas de faturas:</b>  Receba alertas sobre faturas que estão vencendo ou que ultrapassaram seu limite de crédito.
                             </span>
@@ -159,7 +198,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span className="dark:text-white">
                                 <b>Open Finance:</b> Insira 2 contas reais.
@@ -169,7 +208,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>Bancos mais próximos:</b> Encontre bancos perto de você.
@@ -179,7 +218,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>Cadastro de parcelas:</b> Organize suas despesas em parcelas.
@@ -189,7 +228,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span className="opacity-70">
                                 <b>Em breve:</b> Veja seu histórico de gastos com filtros de pesquisa.
@@ -199,7 +238,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span className="opacity-70">
                                 <b>Em breve:</b> Defina metas financeiras para alcançar seus objetivos.
@@ -209,7 +248,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span className="dark:text-white">
                                 <b>Histórico mensal:</b> Veja o histórico de pagamentos das despesas recorrentes.
@@ -219,7 +258,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>Análise de faturas:</b> Veja suas faturas de forma clara e intuitiva com Inteligência Artificial.
@@ -277,7 +316,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span className="dark:text-white">
                                 <b>Open Finance:</b> Insira 4 contas reais.
@@ -287,7 +326,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span className="opacity-70">
                                 <b>Em breve:</b> Você poderá visualizar seu perfil de consumo.
@@ -297,7 +336,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>B3 (Bolsa do Brasil) em tempo real:</b> Acompanhe a B3 em tempo real.
@@ -307,7 +346,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>Dados financeiros em CSV:</b> Exporte seus dados financeiros para o Excel.
@@ -317,7 +356,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>Suporte WhatsApp 24h:</b> Entre em contato com o suporte pelo WhatsApp a qualquer hora.
@@ -327,7 +366,7 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
                                 <b>Mercados de ações em tempo real:</b> Acompanhe os mercados de ações dos EUA e do Brasil em tempo real.
@@ -337,10 +376,10 @@ export const Subscriptions = () => {
                             <img
                                 src={`${router.basePath}/assets/badge-check-gold.png`}
                                 className="w-5"
-                                alt="Subscription"
+                                alt="Badge"
                             />
                             <span>
-                                <b>Dicas da Ingrid:</b> Converse com a Inteligência Artificial Ingrid e receba semanais de acordo com seus dados.
+                                <b>Dicas da Ingrid:</b> Converse com a Inteligência Artificial Ingrid e receba dicas semanais de acordo com seus dados.
                             </span>
                         </li>
                     </ul>
