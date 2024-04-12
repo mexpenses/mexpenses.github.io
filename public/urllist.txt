@@ -1,4 +1,5 @@
 https://www.mexpenses.net
+https://www.mexpenses.net/policy
 https://www.mexpenses.net/opensearch.xml
 https://app.mexpenses.com.br/auth/login
 https://app.mexpenses.com.br/auth/register/basic

@@ -1,5 +1,4 @@
 import React from "react";
-import Maps from "../public/assets/HugeGlobal.svg";
 import { Subscriptions } from "./Subscriptions";
 
 const Pricing = () => {
@@ -26,7 +25,7 @@ const Pricing = () => {
                         veja abaixo algumas das milhares de empresas que utilizam serviços da Amazon Web Services no mundo todo.
                     </p>
                     <div className="py-12 w-full px-8 mt-16">
-                        <Maps className="w-full h-auto" />
+                        <img src="/assets/aws_locations.png" className="w-full h-auto" alt="AWS Locations" />
                     </div>
                     <div className="w-full flex justify-center items-center">
                         <div className="flex justify-start items-center gap-5 lg:gap-20 mt-4 flex-wrap lg:flex-nowrap">

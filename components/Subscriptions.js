@@ -36,8 +36,8 @@ export const Subscriptions = () => {
                     <span className="mb-5 font-extrabold text-green-600">Não fique aqui para sempre amigo(a)</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <div className="w-full flex flex-row items-center gap-2">
-                            <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                        <div className="w-full flex flex-row items-center flex-wrap gap-2">
+                            <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
                         </div>
@@ -186,11 +186,11 @@ export const Subscriptions = () => {
                     <span className="mb-5 font-extrabold text-indigo-500">É baratinho, preço de um pastélzinho</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <div className="w-full flex flex-row items-center gap-2">
-                            <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                        <div className="w-full flex flex-row items-center flex-wrap gap-2">
+                            <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-indigo-500 text-xl font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-indigo-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
                         </div>
@@ -301,14 +301,14 @@ export const Subscriptions = () => {
                     <span className="mb-5 font-extrabold text-orange-500">Preço de um lanchinho não faz falta</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
-                        <div className="w-full flex flex-row items-center gap-2">
-                            <span className="py-1 px-3 bg-green-600 text-xl font-bold text-white rounded-xl">
+                        <div className="w-full flex flex-row items-center flex-wrap gap-2">
+                            <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-indigo-500 text-xl font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-indigo-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
-                            <span className="py-1 px-3 bg-orange-500 text-xl font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-orange-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Premium
                             </span>
                         </div>
