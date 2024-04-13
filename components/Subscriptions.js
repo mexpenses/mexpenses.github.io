@@ -48,7 +48,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Cadastro de categorias:</b>  Organize suas despesas de forma simples.
+                                <b>Cadastro de categorias:</b> Organize suas despesas de forma simples.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -58,7 +58,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Calculadora de Impostos:</b>  Calcule seus impostos de forma rápida e fácil.
+                                <b>Calculadora de Impostos:</b> Calcule seus impostos de forma rápida e fácil.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -68,7 +68,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Visualização de taxas de juros:</b>  Acompanhe as taxas de juros do mercado.
+                                <b>Visualização de taxas de juros:</b> Acompanhe as taxas de juros do mercado.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -88,7 +88,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Análise de dados:</b>  Visualize seus dados financeiros de forma clara e intuitiva.
+                                <b>Análise de dados:</b> Visualize seus dados financeiros de forma clara e intuitiva.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -98,7 +98,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Gerenciamento de cartões de crédito:</b>  Controle suas faturas de cartão de crédito.
+                                <b>Gerenciamento de cartões de crédito:</b> Controle suas faturas de cartão de crédito.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -108,7 +108,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Visualização de criptomoedas:</b>  Acompanhe as principais criptomoedas do mercado.
+                                <b>Visualização de criptomoedas:</b> Acompanhe as principais criptomoedas do mercado.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -118,7 +118,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Gerenciamento de entradas e saídas:</b>  Acompanhe seu dinheiro de forma detalhada.
+                                <b>Gerenciamento de entradas e saídas:</b> Acompanhe seu dinheiro de forma detalhada.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -128,7 +128,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Suporte WhatsApp:</b>  Entre em contato com o suporte pelo WhatsApp durante o horário de expediente.
+                                <b>Suporte WhatsApp:</b> Entre em contato com o suporte pelo WhatsApp durante o horário de expediente.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -138,7 +138,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Alertas de faturas:</b>  Receba alertas sobre faturas que estão vencendo ou que ultrapassaram seu limite de crédito.
+                                <b>Alertas de faturas:</b> Receba alertas sobre faturas que estão vencendo ou que ultrapassaram sua renda mensal.
                             </span>
                         </li>
                     </ul>
