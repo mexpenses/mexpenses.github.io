@@ -339,7 +339,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>B3 (Bolsa do Brasil) em tempo real:</b> Acompanhe a B3 em tempo real.
+                                <b>B3 (Bolsa do Brasil):</b> Acompanhe a B3 em tempo real.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
