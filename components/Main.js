@@ -25,10 +25,10 @@ const Main = ({ listAbout = [
     { id: 3, name: 'Evolua cada vez mais e saia do comodismo', cls: 'text-gray-900', value: 'Não desista...' },
   ];
   const stats_assistant = [
-    { name: 'Geração de relatórios', value: 'Em tempo real' },
-    { name: 'Dicas financeiras', value: '98% aplicáveis' },
-    { name: 'Mentora financeira', value: '24h por dia' },
-    { name: 'Dicas geradas', value: '+4.000' },
+    { name: 'Geração de relatórios', value: 'Peça no Chat' },
+    { name: '98% aplicáveis', value: 'Dicas financeiras' },
+    { name: '24h por dia', value: 'Disponibilidade' },
+    { name: '+4.000', value: 'Dicas geradas' },
   ];
   const router = useRouter();
   return (
