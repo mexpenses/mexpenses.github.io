@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e758a1d-53fb-4ca6-a6d2-f0995327dae2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/H3CT0R S1LV4/Documents/Projects/react-mexpenses-app",
+    "last_opened_file_path": "C:/Users/H3CT0R S1LV4/Documents/Projects/nextjs-landingpage-mexpenses",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -130,6 +131,9 @@
       <workItem from="1713407505154" duration="458000" />
       <workItem from="1713409288921" duration="1419000" />
       <workItem from="1713482003176" duration="44000" />
+      <workItem from="1713716672543" duration="1161000" />
+      <workItem from="1713724117481" duration="103000" />
+      <workItem from="1713879762812" duration="683000" />
     </task>
     <servers />
   </component>

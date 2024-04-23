@@ -37,8 +37,8 @@ const Main = ({ listAbout = [
             id="about"
             className="max-w-screen-xl mt-28 lg:mt-24 px-8 xl:px-5 mx-auto"
         >
-          <div className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
-            <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+          <div className="grid grid-flow-row lg:grid-flow-col grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 py-6 lg:py-16">
+            <div className="flex flex-col justify-center items-start row-start-2 lg:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
                 Troque suas planilhas com <strong className="text-green-900">complexidades</strong><br/>
                 <span className="text-indigo-600 font-normal leading-normal">Por simplicidade</span>
@@ -128,7 +128,7 @@ const Main = ({ listAbout = [
         <div className="relative overflow-hidden bg-white px-5 md:px-0" id="feature">
           <div className="pb-20 sm:pt-24 lg:pb-48 lg:pt-40">
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-              <div className="sm:max-w-lg mb-10">
+              <div className="lg:max-w-lg mb-10">
                 <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
                   <span className="text-black">Veja sem medo</span><br/>
                   <span className="text-indigo-950">Investimentos</span><br/>
@@ -150,8 +150,8 @@ const Main = ({ listAbout = [
                   className="pointer-events-none lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
               >
                 <div className="lg:absolute transform sm:left-1/2 sm:top-0 sm:translate-x-0 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                  <div className="absolute w-screen h-full bg-gradient-to-l from-white"/>
-                  <div className="flex items-center space-x-6 lg:space-x-8">
+                  <div className="absolute w-screen h-full"/>
+                  <div className="flex items-center justify-center space-x-6 lg:space-x-8">
                     <div className="relative grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
