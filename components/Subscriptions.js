@@ -231,7 +231,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span className="opacity-70">
-                                <b>Em breve:</b> Veja seu histórico de gastos com filtros de pesquisa.
+                                <b>Em breve:</b> Defina metas financeiras para alcançar seus objetivos.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -240,8 +240,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="opacity-70">
-                                <b>Em breve:</b> Defina metas financeiras para alcançar seus objetivos.
+                            <span>
+                                <b>Open Finance:</b> Histórico de transações com filtros de Entrada e Saída.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -274,7 +274,8 @@ export const Subscriptions = () => {
                     </a>
                 </div>
                 {/* Pricing Card */}
-                <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <div
+                    className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <div id="premium" className="absolute" style={{ top: -150 }}/>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Premium&nbsp;
