@@ -41,14 +41,15 @@ const Main = ({ listAbout = [
             <div className="flex flex-col justify-center items-start row-start-2 lg:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
                 Troque suas planilhas com <strong className="text-green-900">complexidades</strong><br/>
-                <span className="text-indigo-600 font-normal leading-normal">Por simplicidade</span>
+                <span className="text-indigo-600 font-normal leading-normal">por simplicidade</span>
               </h1>
               <p className="text-black-500 mt-4 mb-6 text-lg">
-                Tenha uma breve experiência criando uma conta gratuita ou
-                assine para simplificar de verdade suas finanças com <strong className="text-green-900">1 mês grátis</strong>
+                Não temos frases bonitas para impressionar,
+                mas o que a gente entende é de simplificar.
+                Sua primeira assinatura com <strong className="text-green-700 uppercase text-sm">primeiro mês grátis</strong>
               </p>
               <a href="https://app.mexpenses.com.br/auth/register/basic">
-                <ButtonPrimary>Experimente grátis</ButtonPrimary>
+              <ButtonPrimary>Experimente agora</ButtonPrimary>
               </a>
             </div>
             <div className="flex w-full">
