@@ -264,6 +264,16 @@ export const Subscriptions = () => {
                                 <b>Análise de faturas:</b> Veja suas faturas de forma clara e intuitiva com Inteligência Artificial.
                             </span>
                         </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={`${router.basePath}/assets/badge-check.png`}
+                                className="w-5"
+                                alt="Badge"
+                            />
+                            <span>
+                                <b>Detalhamento de despesas:</b> Veja suas pendências e pagamentos sem precisar navegar por cada categoria.
+                            </span>
+                        </li>
                     </ul>
                     <a
                         target="_blank"
