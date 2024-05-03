@@ -24,8 +24,8 @@ const Pricing = () => {
                         Garantimos a sua segurança por não te obrigar a registrar qualquer informação que seja sensível. Todos os dados estão armazenados em um dos maiores players de servidores do mundo,
                         veja abaixo algumas das milhares de empresas que utilizam serviços da Amazon Web Services no mundo todo.
                     </p>
-                    <div className="py-12 w-full px-8 mt-16">
-                        <img src="/assets/aws_locations.png" className="w-full h-auto" alt="AWS Locations" />
+                    <div className="py-10 w-full">
+                        <img src="/assets/aws_locations.jpg" className="w-full h-auto rounded-xl" alt="AWS Locations" />
                     </div>
                     <div className="w-full flex justify-center items-center">
                         <div className="flex justify-start items-center gap-5 lg:gap-20 mt-4 flex-wrap lg:flex-nowrap">
