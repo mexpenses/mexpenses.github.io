@@ -119,7 +119,7 @@ const Feature = () => {
                 <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                   <a
                       target="_blank"
-                      href="https://app.mexpenses.com.br/auth/register/basic"
+                      href="https://app.mexpenses.com.br/#/auth/register/basic"
                       className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     Assinar <span className="font-bold uppercase">agora</span>
@@ -127,7 +127,7 @@ const Feature = () => {
                   <a
                       target="_blank"
                       className="text-sm font-semibold leading-6 text-white"
-                      href="https://app.mexpenses.com.br/auth/register/free"
+                      href="https://app.mexpenses.com.br/#/auth/register/free"
                   >
                     Teste gratuitamente&nbsp;<span aria-hidden="true">→</span>
                   </a>

@@ -144,7 +144,7 @@ export const Subscriptions = () => {
                     </ul>
                     <a
                         target="_blank"
-                        href="https://app.mexpenses.com.br/auth/register/free"
+                        href="https://app.mexpenses.com.br/#/auth/register/free"
                         className="mt-auto text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
                     >
                         Teste gratuitamente
@@ -277,7 +277,7 @@ export const Subscriptions = () => {
                     </ul>
                     <a
                         target="_blank"
-                        href="https://app.mexpenses.com.br/auth/register/basic"
+                        href="https://app.mexpenses.com.br/#/auth/register/basic"
                         className="mt-auto text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar
@@ -396,7 +396,7 @@ export const Subscriptions = () => {
                     </ul>
                     <a
                         target="_blank"
-                        href="https://app.mexpenses.com.br/auth/register/premium"
+                        href="https://app.mexpenses.com.br/#/auth/register/premium"
                         className="mt-auto text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar

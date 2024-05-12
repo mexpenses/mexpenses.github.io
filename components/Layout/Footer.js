@@ -113,7 +113,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Produtos</p>
             <ul className="text-black-500 ">
-              <a target="_blank" href="https://app.mexpenses.com.br/auth/register/basic">
+              <a target="_blank" href="https://app.mexpenses.com.br/#/auth/register/basic">
                 <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Conta digital{" "}
                 </li>

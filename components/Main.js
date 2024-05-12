@@ -48,7 +48,7 @@ const Main = ({ listAbout = [
                 mas o que a gente entende é de simplificar.
                 Sua primeira assinatura com <strong className="text-green-700 uppercase text-sm">primeiro mês grátis</strong>
               </p>
-              <a href="https://app.mexpenses.com.br/auth/register/basic">
+              <a href="https://app.mexpenses.com.br/#/auth/register/basic">
               <ButtonPrimary>Experimente agora</ButtonPrimary>
               </a>
             </div>
@@ -285,7 +285,7 @@ const Main = ({ listAbout = [
             <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
               <a
                   target="_blank"
-                  href="https://app.mexpenses.com.br/auth/register/premium"
+                  href="https://app.mexpenses.com.br/#/auth/register/premium"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Assinar <span className="font-bold uppercase">agora</span>
