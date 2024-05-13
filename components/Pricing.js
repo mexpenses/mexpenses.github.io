@@ -16,45 +16,52 @@ const Pricing = () => {
                 <Subscriptions/>
             </div>
             <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center" id="company">
-                <div className="flex flex-col w-full my-16">
+                <div className="flex flex-col w-full my-10">
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
                         Seus dados estão seguros
                     </h3>
-                    <p className="leading-normal text-left my-2 w-full">
-                        Garantimos a sua segurança por não te obrigar a registrar qualquer informação que seja sensível. Todos os dados estão armazenados em um dos maiores players de servidores do mundo,
-                        veja abaixo algumas das milhares de empresas que utilizam serviços da Amazon Web Services no mundo todo.
+                    <p className="leading-normal text-left my-10 w-full">
+                        Garantimos a sua segurança por não te obrigar a registrar qualquer informação que seja sensível.
+                        Todos os dados estão armazenados em um dos maiores players de servidores do mundo,
+                        veja abaixo algumas das milhares de empresas que utilizam serviços da <strong className="font-extrabold">AWS (Amazon Web Services)</strong> no
+                        mundo todo.
                     </p>
-                    <div className="py-10 w-full">
-                        <img src="/assets/aws_locations.jpg" className="w-full h-auto rounded-xl" alt="AWS Locations" />
-                    </div>
                     <div className="w-full flex justify-center items-center">
-                        <div className="flex justify-start items-center gap-5 lg:gap-20 mt-4 flex-wrap lg:flex-nowrap">
+                        <div className="flex justify-start items-center gap-10 lg:gap-20 flex-wrap lg:flex-nowrap">
                             <img
-                                src="/assets/c6_bank.png"
-                                className="h-10"
-                                alt="C6 Bank"
+                                src="/assets/itau_aws.png"
+                                className="h-12"
+                                alt="Itaú"
                             />
                             <img
-                                src="/assets/pag_seguro.png"
-                                className="h-10"
-                                alt="PagSeguro"
-                            />
-                            <img
-                                src="/assets/picpay.png"
-                                className="h-10"
-                                alt="PicPay"
-                            />
-                            <img
-                                src="/assets/nu.png"
-                                className="h-10"
-                                alt="PicPay"
-                            />
-                            <img
-                                src="/assets/bank_inter.png"
+                                src="/assets/inter_aws.png"
                                 className="h-10"
                                 alt="Inter"
                             />
+                            <img
+                                src="/assets/c6_bank_aws.png"
+                                className="h-7"
+                                alt="C6 Bank"
+                            />
+                            <img
+                                src="/assets/logo.png"
+                                className="h-10"
+                                alt="Mexpenses"
+                            />
+                            <img
+                                src="/assets/picpay_aws.png"
+                                className="h-9"
+                                alt="PicPay"
+                            />
+                            <img
+                                src="/assets/nu_aws.png"
+                                className="h-8"
+                                alt="Nubank"
+                            />
                         </div>
+                    </div>
+                    <div className="my-10 w-full">
+                        <img src="/assets/aws_locations.png" className="w-full h-auto rounded-xl" alt="AWS Locations"/>
                     </div>
                 </div>
             </div>

@@ -180,7 +180,7 @@ const Main = ({ listAbout = [
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Itaú"
-                            src={`${router.basePath}/assets/itau.webp`}
+                            src={`${router.basePath}/assets/itau.png`}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
@@ -203,7 +203,7 @@ const Main = ({ listAbout = [
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Inter"
-                            src={`${router.basePath}/assets/inter.png`}
+                            src={`${router.basePath}/assets/inter.jpg`}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
