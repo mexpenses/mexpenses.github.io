@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import Link from "next/link";
 import {Store} from "../Store";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
+import Image from "next/image";
 
 const Footer = () => {
   const router = useRouter();
@@ -29,10 +30,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div
-            className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-10 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4 mt-20">
+        <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-10 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4 mt-20">
           <div className="flex flex-col items-start">
-            <LogoMexpenses className="h-8 w-auto mb-6"/>
+            <Image src={LogoMexpenses} className="mb-6" width={90} height={90} alt="Mexpenses"/>
             <p className="mb-4">
               <strong className="font-medium">Mexpenses</strong> Troque suas planilhas com complexidades por
               simplicidade.

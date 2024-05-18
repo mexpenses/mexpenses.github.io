@@ -1,23 +1,14 @@
-import Document, { Html, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document'
 import SeoHead from "../components/SeoHead";
 
-class MyDocument extends Document {
-    static async getInitialProps(ctx) {
-        const initialProps = await Document.getInitialProps(ctx);
-        return { ...initialProps };
-    }
-
-    render() {
-        return (
-            <Html lang="pt-BR">
-                <SeoHead/>
-                <body>
+export default function Document() {
+    return (
+        <Html lang="en">
+            <SeoHead/>
+            <body>
                 <Main />
                 <NextScript />
-                </body>
-            </Html>
-        );
-    }
+            </body>
+        </Html>
+    )
 }
-
-export default MyDocument;

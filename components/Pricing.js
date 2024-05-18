@@ -27,7 +27,7 @@ const Pricing = () => {
                         mundo todo.
                     </p>
                     <div className="w-full flex justify-center items-center">
-                        <div className="flex justify-start items-center gap-10 lg:gap-20 flex-wrap lg:flex-nowrap">
+                        <div className="flex justify-start items-center gap-10 lg:gap-20 flex-wrap">
                             <img
                                 src="/assets/itau_aws.png"
                                 className="h-12"

@@ -6,20 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && touch .nojekyll"
+    "export": "next build && touch .nojekyll"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.12",
-    "next": "^12.3.1",
-    "postcss": "^8.4.17",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.19",
+    "next": "^14.2.3",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-lottie": "^1.2.3",
     "react-scroll": "^1.8.1",
-    "react-slick": "^0.27.13",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.4.3"
   },
-  "devDependencies": {
-    "babel-plugin-inline-react-svg": "^1.1.2"
-  }
+  "devDependencies": {}
 }

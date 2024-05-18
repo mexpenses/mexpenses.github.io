@@ -1,16 +1,15 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
 [hidden] {
   display: none !important;
 }
 
-html {
-  font-family: "Rubik", sans-serif;
+html, body {
+    font-family: "Rubik", sans-serif;
 }
+
 .animation-hover:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
@@ -26,8 +25,8 @@ html {
 }
 
 li.custom-list:before {
-  content: "\2022"; /* bullet point, for screen readers */
-  text-indent: -9999999px; /* move the bullet point out of sight */
+  content: "\2022";
+  text-indent: -9999999px;
 
   width: 0.4em;
   height: 1em;
@@ -90,8 +89,3 @@ li.circle-check:before {
         background-position: 0 50%;
     }
 }
-
-/* purgecss end ignore */
-@tailwind utilities;
-/* purgecss start ignore */
-/* purgecss end ignore */

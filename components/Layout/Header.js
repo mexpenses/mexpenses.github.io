@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../Buttons/ButtonOutline.";
@@ -11,7 +12,7 @@ const Header = () => {
             <header className="fixed top-0 w-full  z-30 bg-white transition-all shadow-md pt-0">
                 <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
                     <div className="col-start-1 col-end-2 flex items-center">
-                        <LogoMexpenses className="h-8 w-auto hidden lg:block"/>
+                        <Image src={LogoMexpenses} className="hidden lg:block" width={90} height={90} alt="Mexpenses"/>
                         <img src="/assets/mexpenses-icon.png" className="h-8 w-auto block lg:hidden" alt="Mexpenses"/>
                     </div>
                     <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
@@ -157,7 +158,7 @@ const Header = () => {
                 {/*        </button>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
-                <div className={`relative bg-orange-800 hover:bg-green-700 ${hideBanner ? "hidden" : "flex"} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
+                <div className={`relative bg-green-700 hover:bg-green-800 ${hideBanner ? "hidden" : "flex"} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
                     <div className="relative w-full" onClick={() => window.open("https://www.vakinha.com.br/4712837")}>
                         <div
                             aria-hidden="true"
