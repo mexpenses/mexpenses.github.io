@@ -32,7 +32,7 @@ export default function About() {
                     Trabalhar na Mexpenses
                 </h1>
                 <p className="lg:w-7/12 mx-auto mt-4 text-lg">
-                    Na Mex, estamos construindo novas maneiras inovadoras de ajudar as pessoas a se sentirem mais
+                    Na Mex, estamos construindo novas maneiras inovadoras de ajudar as pessoas se sentirem mais
                     confortáveis com as finanças pessoais e novas tecnologias.
                 </p>
                 <div className="lg:w-7/12 mx-auto mt-5">
