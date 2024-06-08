@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import React from "react";
 import Lottie from 'react-lottie';
 import * as AnimationRecommended from '../public/assets/animation_recommended.json';
@@ -12,7 +11,6 @@ const defaultOptions = {
 };
 
 export const Subscriptions = () => {
-    const router = useRouter();
     return (
         <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6">
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
@@ -43,7 +41,7 @@ export const Subscriptions = () => {
                         </div>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -53,7 +51,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -63,7 +61,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -73,7 +71,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -83,7 +81,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -93,7 +91,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -103,7 +101,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -113,7 +111,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -123,7 +121,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -133,7 +131,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/checklist.svg`}
+                                src={"/assets/checklist.svg"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -196,7 +194,7 @@ export const Subscriptions = () => {
                         </div>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -206,7 +204,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -216,7 +214,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -226,7 +224,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -236,7 +234,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -246,7 +244,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -256,7 +254,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -266,7 +264,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check.png`}
+                                src={"/assets/badge-check.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -325,7 +323,7 @@ export const Subscriptions = () => {
                         </div>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -335,7 +333,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -345,7 +343,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -355,7 +353,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -365,7 +363,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -375,7 +373,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />
@@ -385,7 +383,7 @@ export const Subscriptions = () => {
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
                             <img
-                                src={`${router.basePath}/assets/badge-check-gold.png`}
+                                src={"/assets/badge-check-gold.png"}
                                 className="w-5"
                                 alt="Badge"
                             />

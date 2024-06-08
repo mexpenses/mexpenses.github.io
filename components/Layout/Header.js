@@ -1,18 +1,21 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import React, {Fragment, useContext, useState} from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../Buttons/ButtonOutline.";
-import LogoMexpenses from "../../public/assets/mexpenses-black.svg";
+import Link from "next/link";
+import {useRouter} from "next/router";
+import {Context} from "../../context";
+import {usePathname} from "next/navigation";
 
 const Header = () => {
-    const [hideBanner, setHideBanner] = useState(false);
-    const [activeLink, setActiveLink] = useState("about");
+    const { showBanner, activeLinkNavbar, setActiveLinkNavbar, setShowBanner } = useContext(Context);
+    const router = useRouter();
+    const pathname = usePathname();
     return (
         <>
             <header className="fixed top-0 w-full  z-30 bg-white transition-all shadow-md pt-0">
                 <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
                     <div className="col-start-1 col-end-2 flex items-center">
-                        <Image src={LogoMexpenses} className="hidden lg:block" width={90} height={90} alt="Mexpenses"/>
+                        <img src="/assets/mexpenses-black.svg" className="hidden lg:block" width={90} alt="Mexpenses"/>
                         <img src="/assets/mexpenses-icon.png" className="h-8 w-auto block lg:hidden" alt="Mexpenses"/>
                     </div>
                     <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
@@ -21,13 +24,13 @@ const Header = () => {
                             to="about"
                             spy
                             smooth
+                            offset={-100}
                             duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("about");
-                            }}
+                            onSetActive={() => setActiveLinkNavbar("about")}
+                            onClick={() => router.push('/')}
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "about"
+                                (activeLinkNavbar === "about"
                                     ? " text-indigo-500 animation-active "
                                     : " text-black-500 hover:text-indigo-500 a")
                             }
@@ -40,12 +43,11 @@ const Header = () => {
                             spy
                             smooth
                             duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("feature");
-                            }}
+                            onClick={() => router.push('/#feature')}
+                            onSetActive={() => setActiveLinkNavbar("feature")}
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "feature"
+                                (activeLinkNavbar === "feature"
                                     ? " text-indigo-500 animation-active "
                                     : " text-black-500 hover:text-indigo-500 ")
                             }
@@ -58,36 +60,29 @@ const Header = () => {
                             spy
                             smooth
                             duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("pricing");
-                            }}
+                            onClick={() => router.push('/#pricing')}
+                            onSetActive={() => setActiveLinkNavbar("pricing")}
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "pricing"
+                                (activeLinkNavbar === "pricing"
                                     ? " text-indigo-500 animation-active "
                                     : " text-black-500 hover:text-indigo-500 ")
                             }
                         >
                             Assinaturas
                         </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="company"
-                            spy
-                            smooth
-                            duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("contributors");
-                            }}
+                        <Link
+                            href="/about"
+                            onClick={() => setActiveLinkNavbar("contributors")}
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                                (activeLink === "contributors"
+                                ((activeLinkNavbar === "contributors") || (pathname === '/about')
                                     ? " text-indigo-500 animation-active "
                                     : " text-black-500 hover:text-indigo-500 ")
                             }
                         >
-                            Empresa
-                        </LinkScroll>
+                            Sobre nós
+                        </Link>
                     </ul>
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <a
@@ -101,7 +96,7 @@ const Header = () => {
                         </a>
                     </div>
                 </nav>
-                {/*<div className={`relative bg-black hover:bg-indigo-500 ${hideBanner ? "hidden" : "flex"} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>*/}
+                {/*<div className="relative bg-black hover:bg-indigo-500 ${hideBanner ? "hidden" : "flex" items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none">*/}
                 {/*    <LinkScroll*/}
                 {/*        spy*/}
                 {/*        smooth*/}
@@ -158,7 +153,7 @@ const Header = () => {
                 {/*        </button>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
-                <div className={`relative bg-green-700 hover:bg-green-800 ${hideBanner ? "hidden" : "flex"} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
+                <div className={`relative bg-green-700 hover:bg-green-800 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
                     <div className="relative w-full" onClick={() => window.open("https://www.vakinha.com.br/4712837")}>
                         <div
                             aria-hidden="true"
@@ -199,8 +194,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="absolute right-0">
-                        <button type="button" className="p-3 focus-visible:outline-offset-[-4px]"
-                                onClick={() => setHideBanner(true)}>
+                        <button type="button" className="p-3 focus-visible:outline-offset-[-4px]" onClick={() => setShowBanner(false)}>
                             <span className="sr-only">Dismiss</span>
                             <svg className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
                                  aria-hidden="true">
@@ -220,13 +214,13 @@ const Header = () => {
                             to="about"
                             spy
                             smooth
+                            offset={-100}
                             duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("about");
-                            }}
+                            onClick={() => router.push('/')}
+                            onSetActive={() => setActiveLinkNavbar("about")}
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                                (activeLink === "about"
+                                (activeLinkNavbar === "about"
                                     ? "  border-indigo-500 text-indigo-500"
                                     : " border-transparent")
                             }
@@ -253,12 +247,11 @@ const Header = () => {
                             spy
                             smooth
                             duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("feature");
-                            }}
+                            onClick={() => router.push('/#feature')}
+                            onSetActive={() => setActiveLinkNavbar("feature")}
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                                (activeLink === "feature"
+                                (activeLinkNavbar === "feature"
                                     ? "  border-indigo-500 text-indigo-500"
                                     : " border-transparent ")
                             }
@@ -285,12 +278,11 @@ const Header = () => {
                             spy
                             smooth
                             duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("pricing");
-                            }}
+                            onClick={() => router.push('/#pricing')}
+                            onSetActive={() => setActiveLinkNavbar("pricing")}
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                                (activeLink === "pricing"
+                                (activeLinkNavbar === "pricing"
                                     ? "  border-indigo-500 text-indigo-500"
                                     : " border-transparent ")
                             }
@@ -311,18 +303,12 @@ const Header = () => {
                             </svg>
                             Assinaturas
                         </LinkScroll>
-                        <LinkScroll
-                            activeClass="active"
-                            to="company"
-                            spy
-                            smooth
-                            duration={1000}
-                            onSetActive={() => {
-                                setActiveLink("contributors");
-                            }}
+                        <Link
+                            href="/about"
+                            onClick={() => setActiveLinkNavbar("contributors")}
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                                (activeLink === "contributors"
+                                ((activeLinkNavbar === "contributors") || (pathname === '/about')
                                     ? "  border-indigo-500 text-indigo-500"
                                     : " border-transparent ")
                             }
@@ -341,8 +327,8 @@ const Header = () => {
                                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                                 />
                             </svg>
-                            Empresa
-                        </LinkScroll>
+                            Sobre nós
+                        </Link>
                     </ul>
                 </div>
             </nav>

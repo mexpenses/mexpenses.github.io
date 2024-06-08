@@ -1,8 +1,6 @@
 import React from "react";
-import {useRouter} from "next/router";
 
 const Feature = () => {
-  const router = useRouter();
   return (
       <>
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
@@ -66,22 +64,22 @@ const Feature = () => {
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
             <img
                 alt="Sem anúncios"
-                src={`${router.basePath}/assets/topic_1.jpg`}
+                src={"/assets/topic_1.jpg"}
                 className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
             />
             <img
                 alt="Open Finance"
-                src={`${router.basePath}/assets/topic_2.jpg`}
+                src={"/assets/topic_2.jpg"}
                 className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
             />
             <img
                 alt="Inteligência Artificial"
-                src={`${router.basePath}/assets/topic_4.jpg`}
+                src={"/assets/topic_4.jpg"}
                 className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
             />
             <img
                 alt="Cripto"
-                src={`${router.basePath}/assets/topic_3.jpg`}
+                src={"/assets/topic_3.jpg"}
                 className="rounded-lg bg-gray-100 h-full w-full object-cover object-center"
             />
           </div>
@@ -138,7 +136,7 @@ const Feature = () => {
                     width={1824}
                     height={1080}
                     alt="App screenshot"
-                    src={`${router.basePath}/assets/app.png`}
+                    src={"/assets/app.png"}
                     className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 />
               </div>

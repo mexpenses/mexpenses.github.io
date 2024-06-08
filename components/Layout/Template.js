@@ -2,10 +2,10 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const Template = ({ children }) => {
+const Template = ({ activeLinkNavbar, children }) => {
   return (
     <>
-      <Header />
+      <Header/>
       {children}
       <Footer />
     </>

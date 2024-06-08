@@ -1,10 +1,8 @@
 import { memo } from 'react';
-import {useRouter} from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 
 const Policy = memo(() => {
-    const router = useRouter();
     return (
         <>
             <Head>
@@ -54,7 +52,7 @@ const Policy = memo(() => {
                     <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                         <img
                             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                            src={`${router.basePath}/assets/privacy_policy.webp`}
+                            src={"/assets/privacy_policy.webp"}
                             alt="Política de Privacidade"
                         />
                     </div>
@@ -209,7 +207,7 @@ const Policy = memo(() => {
                                         <b className="flex items-center justify-start m-0 text-indigo-600 hover:text-indigo-500 font-medium cursor-pointer" title="mexpenses.app@gmail.com">
                                             <img
                                                 alt="E-mail"
-                                                src={`${router.basePath}/assets/email.png`}
+                                                src={"/assets/email.png"}
                                                 className="h-5 w-auto object-cover object-center"
                                             />
                                             &nbsp;Entrar em contato por e-mail
@@ -221,7 +219,7 @@ const Policy = memo(() => {
                                 {/*        <b className="flex items-center justify-start m-0 text-green-600 hover:text-green-500 font-medium cursor-pointer" title="Atendimento WhatsApp">*/}
                                 {/*            <img*/}
                                 {/*                alt="WhatsApp"*/}
-                                {/*                src={`${router.basePath}/assets/whatsapp.png`}*/}
+                                {/*                src={"/assets/whatsapp.png"}*/}
                                 {/*                className="h-5 w-5 object-cover object-center"*/}
                                 {/*            />*/}
                                 {/*            &nbsp;Atendimento WhatsApp*/}

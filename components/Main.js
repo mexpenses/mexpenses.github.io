@@ -1,6 +1,5 @@
 import React from "react";
 import ButtonPrimary from "./Buttons/ButtonPrimary";
-import {useRouter} from "next/router";
 
 const Main = ({ listAbout = [
   {
@@ -30,12 +29,11 @@ const Main = ({ listAbout = [
     { name: '24h por dia', value: 'Disponibilidade' },
     { name: '+4.000', value: 'Dicas geradas' },
   ];
-  const router = useRouter();
   return (
       <>
         <div
             id="about"
-            className="max-w-screen-xl mt-28 lg:mt-24 px-8 xl:px-5 mx-auto"
+            className="max-w-screen-xl mt-24 lg:mt-16 px-8 xl:px-5 mx-auto"
         >
           <div className="grid grid-flow-row lg:grid-flow-col grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 py-6 lg:py-16">
             <div className="flex flex-col justify-center items-start row-start-2 lg:row-start-1">
@@ -57,7 +55,7 @@ const Main = ({ listAbout = [
                 <img
                     width={700}
                     alt="Mexpenses Illustration"
-                    src={`${router.basePath}/assets/sad_and_happy.jpg`}
+                    src={"/assets/sad_and_happy.jpg"}
                 />
               </div>
             </div>
@@ -70,31 +68,31 @@ const Main = ({ listAbout = [
               </p>
               <div className="w-full pt-10 carousel-logos">
                 <a href="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/amazon_partner.png`} alt="Amazon"/>
+                  <img src={"/assets/amazon_partner.png"} alt="Amazon"/>
                 </a>
                 <a href="https://about.google/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/google_partner.png`} alt="Google"/>
+                  <img src={"/assets/google_partner.png"} alt="Google"/>
                 </a>
                 <a href="https://about.meta.com/br/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/meta_partner.png`} alt="Meta"/>
+                  <img src={"/assets/meta_partner.png"} alt="Meta"/>
                 </a>
                 <a href="https://stripe.com/br" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/stripe_partner.png`} alt="Stripe"/>
+                  <img src={"/assets/stripe_partner.png"} alt="Stripe"/>
                 </a>
                 <a href="https://pluggy.ai/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/pluggy_partner.png`} alt="Pluggy"/>
+                  <img src={"/assets/pluggy_partner.png"} alt="Pluggy"/>
                 </a>
                 <a href="https://vercel.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/vercel_partner.png`} alt="Vercel"/>
+                  <img src={"/assets/vercel_partner.png"} alt="Vercel"/>
                 </a>
                 <a href="https://openai.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/open_ai_partner.png`} alt="OpenAI"/>
+                  <img src={"/assets/open_ai_partner.png"} alt="OpenAI"/>
                 </a>
                 <a href="https://github.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/github_partner.png`} alt="GitHub"/>
+                  <img src={"/assets/github_partner.png"} alt="GitHub"/>
                 </a>
                 <a href="https://br.tradingview.com/" target="_blank" className="carousel-logo">
-                  <img src={`${router.basePath}/assets/tradingview_partner.png`} alt="TradingView"/>
+                  <img src={"/assets/tradingview_partner.png"} alt="TradingView"/>
                 </a>
               </div>
             </div>
@@ -157,21 +155,21 @@ const Main = ({ listAbout = [
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Nubank"
-                            src={`${router.basePath}/assets/nubank.png`}
+                            src={"/assets/nubank.png"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Wise"
-                            src={`${router.basePath}/assets/wise.webp`}
+                            src={"/assets/wise.webp"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Mercado Pago"
-                            src={`${router.basePath}/assets/mercado_pago.jpg`}
+                            src={"/assets/mercado_pago.jpg"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
@@ -180,7 +178,7 @@ const Main = ({ listAbout = [
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Itaú"
-                            src={`${router.basePath}/assets/itau.png`}
+                            src={"/assets/itau.png"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
@@ -188,13 +186,13 @@ const Main = ({ listAbout = [
                         <img
                             alt="Santander"
                             className="h-full w-full object-cover object-center"
-                            src={`${router.basePath}/assets/santander.png`}
+                            src={"/assets/santander.png"}
                         />
                       </div>
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="XP Investimentos"
-                            src={`${router.basePath}/assets/xp.png`}
+                            src={"/assets/xp.png"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
@@ -203,14 +201,14 @@ const Main = ({ listAbout = [
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Inter"
-                            src={`${router.basePath}/assets/inter.jpg`}
+                            src={"/assets/inter.jpg"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-32 w-32 lg:h-44 lg:w-44 overflow-hidden rounded-lg">
                         <img
                             alt="Bradesco"
-                            src={`${router.basePath}/assets/bradesco.png`}
+                            src={"/assets/bradesco.png"}
                             className="h-full w-full object-cover object-center"
                         />
                       </div>
@@ -218,7 +216,7 @@ const Main = ({ listAbout = [
                         <img
                             alt="Rico"
                             className="h-full w-full object-cover object-center"
-                            src={`${router.basePath}/assets/rico.jpg`}
+                            src={"/assets/rico.jpg"}
                         />
                       </div>
                     </div>
@@ -234,7 +232,7 @@ const Main = ({ listAbout = [
               {stats.map((stat) => (
                   <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
                     <dt className="text-base leading-7">{stat.name}</dt>
-                    <dd className={`order-first text-3xl font-semibold tracking-tight sm:text-5xl ${stat.cls}`}>
+                    <dd className={"order-first text-3xl font-semibold tracking-tight sm:text-5xl ${stat.cls}"}>
                       {stat.value}
                     </dd>
                   </div>
@@ -275,7 +273,7 @@ const Main = ({ listAbout = [
               <p className="mt-6 text-lg leading-8 text-gray-300">
                 <img
                     alt="AI Ingrid"
-                    src={`${router.basePath}/assets/ai_ingrid.png`}
+                    src={"/assets/ai_ingrid.png"}
                     className="w-24 h-24 object-cover object-center float-right ml-3"
                 />
                 <b>Assinatura Premium</b> apresenta a Inteligência Artificial <b>Ingrid</b>, que irá lhe ajudar a
