@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import {Store} from "../Store";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
 
 const Footer = () => {
@@ -21,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-10 flex flex-row flex-wrap lg:flex-nowrap justify-between gap-4 mt-20">
           <div className="flex flex-col items-start">
-            <img  src="/assets/mexpenses-black.svg" className="hidden lg:block" width={90} alt="Mexpenses"/>
+            <img src="/assets/mexpenses-black.svg" className="hidden lg:block" width={90} alt="Mexpenses"/>
             <p className="my-4">
               <strong className="font-medium">Mexpenses</strong> Troque suas planilhas com complexidades por
               simplicidade.
@@ -64,10 +63,15 @@ const Footer = () => {
                 </Link>
               </li>
             </div>
-            <p className="text-gray-400">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
-            <div className="flex flex-row items-center justify-start flex-wrap w-full mt-5 gap-2">
-              <Store/>
-            </div>
+            <p className="text-gray-600">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
+            <p className="text-gray-400 mt-1">Inscrita no CNPJ sob o nº 55.552.018/0001-98</p>
+            <p className="mt-2">
+              <span className="text-gray-800 font-semibold">Endereço comercial</span>&nbsp;
+              <Link target="_blank" className="cursor-pointer text-gray-700 hover:text-indigo-500"
+                    href="https://maps.app.goo.gl/CtuL2636NDZwDY2x7">
+                R. Cel. José Eusébio, 95 - Higienópolis, São Paulo
+              </Link>
+            </p>
           </div>
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
