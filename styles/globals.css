@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-[hidden] {
-  display: none !important;
-}
-
 html, body {
     font-family: "Rubik", sans-serif;
 }
@@ -17,41 +13,13 @@ html, body {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   @apply w-0 bg-indigo-500 left-1/2 block bottom-0 absolute;
 }
+
 .animation-active:after {
   @apply left-0 w-full;
 }
+
 .animation-hover:hover:after {
   @apply left-0 w-full;
-}
-
-li.custom-list:before {
-  content: "\2022";
-  text-indent: -9999999px;
-
-  width: 0.4em;
-  height: 1em;
-  background-repeat: no-repeat;
-
-  background-size: 0.4em 0.7em;
-  background-position: 0 0.3em;
-  font-size: 300%;
-  top: -0.35em;
-  @apply absolute block;
-}
-li.circle-check:before {
-  background-image: url("/assets/checklist.svg");
-  left: -0.7em;
-  top: -0.4em;
-}
-/* Slideshow */
-.slick-dots li {
-  @apply inline-block;
-}
-.slick-dots span {
-  @apply bg-indigo-500;
-}
-.slick-dots .slick-active span {
-  @apply bg-indigo-500 rounded-l-full rounded-r-full w-12;
 }
 
 .text-animation-colors {

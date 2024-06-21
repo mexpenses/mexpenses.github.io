@@ -1,5 +1,5 @@
+import "../styles/globals.css";
 import "../styles/carousel.css";
-import "../styles/tailwind.css";
 import {ContextProvider} from "../context";
 
 function App({ Component, pageProps }) {

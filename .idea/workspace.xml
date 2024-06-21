@@ -26,27 +26,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.14.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/dev/nextjs-landingpage-mexpenses&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;wsl://Ubuntu@/home/dev/.nvm/versions/node/v20.14.0/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;DotEnv.SettingsForm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "20.14.0",
+    "javascript.nodejs.core.library.typings.version": "20.14.2",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/dev/nextjs-landingpage-mexpenses",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "wsl://Ubuntu@/home/dev/.nvm/versions/node/v20.14.0/bin/node",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "DotEnv.SettingsForm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\dev\nextjs-landingpage-mexpenses\public\assets\local" />
@@ -177,7 +177,14 @@
       <workItem from="1718021863171" duration="50000" />
       <workItem from="1718648115145" duration="1238000" />
       <workItem from="1718714488853" duration="1206000" />
-      <workItem from="1718751675970" duration="1022000" />
+      <workItem from="1718751675970" duration="1104000" />
+      <workItem from="1718758709993" duration="623000" />
+      <workItem from="1718925179338" duration="465000" />
+      <workItem from="1718998150967" duration="199000" />
+      <workItem from="1718998356913" duration="1086000" />
+      <workItem from="1719008046042" duration="5583000" />
+      <workItem from="1719021594823" duration="22000" />
+      <workItem from="1719026943153" duration="458000" />
     </task>
     <servers />
   </component>

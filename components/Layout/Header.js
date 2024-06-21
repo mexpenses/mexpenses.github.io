@@ -1,4 +1,4 @@
-import React, {Fragment, useContext, useState} from "react";
+import React, {Fragment, useContext} from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../Buttons/ButtonOutline.";
 import Link from "next/link";
@@ -96,65 +96,14 @@ const Header = () => {
                         </a>
                     </div>
                 </nav>
-                {/*<div className="relative bg-black hover:bg-indigo-500 ${hideBanner ? "hidden" : "flex" items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none">*/}
-                {/*    <LinkScroll*/}
-                {/*        spy*/}
-                {/*        smooth*/}
-                {/*        to="basic"*/}
-                {/*        duration={1000}*/}
-                {/*        className="w-full"*/}
-                {/*    >*/}
-                {/*        <div*/}
-                {/*            aria-hidden="true"*/}
-                {/*            className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"*/}
-                {/*        >*/}
-                {/*            <div*/}
-                {/*                className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"*/}
-                {/*                style={{*/}
-                {/*                    clipPath:*/}
-                {/*                        "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"*/}
-                {/*                }}*/}
-                {/*            />*/}
-                {/*        </div>*/}
-                {/*        <div*/}
-                {/*            className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"*/}
-                {/*            aria-hidden="true"*/}
-                {/*        >*/}
-                {/*            <div*/}
-                {/*                className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"*/}
-                {/*                style={{*/}
-                {/*                    clipPath:*/}
-                {/*                        "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"*/}
-                {/*                }}*/}
-                {/*            />*/}
-                {/*        </div>*/}
-                {/*        <div className="flex flex-row w-full gap-x-4 gap-y-2 px-6 py-2.5 sm:px-3.5">*/}
-                {/*            <p className="text-xs leading-6 text-white w-full flex items-center justify-center">*/}
-                {/*                <strong className="font-semibold">Assine Basic</strong>*/}
-                {/*                <svg*/}
-                {/*                    viewBox="0 0 2 2"*/}
-                {/*                    aria-hidden="true"*/}
-                {/*                    className="mx-2 inline h-0.5 w-0.5 fill-current"*/}
-                {/*                >*/}
-                {/*                    <circle cx={1} cy={1} r={1} />*/}
-                {/*                </svg>*/}
-                {/*                Inteligência Artificial com Open Finance*/}
-                {/*            </p>*/}
-                {/*        </div>*/}
-                {/*    </LinkScroll>*/}
-                {/*    <div className="absolute right-0">*/}
-                {/*        <button type="button" className="p-3 focus-visible:outline-offset-[-4px]" onClick={() => setHideBanner(true)}>*/}
-                {/*            <span className="sr-only">Dismiss</span>*/}
-                {/*            <svg className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"*/}
-                {/*                 aria-hidden="true">*/}
-                {/*                <path*/}
-                {/*                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/>*/}
-                {/*            </svg>*/}
-                {/*        </button>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                <div className={`relative bg-green-700 hover:bg-green-800 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
-                    <div className="relative w-full" onClick={() => window.open("https://www.vakinha.com.br/4712837")}>
+                <div className={`relative bg-black hover:bg-indigo-500 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
+                    <LinkScroll
+                        spy
+                        smooth
+                        to="basic"
+                        duration={1000}
+                        className="w-full"
+                    >
                         <div
                             aria-hidden="true"
                             className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -181,18 +130,18 @@ const Header = () => {
                         </div>
                         <div className="flex flex-row w-full gap-x-4 gap-y-2 px-6 py-2.5 sm:px-3.5">
                             <p className="text-xs leading-6 text-white w-full flex items-center justify-center">
-                                <strong className="font-semibold">SOS</strong>
+                                <strong className="font-semibold">Assine Basic</strong>
                                 <svg
                                     viewBox="0 0 2 2"
                                     aria-hidden="true"
                                     className="mx-2 inline h-0.5 w-0.5 fill-current"
                                 >
-                                    <circle cx={1} cy={1} r={1}/>
+                                    <circle cx={1} cy={1} r={1} />
                                 </svg>
-                                Ajude o Rio Grande do Sul: Doe agora mesmo
+                                Inteligência Artificial com Open Finance
                             </p>
                         </div>
-                    </div>
+                    </LinkScroll>
                     <div className="absolute right-0">
                         <button type="button" className="p-3 focus-visible:outline-offset-[-4px]" onClick={() => setShowBanner(false)}>
                             <span className="sr-only">Dismiss</span>
@@ -204,6 +153,57 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
+                {/*<div className={`relative bg-green-700 hover:bg-green-800 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>*/}
+                {/*    <div className="relative w-full" onClick={() => window.open("https://www.vakinha.com.br/4712837")}>*/}
+                {/*        <div*/}
+                {/*            aria-hidden="true"*/}
+                {/*            className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"*/}
+                {/*        >*/}
+                {/*            <div*/}
+                {/*                className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"*/}
+                {/*                style={{*/}
+                {/*                    clipPath:*/}
+                {/*                        "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"*/}
+                {/*                }}*/}
+                {/*            />*/}
+                {/*        </div>*/}
+                {/*        <div*/}
+                {/*            className="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"*/}
+                {/*            aria-hidden="true"*/}
+                {/*        >*/}
+                {/*            <div*/}
+                {/*                className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"*/}
+                {/*                style={{*/}
+                {/*                    clipPath:*/}
+                {/*                        "polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"*/}
+                {/*                }}*/}
+                {/*            />*/}
+                {/*        </div>*/}
+                {/*        <div className="flex flex-row w-full gap-x-4 gap-y-2 px-6 py-2.5 sm:px-3.5">*/}
+                {/*            <p className="text-xs leading-6 text-white w-full flex items-center justify-center">*/}
+                {/*                <strong className="font-semibold">SOS</strong>*/}
+                {/*                <svg*/}
+                {/*                    viewBox="0 0 2 2"*/}
+                {/*                    aria-hidden="true"*/}
+                {/*                    className="mx-2 inline h-0.5 w-0.5 fill-current"*/}
+                {/*                >*/}
+                {/*                    <circle cx={1} cy={1} r={1}/>*/}
+                {/*                </svg>*/}
+                {/*                Ajude o Rio Grande do Sul: Doe agora mesmo*/}
+                {/*            </p>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*    <div className="absolute right-0">*/}
+                {/*        <button type="button" className="p-3 focus-visible:outline-offset-[-4px]" onClick={() => setShowBanner(false)}>*/}
+                {/*            <span className="sr-only">Dismiss</span>*/}
+                {/*            <svg className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"*/}
+                {/*                 aria-hidden="true">*/}
+                {/*                <path*/}
+                {/*                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/>*/}
+                {/*            </svg>*/}
+                {/*        </button>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </header>
             {/* Mobile Navigation */}
             <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 shadow-t">

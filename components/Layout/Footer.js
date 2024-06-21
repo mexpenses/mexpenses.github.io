@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
+import {Store} from "../Store";
 
 const Footer = () => {
   return (
@@ -25,7 +26,7 @@ const Footer = () => {
               <strong className="font-medium">Mexpenses</strong> Troque suas planilhas com complexidades por
               simplicidade.
             </p>
-            <div className="flex flex-row flex-wrap justify-center mb-3" style={{gap: 20}}>
+            <div className="flex flex-row flex-wrap justify-center" style={{gap: 20}}>
               <li className="flex items-center justify-center m-0 cursor-pointer">
                 <Link href="https://www.youtube.com/@Mexpenses">
                   <img src="/assets/youtube.png"
@@ -63,15 +64,20 @@ const Footer = () => {
                 </Link>
               </li>
             </div>
-            <p className="text-gray-600">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
-            <p className="text-gray-400 mt-1">Inscrita no CNPJ sob o nº 55.552.018/0001-98</p>
-            <p className="mt-2">
-              <span className="text-gray-800 font-semibold">Endereço comercial</span>&nbsp;
-              <Link target="_blank" className="cursor-pointer text-gray-700 hover:text-indigo-500"
-                    href="https://maps.app.goo.gl/CtuL2636NDZwDY2x7">
-                R. Cel. José Eusébio, 95 - Higienópolis, São Paulo
-              </Link>
-            </p>
+            <div className="flex flex-col items-start justify-start my-4">
+              <p className="text-gray-600">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
+              <p className="text-gray-400 text-sm mt-4 font-medium">Inscrita no CNPJ sob o nº 55.552.018/0001-98</p>
+              <p className="text-sm">
+                <span className="text-gray-800 font-semibold">Endereço comercial</span>&nbsp;
+                <Link target="_blank" className="cursor-pointer text-gray-600 hover:text-indigo-500"
+                      href="https://maps.app.goo.gl/CtuL2636NDZwDY2x7">
+                  R. Cel. José Eusébio, 95 - Higienópolis, São Paulo
+                </Link>
+              </p>
+            </div>
+            <div className="flex flex-row items-center flex-wrap gap-2">
+              <Store/>
+            </div>
           </div>
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
@@ -81,7 +87,7 @@ const Footer = () => {
                   Open Finance
                 </li>
               </a>
-              <Link href="/pages/policy">
+              <Link href="/policy">
                 <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Política de privacidade
                 </li>
