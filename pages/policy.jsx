@@ -2,13 +2,13 @@ import { memo } from 'react';
 import Link from "next/link";
 import Head from "next/head";
 
-const Policy = memo(() => {
+const PolicyContent = memo(() => {
     return (
         <>
             <Head>
                 <title>Mexpenses - Política de privacidade</title>
             </Head>
-            <div className="relative bg-white px-5 lg:px-24 my-14">
+            <div className="relative bg-white px-5 lg:px-24 py-14">
                 <p className="text-base font-semibold leading-7 text-indigo-600">Última
                     atualização 26/05/2023</p>
                 <h1 className="mt-2 text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">Política
@@ -42,16 +42,16 @@ const Policy = memo(() => {
                     <li className="flex gap-x-3">
                         <span>
                             <strong className="font-semibold text-gray-900">Dados coletados:</strong>
-                            <ul className="list-disc px-5">
+                            <ol className="list-decimal px-5">
                                 <li>Localização</li>
                                 <li>Diagnóstico</li>
-                                <li>Identificado­res</li>
+                                <li>Identificadores</li>
                                 <li>Informações de uso</li>
                                 <li>Informações financeiras</li>
                                 <li>Informações de contato</li>
                                 <li>Informações confidenciais</li>
                                 <li>Histórico de navegação da plataforma</li>
-                            </ul>
+                            </ol>
                         </span>
                     </li>
                 </ul>
@@ -165,7 +165,7 @@ const Policy = memo(() => {
                     usuário</h2>
                 <strong className="font-semibold text-gray-900">O usuário do site possui os seguintes
                     direitos, conferidos pela Lei de Proteção de Dados Pessoais:</strong>
-                <ul className="list-decimal px-5">
+                <ol className="list-decimal px-5">
                     <li>Confirmação da existência de tratamento;</li>
                     <li>Acesso aos dados;</li>
                     <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
@@ -188,7 +188,7 @@ const Policy = memo(() => {
                         consequências da negativa;
                     </li>
                     <li>Revogação do consentimento.</li>
-                </ul>
+                </ol>
                 <p className="mt-6">É importante destacar que, nos termos da LGPD, não existe um direito
                     de eliminação de dados tratados com fundamento
                     em bases legais distintas do consentimento, a menos que os dados seja
@@ -219,7 +219,7 @@ const Policy = memo(() => {
                     os padrões atualmente
                     empregados no mercado por empresas semelhantes à nossa.</p>
                 <p>Entre as medidas de segurança adotadas, destacamos as seguintes:</p>
-                <ul className="list-decimal px-5">
+                <ol className="list-decimal px-5">
                     <li>Acesso restrito às pessoas autorizadas;</li>
                     <li>Monitoramento regular dos sistemas e dos acessos;</li>
                     <li>Medidas de proteção contra ataques cibernéticos, como firewall e criptografia de
@@ -229,7 +229,7 @@ const Policy = memo(() => {
                     <li>Limitação do acesso aos dados pessoais;</li>
                     <li>Contrato de confidencialidade com funcionários e prestadores de serviços;</li>
                     <li>Avaliações de segurança regulares nos sistemas.</li>
-                </ul>
+                </ol>
                 <h2 className="mt-16 text-2xl font-medium tracking-tight text-gray-900">Reclamação a uma
                     autoridade de controle</h2>
                 <p className="mt-6">Sem prejuízo de qualquer outra via de recurso administrativo ou
@@ -260,4 +260,4 @@ const Policy = memo(() => {
     );
 });
 
-export default Policy;
+export default PolicyContent;

@@ -23,7 +23,7 @@ const Pricing = () => {
                     <p className="leading-normal text-left my-10 w-full">
                         Garantimos a sua segurança por não te obrigar a registrar qualquer informação que seja sensível.
                         Todos os dados estão armazenados em um dos maiores players de servidores do mundo,
-                        veja abaixo algumas das milhares de empresas que utilizam serviços da <strong className="font-extrabold">AWS (Amazon Web Services)</strong> no
+                        veja abaixo algumas das milhares de empresas que utilizam serviços da <strong className="font-medium">AWS (Amazon Web Services)</strong> no
                         mundo todo.
                     </p>
                     <div className="w-full flex justify-center items-center">

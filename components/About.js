@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function About() {
+export default function AboutCompany() {
     return (
         <main className="min-h-screen flex-col mt-16" id="contributors">
             <div className="flex flex-col item-start py-20 px-8 xl:px-5">

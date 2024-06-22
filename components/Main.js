@@ -13,7 +13,7 @@ const Main = ({ listAbout = [
     icon: "/assets/brasil.png",
   },
   {
-    name: "Servidores na AWS",
+    name: "Servidores na Amazon",
     info: "Segurança garantida",
     icon: "/assets/aws.png",
   },
