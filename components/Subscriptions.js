@@ -228,8 +228,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="opacity-70">
-                                <b>Em breve:</b> Defina metas financeiras para alcançar seus objetivos.
+                            <span>
+                                <b>Cofrinhos:</b> Defina metas financeiras para alcançar seus objetivos.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">

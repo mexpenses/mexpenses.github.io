@@ -16,11 +16,11 @@ export default function AboutCompany() {
                 width="100%"
                 src="/assets/publicity.mp4"
             />
-            <div className="flex flex-col items-center justify-center py-52 bg-[linear-gradient(to_bottom,rgba(255,235,222,.7),white),url('/assets/friends.png')] bg-cover bg-center px-8 xl:px-5">
+            <div className="flex flex-col items-center justify-center py-52 bg-[linear-gradient(to_bottom,rgba(255,235,222,.5),white),url('/assets/friends.png')] bg-cover bg-center px-8 xl:px-5">
                 <h1 className="font-light text-5xl text-gray-800">
                     Nossa história
                 </h1>
-                <p className="lg:w-6/12 xl:w-4/12 mt-4 text-lg text-gray-700">
+                <p className="lg:w-6/12 xl:w-4/12 mt-4 text-lg text-gray-800">
                     Quando a Mexpenses foi lançada em 2023, ela mudou a maneira como as pessoas visualizam as finanças pessoais.
                     A Mexpenses vai além de só controlar os gastos, ela vai te instruir por meio de Inteligência Artificial e
                     ajudar as pessoas olharem pro dinheiro delas com outros olhos para ter as melhores economias, liberdade financeira e domínio sob o vilão chamado cartão de crédito.
