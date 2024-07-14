@@ -258,6 +258,16 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
+                            <span className="dark:text-white">
+                                <b>Filtro por períodos:</b> Encontre suas transações, despesas e faturas no período desejado.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={"/assets/badge-check.png"}
+                                className="w-5"
+                                alt="Badge"
+                            />
                             <span>
                                 <b>Análise de faturas:</b> Veja suas faturas de forma clara e intuitiva com Inteligência Artificial.
                             </span>
