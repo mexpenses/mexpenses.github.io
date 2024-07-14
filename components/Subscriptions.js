@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import Lottie from 'react-lottie';
 import * as AnimationRecommended from '../public/assets/animation_recommended.json';
+import {Switcher} from "./Buttons/Switch";
 
 const defaultOptions = {
     loop: true,
@@ -10,9 +11,20 @@ const defaultOptions = {
     }
 };
 
+
 export const Subscriptions = () => {
+    const [isYear, setIsYear] = useState(false);
+    const period = isYear ? 'Ano' : 'Mês';
+    const plans = {
+        free: { price: 'Grátis', period },
+        basic: { price: !isYear ? '9,90' : '117,90', period },
+        premium: { price: !isYear ? '14,90' : '170,90', period }
+    };
     return (
         <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6">
+            <div className="mb-3">
+                <Switcher checked={isYear} onChange={() => setIsYear(!isYear)} textLeft="Mensal" textRight="Anual"/>
+            </div>
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
                 {/* Pricing Card */}
                 <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
@@ -25,10 +37,10 @@ export const Subscriptions = () => {
                     </p>
                     <div className="flex justify-center items-baseline my-8">
                         <span className="mr-2 text-5xl font-extrabold text-green-600">
-                            Grátis
+                            {plans.free.price}
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
-                            /Mês
+                            /&nbsp;{plans.free.period}
                         </span>
                     </div>
                     <span className="mb-5 font-extrabold text-green-600">Não fique aqui para sempre amigo(a)</span>
@@ -175,10 +187,10 @@ export const Subscriptions = () => {
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
                         <span className="mr-2 text-5xl font-extrabold text-indigo-500">
-                            R$ 9,90
+                            R$&nbsp;{plans.basic.price}
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
-                            /Mês
+                            /&nbsp;{plans.basic.period}
                         </span>
                     </div>
                     <span className="mb-5 font-extrabold text-indigo-500">É baratinho, preço de um pastélzinho</span>
@@ -311,10 +323,10 @@ export const Subscriptions = () => {
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
                         <span className="mr-2 text-5xl font-extrabold text-orange-500">
-                            R$ 14,90
+                            R$&nbsp;{plans.premium.price}
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
-                            /Mês
+                            /&nbsp;{plans.premium.period}
                         </span>
                     </div>
                     <span className="mb-5 font-extrabold text-orange-500">Preço de um lanchinho não faz falta</span>
