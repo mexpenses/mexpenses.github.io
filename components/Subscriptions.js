@@ -15,6 +15,7 @@ const defaultOptions = {
 export const Subscriptions = () => {
     const [isYear, setIsYear] = useState(false);
     const period = isYear ? 'Ano' : 'Mês';
+    const urlParamsApp = `?period=${isYear ? 'year' : 'month'}`;
     const plans = {
         free: { price: 'Grátis', period },
         basic: { price: !isYear ? '9,90' : '117,90', period },
@@ -22,7 +23,7 @@ export const Subscriptions = () => {
     };
     return (
         <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6">
-            <div className="mb-3">
+            <div className="mb-3 flex items-center justify-center">
                 <Switcher checked={isYear} onChange={() => setIsYear(!isYear)} textLeft="Mensal" textRight="Anual"/>
             </div>
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
@@ -154,7 +155,7 @@ export const Subscriptions = () => {
                     </ul>
                     <a
                         target="_blank"
-                        href="https://app.mexpenses.com.br/#/auth/register/free"
+                        href={`https://app.mexpenses.com.br/#/auth/register/free${urlParamsApp}`}
                         className="mt-auto text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
                     >
                         Teste gratuitamente
@@ -297,7 +298,7 @@ export const Subscriptions = () => {
                     </ul>
                     <a
                         target="_blank"
-                        href="https://app.mexpenses.com.br/#/auth/register/basic"
+                        href={`https://app.mexpenses.com.br/#/auth/register/basic${urlParamsApp}`}
                         className="mt-auto text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar
@@ -416,7 +417,7 @@ export const Subscriptions = () => {
                     </ul>
                     <a
                         target="_blank"
-                        href="https://app.mexpenses.com.br/#/auth/register/premium"
+                        href={`https://app.mexpenses.com.br/#/auth/register/premium${urlParamsApp}`}
                         className="mt-auto text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar
