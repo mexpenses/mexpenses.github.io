@@ -2,9 +2,19 @@ import React, {Fragment, useContext} from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../Buttons/ButtonOutline.";
 import Link from "next/link";
+import Lottie from 'react-lottie';
 import {useRouter} from "next/router";
 import {Context} from "../../context";
 import {usePathname} from "next/navigation";
+import * as AnimationLogo from '../../public/assets/animation_mexpenses-black.json';
+
+const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+    }
+};
 
 const Header = () => {
     const { showBanner, activeLinkNavbar, setActiveLinkNavbar, setShowBanner } = useContext(Context);
@@ -15,7 +25,13 @@ const Header = () => {
             <header className="fixed top-0 w-full  z-30 bg-white transition-all shadow-md pt-0">
                 <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
                     <div className="col-start-1 col-end-2 flex items-center">
-                        <img src="/assets/mexpenses-black.svg" className="hidden lg:block" width={90} alt="Mexpenses"/>
+                        <div className="hidden lg:block">
+                            <Lottie
+                                height={40}
+                                isClickToPauseDisabled
+                                options={{...defaultOptions, animationData: AnimationLogo }}
+                            />
+                        </div>
                         <img src="/assets/mexpenses-icon.png" className="h-8 w-auto block lg:hidden" alt="Mexpenses"/>
                     </div>
                     <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
