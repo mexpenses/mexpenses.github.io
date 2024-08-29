@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="12fd63dc-79b9-4552-9b7e-501b79f68885" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pricing.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +34,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "wsl://Ubuntu@/home/dev/.nvm/versions/node/v20.14.0/bin/node",
     "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.nodejs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -58,7 +62,8 @@
       <updated>1721953350179</updated>
       <workItem from="1721953351398" duration="2038000" />
       <workItem from="1721957427195" duration="334000" />
-      <workItem from="1721958075014" duration="120000" />
+      <workItem from="1721958075014" duration="161000" />
+      <workItem from="1724884775943" duration="6221000" />
     </task>
     <servers />
   </component>
