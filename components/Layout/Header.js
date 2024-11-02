@@ -146,7 +146,7 @@ const Header = () => {
                         </div>
                         <div className="flex flex-row w-full gap-x-4 gap-y-2 px-6 py-2.5 sm:px-3.5">
                             <p className="text-xs leading-6 text-white w-full flex items-center justify-center">
-                                <strong className="font-semibold">Assine Basic</strong>
+                                <strong className="font-semibold whitespace-nowrap">Assine Basic</strong>
                                 <svg
                                     viewBox="0 0 2 2"
                                     aria-hidden="true"
@@ -154,7 +154,7 @@ const Header = () => {
                                 >
                                     <circle cx={1} cy={1} r={1} />
                                 </svg>
-                                Inteligência Artificial com Open Finance
+                                <span className="truncate">Inteligência Artificial que economiza tempo</span>
                             </p>
                         </div>
                     </LinkScroll>

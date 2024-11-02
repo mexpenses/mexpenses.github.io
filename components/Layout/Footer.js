@@ -82,11 +82,6 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
             <ul className="text-black-500">
-              <a target="_blank" href="https://www.pluggy.ai/blog/open-finance-vale-a-pena">
-                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
-                  Open Finance
-                </li>
-              </a>
               <Link href="/policy">
                 <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
                   Política de privacidade

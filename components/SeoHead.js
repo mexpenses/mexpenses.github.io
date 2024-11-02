@@ -4,10 +4,10 @@ const defaultMeta = {
     title: 'Mexpenses - Troque suas planilhas com complexidades por simplicidade.',
     siteName: 'Mexpenses',
     description: 'Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial.',
-    url: 'https://www.mexpenses.net',
+    url: 'https://www.mexpenses.com.br',
     type: 'website',
     robots: 'follow, index',
-    image: 'https://www.mexpenses.net/assets/mexpenses.png',
+    image: 'https://www.mexpenses.com.br/assets/mexpenses.png',
     author: 'Mexpenses Soluções Financeiras Ltda.'
 };
 
@@ -43,13 +43,13 @@ const SeoHead = (props = {}) => {
             {/* Twitter */}
             <meta name="twitter:site" content="@mexpenses"/>
             <meta name="twitter:app:country" content="BR"/>
-            <meta name="twitter:domain" content="www.mexpenses.net"/>
+            <meta name="twitter:domain" content="www.mexpenses.com.br"/>
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:app:name:ipad" content="Mexpenses iOS"/>
             <meta name="twitter:app:name:iphone" content="Mexpenses iOS"/>
             <meta name="twitter:app:id:googleplay" content="com.Mexpenses"/>
             <meta name="twitter:app:name:googleplay" content="Mexpenses Android"/>
-            <meta name="twitter:image" content="https://www.mexpenses.net/assets/mexpenses.png"/>
+            <meta name="twitter:image" content="https://www.mexpenses.com.br/assets/mexpenses.png"/>
             <meta name="twitter:title" content={meta.title}/>
             <meta name="twitter:description" content="Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial."/>
             {/* Open Graph */}
@@ -62,13 +62,13 @@ const SeoHead = (props = {}) => {
             <meta property="og:image:width" content="1200"/>
             <meta property="og:image:height" content="600"/>
             <meta property="og:image:type" content="image/png"/>
-            <meta property="og:url" content="https://www.mexpenses.net"/>
-            <meta property="og:image" content="https://www.mexpenses.net/assets/mexpenses.png"/>
-            <meta property="og:image:secure_url" content="https://www.mexpenses.net/assets/mexpenses.png"/>
+            <meta property="og:url" content="https://www.mexpenses.com.br"/>
+            <meta property="og:image" content="https://www.mexpenses.com.br/assets/mexpenses.png"/>
+            <meta property="og:image:secure_url" content="https://www.mexpenses.com.br/assets/mexpenses.png"/>
             <meta name="google-site-verification" content="lCNhAmQk9rLMDjhjfyxWtD39ERSRRAKVhB2OwMmPcsw"/>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "Organization", "name": "Mexpenses", "url": "https://www.mexpenses.net", "address": "Garça/SP, CEP 17400-000", "sameAs": ["https://www.facebook.com/profile.php?id=100090266616695", "https://www.linkedin.com/company/mexpenses", "https://www.instagram.com/mexpenses", "https://www.youtube.com/@Mexpenses", "https://www.threads.net/@mexpenses", "https://www.tiktok.com/@mexpenses"] }' }}
+                dangerouslySetInnerHTML={{ __html: '{"@context": "https://schema.org", "@type": "Organization", "name": "Mexpenses", "url": "https://www.mexpenses.com.br", "address": "Garça/SP, CEP 17400-000", "sameAs": ["https://www.facebook.com/profile.php?id=100090266616695", "https://www.linkedin.com/company/mexpenses", "https://www.instagram.com/mexpenses", "https://www.youtube.com/@Mexpenses", "https://www.threads.net/@mexpenses", "https://www.tiktok.com/@mexpenses"] }' }}
             />
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-7473LM1VVQ"></script>
             {/*Meta Pixel Code*/}
