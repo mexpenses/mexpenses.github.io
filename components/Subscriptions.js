@@ -211,16 +211,6 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="dark:text-white">
-                                <b>Open Finance:</b> Insira 2 contas reais.
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3 text-sm">
-                            <img
-                                src={"/assets/badge-check.png"}
-                                className="w-5"
-                                alt="Badge"
-                            />
                             <span>
                                 <b>Bancos mais próximos:</b> Encontre bancos perto de você.
                             </span>
@@ -251,16 +241,6 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Open Finance:</b> Histórico de transações com filtros de Entrada e Saída.
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3 text-sm">
-                            <img
-                                src={"/assets/badge-check.png"}
-                                className="w-5"
-                                alt="Badge"
-                            />
                             <span className="dark:text-white">
                                 <b>Histórico mensal:</b> Veja o histórico de pagamentos das despesas recorrentes.
                             </span>
@@ -282,7 +262,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Análise de faturas:</b> Veja suas faturas de forma clara e intuitiva com Inteligência Artificial.
+                                <b>Análise de faturas:</b> Economize tempo com a Ingrid dizendo para você quais decisões poderá tomar sobre seus gastos.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -350,16 +330,6 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="dark:text-white">
-                                <b>Open Finance:</b> Insira 4 contas reais.
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3 text-sm">
-                            <img
-                                src={"/assets/badge-check-gold.png"}
-                                className="w-5"
-                                alt="Badge"
-                            />
                             <span className="opacity-70">
                                 <b>Em breve:</b> Você poderá visualizar seu perfil de consumo.
                             </span>
@@ -411,7 +381,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Dicas da Ingrid:</b> Converse com a Inteligência Artificial Ingrid e receba dicas semanais de acordo com seus dados.
+                                <b>Dicas da Ingrid:</b> Peça ajuda a qualquer momento e receba dicas semanais de acordo com seus dados.
                             </span>
                         </li>
                     </ul>
