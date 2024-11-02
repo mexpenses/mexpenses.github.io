@@ -11,6 +11,7 @@ const Feature = () => {
   return (
       <>
         <div
+            id="feature"
             className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -40,12 +41,10 @@ const Feature = () => {
                       className="bg-indigo-100 mb-3 text-indigo-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
                     2
                   </div>
-                  Open Finance
+                  Cofrinhos
                 </dt>
                 <dd className="mt-2 text-sm text-gray-500">
-                  Conecte contas reais para visualizar transações, por meio de nossa conciliação bancária
-                  com a <a href="https://www.pluggy.ai/" target="_blank"
-                           className="font-bold hover:opacity-80 text-indigo-950 underline">Pluggy</a>.
+                  Crie metas para suas conquistas e acompanhe os rendimentos com base no CDI, Taxa Selic ou IPCA.
                 </dd>
               </div>
               <div className="border-t border-gray-200 pt-4">
@@ -57,8 +56,7 @@ const Feature = () => {
                   Inteligência Artificial
                 </dt>
                 <dd className="mt-2 text-sm text-gray-500">
-                  Tenha dicas semanais e individuais com a Ingrid, por meio de nossa integração em tempo real com seus
-                  dados.
+                  Tenha dicas semanais com a Ingrid e economize seu tempo para tomar as decisões.
                 </dd>
               </div>
               <div className="border-t border-gray-200 pt-4">
