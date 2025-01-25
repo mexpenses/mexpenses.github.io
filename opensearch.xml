@@ -2,6 +2,6 @@
     <ShortName>Mexpenses</ShortName>
     <Description>Troque suas planilhas com complexidades por simplicidade.</Description>
     <InputEncoding>UTF-8</InputEncoding>
-    <Image width="16" height="16" type="image/x-icon">https://www.mexpenses.net/assets/favicon.ico</Image>
-    <Url type="text/html" method="get" template="https://www.mexpenses.net/"/>
+    <Image width="16" height="16" type="image/x-icon">https://www.mexpenses.com.br/assets/favicon.ico</Image>
+    <Url type="text/html" method="get" template="https://www.mexpenses.com.br/"/>
 </OpenSearchDescription>
