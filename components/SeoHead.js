@@ -30,7 +30,6 @@ const SeoHead = (props = {}) => {
             <meta content={meta.description} name='description' />
             <link rel="manifest" href="/manifest.json"/>
             <meta property='og:url' content={meta.url} />
-            <link rel='canonical' href={meta.url} />
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
             <meta httpEquiv="content-language" content="pt-br, en-US, es-AR, es-MX, es-CL"/>
             <meta name="author" content={meta.author}/>

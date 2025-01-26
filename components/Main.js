@@ -13,9 +13,9 @@ const Main = ({ listAbout = [
     icon: "/assets/brasil.png",
   },
   {
-    name: "Nuvem na Amazon 💪",
+    name: "Nuvem na Hetzner Cloud 🔒",
     info: "Segurança garantida",
-    icon: "/assets/aws.png",
+    icon: "/assets/hetzner.png",
   },
 ] }) => {
   const stats = [
@@ -62,17 +62,14 @@ const Main = ({ listAbout = [
             Dê uma olhada para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro
           </p>
           <div className="w-full pt-10 carousel-logos animate-pulse">
-            <a href="https://aws.amazon.com/pt/?nc2=h_lg" target="_blank" className="carousel-logo">
-              <img src={"/assets/amazon_partner.png"} alt="Amazon" />
-            </a>
-            <a href="https://about.google/" target="_blank" className="carousel-logo">
-              <img src={"/assets/google_partner.png"} alt="Google" />
+            <a href="https://www.hetzner.com/" target="_blank" className="carousel-logo">
+              <img src={"/assets/hetzner_partner.png"} alt="Hetzner"/>
             </a>
             <a href="https://about.meta.com/br/" target="_blank" className="carousel-logo">
               <img src={"/assets/meta_partner.png"} alt="Meta" />
             </a>
-            <a href="https://stripe.com/br" target="_blank" className="carousel-logo">
-              <img src={"/assets/stripe_partner.png"} alt="Stripe" />
+            <a href="https://about.google/" target="_blank" className="carousel-logo">
+              <img src={"/assets/google_partner.png"} alt="Google" />
             </a>
             {/* <a href="https://pluggy.ai/" target="_blank" className="carousel-logo">
               <img src={"/assets/pluggy_partner.png"} alt="Pluggy" />
@@ -83,6 +80,9 @@ const Main = ({ listAbout = [
             {/* <a href="https://openai.com/" target="_blank" className="carousel-logo">
               <img src={"/assets/open_ai_partner.png"} alt="OpenAI" />
             </a> */}
+            <a href="https://stripe.com/br" target="_blank" className="carousel-logo">
+              <img src={"/assets/stripe_partner.png"} alt="Stripe" />
+            </a>
             <a href="https://github.com/" target="_blank" className="carousel-logo">
               <img src={"/assets/github_partner.png"} alt="GitHub" />
             </a>
