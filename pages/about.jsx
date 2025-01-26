@@ -7,6 +7,7 @@ export default function AboutPage() {
         <Template>
             <Head>
                 <title>Mexpenses - Sobre nós</title>
+                <link rel="canonical" href="https://www.mexpenses.com.br" />
             </Head>
             <AboutCompany/>
         </Template>
