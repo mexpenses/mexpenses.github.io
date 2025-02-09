@@ -8,33 +8,32 @@ const Main = ({ listAbout = [
     icon: "/assets/economy.png",
   },
   {
-    name: "Só para os brasileirinhos",
+    name: "Só para os brasileiros",
     info: "Para quem?",
     icon: "/assets/brasil.png",
   },
   {
-    name: "Nuvem na Hetzner Cloud 🔒",
+    name: "Nuvem da Hetzner Cloud",
     info: "Segurança garantida",
     icon: "/assets/hetzner.png",
   },
 ] }) => {
   const stats = [
     { id: 1, name: 'Para quem se esqueceu o que comeu no café da manhã', value: 'Simples' },
-    { id: 2, name: 'Para quem deseja ficar ciente algumas vezes no mês', value: 'Básico' },
+    { id: 2, name: 'Para quem deseja ficar ciente algumas vezes no mês', value: 'Essencial' },
     { id: 3, name: 'Aqui estão os experientes, que o dinheiro não os controla, são eles que o controlam', value: 'Completo' },
   ];
   return (
     <>
       <div
         id="about"
-        className="max-w-screen-xl mt-24 lg:mt-16 px-8 xl:px-5 mx-auto"
       >
         <div
-          className="grid grid-flow-row lg:grid-flow-col grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 py-6 lg:py-16">
+          className="grid grid-flow-row lg:grid-flow-col grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 py-6 lg:py-16 max-w-screen-xl mt-24 lg:mt-16 px-8 xl:px-5 mx-auto">
           <div className="flex flex-col justify-center items-start row-start-2 lg:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
               Troque suas planilhas com <strong className="text-green-900">complexidades</strong><br />
-              <span className="text-indigo-600 font-normal leading-normal">por simplicidade</span>
+              <span className="text-blue-600 font-normal leading-normal">por simplicidade</span>
             </h1>
             <p className="text-black-500 my-6 text-lg">
               Não temos frases bonitas para impressionar,
@@ -50,18 +49,21 @@ const Main = ({ listAbout = [
             <div className="h-full w-full">
               <img
                 width={700}
+                className="rounded-3xl"
                 alt="Mexpenses Illustration"
-                src={"/assets/sad_and_happy.jpg"}
+                src={"/assets/thumbnail.jpg"}
               />
             </div>
           </div>
         </div>
         <div className="w-full flex flex-col items-center justify-center pt-20">
-          <h1 className="mb-5 text-4xl text-start text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
-          <p className="text-secondary text-xl text-start">
-            Dê uma olhada para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro
-          </p>
-          <div className="w-full pt-10 carousel-logos animate-pulse">
+          <div className="max-w-screen-xl px-8 xl:px-5 mx-auto">
+            <h1 className="mb-5 text-4xl text-center text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
+            <p className="text-secondary text-xl text-start">
+              Dê uma olhada para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro
+            </p>
+          </div>
+          <div className="w-full pt-10 carousel-logos animate-pulse px-5 xl:px-0">
             <a href="https://www.hetzner.com/" target="_blank" className="carousel-logo">
               <img src={"/assets/hetzner_partner.png"} alt="Hetzner"/>
             </a>
@@ -91,7 +93,7 @@ const Main = ({ listAbout = [
             </a>
           </div>
         </div>
-        <div className="relative w-full flex py-14">
+        <div className="relative w-full flex pb-14 max-w-screen-xl px-8 xl:px-5 mx-auto">
           <div
             className="rounded-lg w-full grid grid-flow-row lg:grid-flow-row grid-cols-1 lg:grid-cols-3 py-9 divide-y-2 lg:divide-y-0 lg:divide-x-2 divide-gray-100 bg-white z-10">
             {listAbout.map((listAbouts, index) => (
@@ -100,7 +102,7 @@ const Main = ({ listAbout = [
                 className="flex items-center justify-start sm:justify-center py-10 sm:py-6 w-full px-4 sm:w-auto mx-auto sm:mx-0"
               >
                 <div className="flex w-full">
-                  <div className="flex items-center justify-center bg-indigo-100 w-12 h-12 mr-6 rounded-full">
+                  <div className="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full">
                     <img src={listAbouts.icon} width={30} alt={listAbouts.name} />
                   </div>
                   <div className="flex flex-col">
@@ -197,16 +199,16 @@ const Main = ({ listAbout = [
             <div className="lg:max-w-lg mb-10">
               <h1 className="text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl">
                 <span className="text-black">Veja sem medo</span><br />
-                <span className="text-indigo-950">Investimentos</span><br />
-                <span className="text-indigo-800">Transações</span><br />
-                <span className="text-indigo-600">Saldos</span><br />
+                <span className="text-blue-950">Investimentos</span><br />
+                <span className="text-blue-800">Transações</span><br />
+                <span className="text-blue-600">Saldos</span><br />
               </h1>
               <div className="mt-4 text-xl text-gray-600 flex flex-col">
                 <span>Compramos sua dor de ficar saindo de banco em banco para olhar seus extratos financeiros.</span>
                 <small className="mt-5">
                   Saiba mais sobre nossa parceira&nbsp;
                   <a href="https://www.pluggy.ai/" target="_blank"
-                    className="font-bold hover:opacity-80 text-indigo-950 underline">Pluggy</a> que
+                    className="font-bold hover:opacity-80 text-blue-950 underline">Pluggy</a> que
                   disponibiliza o Open Finance de forma segura.
                 </small>
               </div>

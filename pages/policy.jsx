@@ -9,7 +9,7 @@ const PolicyContent = memo(() => {
                 <title>Mexpenses - Política de privacidade</title>
             </Head>
             <div className="relative bg-white px-5 lg:px-24 py-14">
-                <p className="text-base font-semibold leading-7 text-indigo-600">Última
+                <p className="text-base font-semibold leading-7 text-blue-600">Última
                     atualização 26/05/2023</p>
                 <h1 className="mt-2 text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">Política
                     de Privacidade</h1>
@@ -244,7 +244,7 @@ const PolicyContent = memo(() => {
                     seguintes canais:</p>
                 <p className="mt-6">
                     <Link href="mailto:mexpenses.app@gmail.com">
-                        <b className="flex items-center justify-start m-0 text-indigo-600 hover:text-indigo-500 font-medium cursor-pointer"
+                        <b className="flex items-center justify-start m-0 text-blue-600 hover:text-blue-500 font-medium cursor-pointer"
                            title="mexpenses.app@gmail.com">
                             <img
                                 alt="E-mail"

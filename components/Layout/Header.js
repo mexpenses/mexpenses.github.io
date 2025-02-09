@@ -32,7 +32,7 @@ const Header = () => {
                                 options={{...defaultOptions, animationData: AnimationLogo }}
                             />
                         </div>
-                        <img src="/assets/mexpenses-icon.png" className="h-8 w-auto block lg:hidden" alt="Mexpenses"/>
+                        <img src="/assets/mexpenses.svg" className="h-8 w-auto block lg:hidden" alt="Mexpenses"/>
                     </div>
                     <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
                         <LinkScroll
@@ -47,8 +47,8 @@ const Header = () => {
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                                 (activeLinkNavbar === "about"
-                                    ? " text-indigo-500 animation-active "
-                                    : " text-black-500 hover:text-indigo-500 a")
+                                    ? " text-blue-500 animation-active "
+                                    : " text-black-500 hover:text-blue-500 a")
                             }
                         >
                             Início
@@ -64,8 +64,8 @@ const Header = () => {
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                                 (activeLinkNavbar === "feature"
-                                    ? " text-indigo-500 animation-active "
-                                    : " text-black-500 hover:text-indigo-500 ")
+                                    ? " text-blue-500 animation-active "
+                                    : " text-black-500 hover:text-blue-500 ")
                             }
                         >
                             Possibilidades
@@ -81,8 +81,8 @@ const Header = () => {
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                                 (activeLinkNavbar === "pricing"
-                                    ? " text-indigo-500 animation-active "
-                                    : " text-black-500 hover:text-indigo-500 ")
+                                    ? " text-blue-500 animation-active "
+                                    : " text-black-500 hover:text-blue-500 ")
                             }
                         >
                             Assinaturas
@@ -93,8 +93,8 @@ const Header = () => {
                             className={
                                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                                 ((activeLinkNavbar === "contributors") || (pathname === '/about')
-                                    ? " text-indigo-500 animation-active "
-                                    : " text-black-500 hover:text-indigo-500 ")
+                                    ? " text-blue-500 animation-active "
+                                    : " text-black-500 hover:text-blue-500 ")
                             }
                         >
                             Sobre nós
@@ -103,7 +103,7 @@ const Header = () => {
                     <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
                         <a
                             href="https://app.mexpenses.com.br/#/auth/login"
-                            className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-indigo-500 transition-all"
+                            className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-500 transition-all"
                         >
                             Login
                         </a>
@@ -112,7 +112,7 @@ const Header = () => {
                         </a>
                     </div>
                 </nav>
-                <div className={`relative bg-black hover:bg-indigo-500 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
+                <div className={`relative bg-black hover:bg-blue-500 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
                     <LinkScroll
                         spy
                         smooth
@@ -237,7 +237,7 @@ const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLinkNavbar === "about"
-                                    ? "  border-indigo-500 text-indigo-500"
+                                    ? "  border-blue-500 text-blue-500"
                                     : " border-transparent")
                             }
                         >
@@ -268,7 +268,7 @@ const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLinkNavbar === "feature"
-                                    ? "  border-indigo-500 text-indigo-500"
+                                    ? "  border-blue-500 text-blue-500"
                                     : " border-transparent ")
                             }
                         >
@@ -299,7 +299,7 @@ const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 (activeLinkNavbar === "pricing"
-                                    ? "  border-indigo-500 text-indigo-500"
+                                    ? "  border-blue-500 text-blue-500"
                                     : " border-transparent ")
                             }
                         >
@@ -325,7 +325,7 @@ const Header = () => {
                             className={
                                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                                 ((activeLinkNavbar === "contributors") || (pathname === '/about')
-                                    ? "  border-indigo-500 text-indigo-500"
+                                    ? "  border-blue-500 text-blue-500"
                                     : " border-transparent ")
                             }
                         >
