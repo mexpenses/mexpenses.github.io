@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, { useContext, useState } from "react";
 import Lottie from 'react-lottie';
 import * as AnimationRecommended from '../public/assets/animation_recommended.json';
-import {Switcher} from "./Buttons/Switch";
+import { Switcher } from "./Buttons/Switch";
+import { Context } from "../context";
 
 const defaultOptions = {
     loop: true,
@@ -14,6 +15,7 @@ const defaultOptions = {
 
 export const Subscriptions = () => {
     const [isYear, setIsYear] = useState(false);
+    const { viewModeApp } = useContext(Context);
     const period = isYear ? 'Ano' : 'Mês';
     const urlParamsApp = `?period=${isYear ? 'year' : 'month'}`;
     const plans = {
@@ -24,12 +26,12 @@ export const Subscriptions = () => {
     return (
         <div className="py-8 px-4 mx-auto lg:py-16 lg:px-6">
             <div className="mb-3 flex items-center justify-center">
-                <Switcher checked={isYear} onChange={() => setIsYear(!isYear)} textLeft="Mensal" textRight="Anual"/>
+                <Switcher checked={isYear} onChange={() => setIsYear(!isYear)} textLeft="Mensal" textRight="Anual" />
             </div>
             <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 gap-3">
                 {/* Pricing Card */}
                 <div className="flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <div id="free" className="absolute" style={{ top: -150 }}/>
+                    <div id="free" className="absolute" style={{ top: -150 }} />
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Free
                     </h3>
@@ -153,28 +155,30 @@ export const Subscriptions = () => {
                             </span>
                         </li>
                     </ul>
-                    <a
-                        target="_blank"
-                        href={`https://app.mexpenses.com.br/#/auth/register/free${urlParamsApp}`}
-                        className="mt-auto text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
-                    >
-                        Teste gratuitamente
-                    </a>
+                    {!viewModeApp &&
+                        <a
+                            target="_blank"
+                            href={`https://app.mexpenses.com.br/#/auth/register/free${urlParamsApp}`}
+                            className="mt-auto text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+                        >
+                            Teste gratuitamente
+                        </a>
+                    }
                 </div>
                 {/* Pricing Card */}
                 <div className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <div id="basic" className="absolute" style={{ top: -150 }}/>
+                    <div id="basic" className="absolute" style={{ top: -150 }} />
                     <div className="absolute right-0" style={{ top: -40 }}>
                         <Lottie
                             width={100}
                             height={100}
                             isClickToPauseDisabled
-                            options={{...defaultOptions, animationData: AnimationRecommended }}
+                            options={{ ...defaultOptions, animationData: AnimationRecommended }}
                         />
                     </div>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Basic&nbsp;
-                        <span className="py-1 px-3 bg-indigo-500 text-white rounded-xl">
+                        <span className="py-1 px-3 bg-blue-500 text-white rounded-xl">
                             Recomendado
                         </span>
                     </h3>
@@ -187,21 +191,21 @@ export const Subscriptions = () => {
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
-                        <span className="mr-2 text-5xl font-extrabold text-indigo-500">
+                        <span className="mr-2 text-5xl font-extrabold text-blue-500">
                             R$&nbsp;{plans.basic.price}
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /&nbsp;{plans.basic.period}
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-indigo-500">É baratinho, preço de um pastélzinho</span>
+                    <span className="mb-5 font-extrabold text-blue-500">É baratinho, preço de um pastélzinho</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
                             <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-indigo-500 text-lg font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-blue-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
                         </div>
@@ -262,7 +266,7 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
-                                <b>Análise de faturas:</b> Economize tempo com a Ingrid dizendo para você quais decisões poderá tomar sobre seus gastos.
+                                <b>Análise de faturas:</b> Economize tempo com a Mex dizendo para você quais decisões poderá tomar sobre seus gastos.
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -276,18 +280,20 @@ export const Subscriptions = () => {
                             </span>
                         </li>
                     </ul>
-                    <a
-                        target="_blank"
-                        href={`https://app.mexpenses.com.br/#/auth/register/basic${urlParamsApp}`}
-                        className="mt-auto text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
-                    >
-                        Assinar
-                    </a>
+                    {!viewModeApp &&
+                        <a
+                            target="_blank"
+                            href={`https://app.mexpenses.com.br/#/auth/register/basic${urlParamsApp}`}
+                            className="mt-auto text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
+                        >
+                            Assinar
+                        </a>
+                    }
                 </div>
                 {/* Pricing Card */}
                 <div
                     className="relative flex flex-col p-6 text-center text-gray-900 bg-white rounded-lg border-2 border-gray-200 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <div id="premium" className="absolute" style={{ top: -150 }}/>
+                    <div id="premium" className="absolute" style={{ top: -150 }} />
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Premium&nbsp;
                         <span className="py-1 px-3 bg-orange-500 text-white rounded-xl">
@@ -317,7 +323,7 @@ export const Subscriptions = () => {
                             <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-indigo-500 text-lg font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-blue-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
                             <span className="py-1 px-3 bg-orange-500 text-lg font-bold text-white rounded-xl">
@@ -351,6 +357,16 @@ export const Subscriptions = () => {
                                 alt="Badge"
                             />
                             <span>
+                                <b>Dicas da Mex:</b> Receba dicas semanais de acordo com seus dados.
+                            </span>
+                        </li>
+                        <li className="flex items-center space-x-3 text-sm">
+                            <img
+                                src={"/assets/badge-check-gold.png"}
+                                className="w-5"
+                                alt="Badge"
+                            />
+                            <span>
                                 <b>Dados financeiros em CSV:</b> Exporte seus dados financeiros para o Excel.
                             </span>
                         </li>
@@ -374,24 +390,16 @@ export const Subscriptions = () => {
                                 <b>Mercados de ações em tempo real:</b> Acompanhe os mercados de ações dos EUA e do Brasil em tempo real.
                             </span>
                         </li>
-                        <li className="flex items-center space-x-3 text-sm">
-                            <img
-                                src={"/assets/badge-check-gold.png"}
-                                className="w-5"
-                                alt="Badge"
-                            />
-                            <span>
-                                <b>Dicas da Ingrid:</b> Peça ajuda a qualquer momento e receba dicas semanais de acordo com seus dados.
-                            </span>
-                        </li>
                     </ul>
-                    <a
-                        target="_blank"
-                        href={`https://app.mexpenses.com.br/#/auth/register/premium${urlParamsApp}`}
-                        className="mt-auto text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
-                    >
-                        Assinar
-                    </a>
+                    {!viewModeApp &&
+                        <a
+                            target="_blank"
+                            href={`https://app.mexpenses.com.br/#/auth/register/premium${urlParamsApp}`}
+                            className="mt-auto text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
+                        >
+                            Assinar
+                        </a>
+                    }
                 </div>
             </div>
         </div>

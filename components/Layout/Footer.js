@@ -69,7 +69,7 @@ const Footer = () => {
               <p className="text-gray-400 text-sm mt-4 font-medium">Inscrita no CNPJ sob o nº 55.552.018/0001-98</p>
               <p className="text-sm">
                 <span className="text-gray-800 font-semibold">Endereço comercial</span>&nbsp;
-                <Link target="_blank" className="cursor-pointer text-gray-600 hover:text-indigo-500"
+                <Link target="_blank" className="cursor-pointer text-gray-600 hover:text-blue-500"
                       href="https://maps.app.goo.gl/CtuL2636NDZwDY2x7">
                   R. Cel. José Eusébio, 95 - Higienópolis, São Paulo
                 </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Mexpenses</p>
             <ul className="text-black-500">
               <Link href="/policy">
-                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
                   Política de privacidade
                 </li>
               </Link>
@@ -93,12 +93,12 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Pagamentos</p>
             <ul className="text-black-500">
               <a target="_blank" href="https://stripe.com/br/customers">
-                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
                   Relatos de clientes
                 </li>
               </a>
               <a target="_blank" href="https://stripe.com/br/privacy">
-                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
                   Privacidade e Termos
                 </li>
               </a>
@@ -108,12 +108,12 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Produtos</p>
             <ul className="text-black-500 ">
               <a target="_blank" href="https://app.mexpenses.com.br/#/auth/register/basic">
-                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
                   Conta digital
                 </li>
               </a>
-              <li className="my-2 hover:text-indigo-500 cursor-pointer transition-al">
-                <b className="text-indigo-600">Em breve</b> Blog
+              <li className="my-2 hover:text-blue-500 cursor-pointer transition-al">
+                <b className="text-blue-600">Em breve</b> Blog
               </li>
             </ul>
           </div>
@@ -121,12 +121,12 @@ const Footer = () => {
             <p className="text-black-600 mb-4 font-medium text-lg">Contato</p>
             <ul className="text-black-500">
               {/*<a target="_blank" href="https://wa.link/71kl40">*/}
-              {/*  <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">*/}
+              {/*  <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">*/}
               {/*    Atendimento WhatsApp" "*/}
               {/*  </li>*/}
               {/*</a>*/}
               <a target="_blank" href="mailto:mexpenses.app@gmail.com">
-                <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
+                <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
                   Entrar em contato por <span className="inline-block">e-mail</span>
                 </li>
               </a>

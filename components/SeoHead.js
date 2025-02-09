@@ -7,7 +7,7 @@ const defaultMeta = {
     url: 'https://www.mexpenses.com.br',
     type: 'website',
     robots: 'follow, index',
-    image: 'https://www.mexpenses.com.br/assets/mexpenses.png',
+    image: 'https://www.mexpenses.com.br/assets/thumbnail_link.png',
     author: 'Mexpenses Soluções Financeiras Ltda.'
 };
 
@@ -38,7 +38,7 @@ const SeoHead = (props = {}) => {
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"/>
             <meta name="description" content="Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial."/>
-            <meta name="keywords" content="gestão financeira com chatgpt,chatgpt,mexpenses com chat chatgpt,chatgpt no mexpenses,login chatgpt,gestão financeira gratuita,controle financeiro gratuito,finanças grátis,site de finanças grátis,finanças brasileiras,gestão financeira dos brasileiros,mexpenses,mexpenses controle financeiro,mexpenses website,site mexpenses,aplicação mexpenses,controle financeiro,controlar dinheiro,fatec garça,fatec,tcc controle financeiro,tcc fatec garça,tcc mexpenses,ingrid mexpenses,hector mexpenses,maycon mexpenses,yara mexpenses"/>
+            <meta name="keywords" content="gestão financeira com chatgpt,chatgpt,mexpenses com chat chatgpt,chatgpt no mexpenses,login chatgpt,gestão financeira gratuita,controle financeiro gratuito,finanças grátis,site de finanças grátis,finanças brasileiras,gestão financeira dos brasileiros,mexpenses,mexpenses controle financeiro,mexpenses website,site mexpenses,aplicação mexpenses,controle financeiro,controlar dinheiro,fatec garça,fatec,tcc controle financeiro,tcc fatec garça,tcc mexpenses,hector mexpenses,maycon mexpenses,yara mexpenses"/>
             {/* Twitter */}
             <meta name="twitter:site" content="@mexpenses"/>
             <meta name="twitter:app:country" content="BR"/>
@@ -48,7 +48,7 @@ const SeoHead = (props = {}) => {
             <meta name="twitter:app:name:iphone" content="Mexpenses iOS"/>
             <meta name="twitter:app:id:googleplay" content="com.Mexpenses"/>
             <meta name="twitter:app:name:googleplay" content="Mexpenses Android"/>
-            <meta name="twitter:image" content="https://www.mexpenses.com.br/assets/mexpenses.png"/>
+            <meta name="twitter:image" content="https://www.mexpenses.com.br/assets/thumbnail_link.png"/>
             <meta name="twitter:title" content={meta.title}/>
             <meta name="twitter:description" content="Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial."/>
             {/* Open Graph */}
@@ -62,8 +62,8 @@ const SeoHead = (props = {}) => {
             <meta property="og:image:height" content="600"/>
             <meta property="og:image:type" content="image/png"/>
             <meta property="og:url" content="https://www.mexpenses.com.br"/>
-            <meta property="og:image" content="https://www.mexpenses.com.br/assets/mexpenses.png"/>
-            <meta property="og:image:secure_url" content="https://www.mexpenses.com.br/assets/mexpenses.png"/>
+            <meta property="og:image" content="https://www.mexpenses.com.br/assets/thumbnail_link.png"/>
+            <meta property="og:image:secure_url" content="https://www.mexpenses.com.br/assets/thumbnail_link.png"/>
             <meta name="google-site-verification" content="lCNhAmQk9rLMDjhjfyxWtD39ERSRRAKVhB2OwMmPcsw"/>
             <script
                 type="application/ld+json"
