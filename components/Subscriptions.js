@@ -174,7 +174,7 @@ export const Subscriptions = () => {
                     </div>
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Basic&nbsp;
-                        <span className="py-1 px-3 bg-indigo-500 text-white rounded-xl">
+                        <span className="py-1 px-3 bg-blue-500 text-white rounded-xl">
                             Recomendado
                         </span>
                     </h3>
@@ -187,21 +187,21 @@ export const Subscriptions = () => {
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
-                        <span className="mr-2 text-5xl font-extrabold text-indigo-500">
+                        <span className="mr-2 text-5xl font-extrabold text-blue-500">
                             R$&nbsp;{plans.basic.price}
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /&nbsp;{plans.basic.period}
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-indigo-500">É baratinho, preço de um pastélzinho</span>
+                    <span className="mb-5 font-extrabold text-blue-500">É baratinho, preço de um pastélzinho</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
                             <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-indigo-500 text-lg font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-blue-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
                         </div>
@@ -279,7 +279,7 @@ export const Subscriptions = () => {
                     <a
                         target="_blank"
                         href={`https://app.mexpenses.com.br/#/auth/register/basic${urlParamsApp}`}
-                        className="mt-auto text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
+                        className="mt-auto text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                     >
                         Assinar
                     </a>
@@ -317,7 +317,7 @@ export const Subscriptions = () => {
                             <span className="py-1 px-3 bg-green-600 text-lg font-bold text-white rounded-xl">
                                 Grátis
                             </span>
-                            <span className="py-1 px-3 bg-indigo-500 text-lg font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-blue-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
                             <span className="py-1 px-3 bg-orange-500 text-lg font-bold text-white rounded-xl">

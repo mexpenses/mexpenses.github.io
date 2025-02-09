@@ -15,7 +15,7 @@ const Feature = () => {
             className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              <span className="text-indigo-500">Novas tendências</span> de mãos dadas
+              <span className="text-blue-500">Novas tendências</span> de mãos dadas
             </h2>
             <p className="mt-4 text-gray-500">
               Estamos revolucionando o modo de como você cuida dos seus gastos com as novas tendências do mercado
@@ -25,7 +25,7 @@ const Feature = () => {
               <div className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   <div
-                      className="bg-indigo-100 mb-3 text-indigo-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
+                      className="bg-blue-100 mb-3 text-blue-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
                     1
                   </div>
                   &nbsp;Sem anúncios
@@ -38,7 +38,7 @@ const Feature = () => {
               <div className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   <div
-                      className="bg-indigo-100 mb-3 text-indigo-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
+                      className="bg-blue-100 mb-3 text-blue-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
                     2
                   </div>
                   Cofrinhos
@@ -50,7 +50,7 @@ const Feature = () => {
               <div className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   <div
-                      className="bg-indigo-100 mb-3 text-indigo-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
+                      className="bg-blue-100 mb-3 text-blue-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
                     3
                   </div>
                   Inteligência Artificial
@@ -62,7 +62,7 @@ const Feature = () => {
               <div className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   <div
-                      className="bg-indigo-100 mb-3 text-indigo-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
+                      className="bg-blue-100 mb-3 text-blue-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
                     4
                   </div>
                   Criptomoedas
@@ -96,7 +96,7 @@ const Feature = () => {
             />
           </div>
         </div>
-        {/*<div className="relative isolate bg-gradient-to-l from-indigo-900 overflow-hidden bg-gray-900 py-24 sm:py-32">*/}
+        {/*<div className="relative isolate bg-gradient-to-l from-blue-900 overflow-hidden bg-gray-900 py-24 sm:py-32">*/}
         {/*  <div*/}
         {/*      className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"*/}
         {/*      aria-hidden="true"*/}
