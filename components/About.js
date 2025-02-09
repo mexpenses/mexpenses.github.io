@@ -6,7 +6,7 @@ export default function AboutCompany() {
             <div className="flex flex-col item-start py-20 px-8 xl:px-5">
                 <span className="uppercase text-center tracking-widest">Nossa missão</span>
                 <h1 className="font-light text-center text-4xl lg:w-5/12 mx-auto leading-normal">
-                    Possibilitar qualquer pessoa ter facilidade financeira <span className="text-indigo-500 font-bold">sem planilhas</span>
+                    Possibilitar qualquer pessoa ter facilidade financeira <span className="text-blue-500 font-bold">sem planilhas</span>
                 </h1>
             </div>
             <video
@@ -26,7 +26,7 @@ export default function AboutCompany() {
                     ajudar as pessoas olharem pro dinheiro delas com outros olhos para ter as melhores economias, liberdade financeira e domínio sob o vilão chamado cartão de crédito.
                 </p>
             </div>
-            <hr className="border-indigo-200 my-10"/>
+            <hr className="border-blue-200 my-10"/>
             <div className="flex flex-col item-start pt-32 px-8 xl:px-5">
                 <h1 className="font-light text-center text-5xl lg:w-7/12 mx-auto">
                     Trabalhar na Mexpenses
@@ -37,7 +37,7 @@ export default function AboutCompany() {
                 </p>
                 <div className="lg:w-7/12 mx-auto mt-5">
                     <span className="text-gray-800 font-semibold">Endereço comercial</span>&nbsp;
-                    <Link target="_blank" className="cursor-pointer text-gray-700 hover:text-indigo-500" href="https://maps.app.goo.gl/CtuL2636NDZwDY2x7">
+                    <Link target="_blank" className="cursor-pointer text-gray-700 hover:text-blue-500" href="https://maps.app.goo.gl/CtuL2636NDZwDY2x7">
                        R. Cel. José Eusébio, 95 - Higienópolis, São Paulo
                     </Link>
                 </div>

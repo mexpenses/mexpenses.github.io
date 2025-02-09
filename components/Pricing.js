@@ -13,13 +13,13 @@ const Pricing = () => {
         const rect = video.getBoundingClientRect();
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
         if (rect.top <= windowHeight / 1.5) {
-          if (video.paused) {
-            video.play();
-          }
+            if (video.paused) {
+                video.play();
+            }
         } else {
-          if (!video.paused) {
-            video.pause();
-          }
+            if (!video.paused) {
+                video.pause();
+            }
         }
     };
 
@@ -43,7 +43,7 @@ const Pricing = () => {
                         Comece com uma conta e viva uma nova experiência <b>Mex</b>
                     </p>
                 </div>
-                <Subscriptions/>
+                <Subscriptions />
             </div>
             <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center" id="hetzner">
                 <div className="flex flex-col w-full my-10">
@@ -67,7 +67,7 @@ const Pricing = () => {
                             <img
                                 alt="Mexpenses"
                                 className="h-10"
-                                src="/assets/logo.png"
+                                src="/assets/mexpenses-black.svg"
                             />
                             <img
                                 className="h-12"
@@ -91,26 +91,14 @@ const Pricing = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2 mt-5">
-                        <div className="w-full flex justify-start font-medium">
-                            <span>Sobre a Hetzner:</span>&nbsp;
-                            <a 
-                                target="_blank"
-                                href={URL_ABOUT_HETZNER_CLOUD}
-                                className="text-red-600 hover:text-red-700"
-                            >
-                                {URL_ABOUT_HETZNER_CLOUD}
-                            </a>
+                    <div className="w-full text-start flex flex-col gap-2 mt-5">
+                        <div className="flex flex-row flex-wrap font-medium">
+                            <span>Sobre a Hetzner:&nbsp;</span>
+                            <a target="_blank" href="https://www.hetzner.com" className="text-red-600 hover:text-red-700 truncate">https://www.hetzner.com</a>
                         </div>
-                        <div className="w-full flex justify-start font-medium">
-                            <span>Vídeo retirado do YouTube Shorts:</span>&nbsp;
-                            <a 
-                                target="_blank"
-                                href={URL_SHORTS_TkkBits_YOUTUBE}
-                                className="text-red-600 hover:text-red-700"
-                            >
-                                {URL_SHORTS_TkkBits_YOUTUBE}
-                            </a>
+                        <div className="flex flex-row flex-wrap font-medium">
+                            <span>Vídeo retirado do YouTube Shorts:&nbsp;</span>
+                            <a target="_blank" href="https://www.youtube.com/@HetznerOnline/shorts" className="text-red-600 hover:text-red-700 truncate">https://www.youtube.com/@HetznerOnline/shorts</a>
                         </div>
                     </div>
                     <div className="my-5 w-full flex flex-row flex-wrap overflow-hidden justify-start gap-5 relative">
@@ -119,7 +107,7 @@ const Pricing = () => {
                             onClick={toggleVolume}
                             className="w-10 h-10 bg-white flex items-center justify-center absolute m-5 z-20 rounded-full hover:bg-neutral-200 drop-shadow-lg"
                         >
-                            <img src={`/assets/volume_${volume}.png`} width={30} alt="Volume"/>
+                            <img src={`/assets/volume_${volume}.png`} width={30} alt="Volume" />
                         </button>
                         <video
                             loop
@@ -134,9 +122,9 @@ const Pricing = () => {
                             <source src="/assets/datacenter_hetzner.mp4" type="video/mp4" />
                         </video>
                         <a href={URL_ABOUT_HETZNER_CLOUD} target="_blank">
-                            <img 
+                            <img
                                 alt="Hetzner (Data center)"
-                                src="/assets/hetzner_locations.png" 
+                                src="/assets/hetzner_locations.png"
                                 className="w-full rounded-xl object-cover"
                             />
                         </a>
