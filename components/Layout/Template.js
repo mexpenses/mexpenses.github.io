@@ -2,12 +2,12 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const Template = ({ activeLinkNavbar, children }) => {
+const Template = ({ viewModeApp = false, activeLinkNavbar, children }) => {
   return (
     <>
-      <Header/>
+      {!viewModeApp && <Header/>}
       {children}
-      <Footer />
+      {!viewModeApp && <Footer/>}
     </>
   );
 };
