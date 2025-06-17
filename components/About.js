@@ -21,9 +21,9 @@ export default function AboutCompany() {
                     Nossa história
                 </h1>
                 <p className="lg:w-6/12 xl:w-4/12 mt-4 text-lg text-gray-800">
-                    Quando a Mexpenses foi lançada em 2023, ela mudou a maneira como as pessoas visualizam as finanças pessoais.
-                    A Mexpenses vai além de só controlar os gastos, ela vai te instruir por meio de Inteligência Artificial e
-                    ajudar as pessoas olharem pro dinheiro delas com outros olhos para ter as melhores economias, liberdade financeira e domínio sob o vilão chamado cartão de crédito.
+                    A Mexpenses surgiu em 2023 pra acabar com aquele drama de "pra onde foi meu dinheiro?".
+                    Aqui você não vem só pra controlar gasto — vem pra domar o cartão de crédito, fazer o boleto te respeitar e ainda receber dicas da IA que não fica te julgando.
+                    Liberdade financeira, sem terrorismo, sem corte no iFood e sem culpa.
                 </p>
             </div>
             <hr className="border-blue-200 my-10"/>

@@ -41,10 +41,10 @@ const Pricing = ({ viewModeApp = false }) => {
             <div className="flex flex-col w-full" id="pricing">
                 <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
                     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
-                        Antes de começar veja nossas assinaturas
+                        Calma, jovem! Antes de começar, dá uma olhadinha nos planos.
                     </h3>
                     <p className="leading-normal text-left my-2 w-10/12 sm:w-7/12 lg:w-6/12">
-                        Comece com uma conta e viva uma nova experiência <b>Mex</b>
+                        Escolhe um, ativa e bora pro modo vida financeira sem perrengue.
                     </p>
                 </div>
                 <Subscriptions />
@@ -53,14 +53,11 @@ const Pricing = ({ viewModeApp = false }) => {
                 <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center" id="hetzner">
                     <div className="flex flex-col w-full my-10">
                         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
-                            Seus dados estão seguros
+                            Aqui, seus dados não vira mercadoria.
                         </h3>
                         <p className="leading-normal text-left my-10 w-full">
-                            Garantimos a sua segurança por não te obrigar a registrar qualquer informação que seja sensível.
-                            Todos os dados estão armazenados em um dos maiores players de servidores do mundo,
-                            veja abaixo algumas das milhares de empresas que utilizam serviços
-                            da <strong onClick={() => window.open(URL_ABOUT_HETZNER_CLOUD)} className="cursor-pointer font-medium text-red-600 hover:text-red-700">Hetzner Cloud</strong> no
-                            mundo todo.
+                            Na Mex, você não precisa sair espalhando seus dados sensíveis por aí. Tudo que você escolhe salvar fica protegido em servidores
+                            da <strong onClick={() => window.open(URL_ABOUT_HETZNER_CLOUD)} className="cursor-pointer font-medium text-red-600 hover:text-red-700">Hetzner Cloud</strong>, uma gigante global da infraestrutura.
                         </p>
                         <div className="w-full flex justify-center items-center">
                             <div className="flex justify-start items-center gap-10 lg:gap-20 flex-wrap">
@@ -96,7 +93,7 @@ const Pricing = ({ viewModeApp = false }) => {
                                 />
                             </div>
                         </div>
-                        <div className="w-full text-start flex flex-col gap-2 mt-5">
+                        {/* <div className="w-full text-start flex flex-col gap-2 mt-5">
                             <div className="flex flex-row flex-wrap font-medium">
                                 <span>Sobre a Hetzner:&nbsp;</span>
                                 <a target="_blank" href="https://www.hetzner.com" className="text-red-600 hover:text-red-700 truncate">https://www.hetzner.com</a>
@@ -105,7 +102,7 @@ const Pricing = ({ viewModeApp = false }) => {
                                 <span>Vídeo retirado do YouTube Shorts:&nbsp;</span>
                                 <a target="_blank" href="https://www.youtube.com/@HetznerOnline/shorts" className="text-red-600 hover:text-red-700 truncate">https://www.youtube.com/@HetznerOnline/shorts</a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="my-5 w-full flex flex-row flex-wrap overflow-hidden justify-start gap-5 relative">
                             <button
                                 type="button"

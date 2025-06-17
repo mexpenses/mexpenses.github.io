@@ -3,7 +3,7 @@ import ButtonPrimary from "./Buttons/ButtonPrimary";
 
 const Main = ({ listAbout = [
   {
-    name: "Tempo e dinheiro",
+    name: "Tempo, estresse e dinheiro",
     info: "Aqui você economiza",
     icon: "/assets/economy.png",
   },
@@ -21,7 +21,7 @@ const Main = ({ listAbout = [
   const stats = [
     { id: 1, name: 'Para quem se esqueceu o que comeu no café da manhã', value: 'Simples' },
     { id: 2, name: 'Para quem deseja ficar ciente algumas vezes no mês', value: 'Essencial' },
-    { id: 3, name: 'Aqui estão os experientes, que o dinheiro não os controla, são eles que o controlam', value: 'Completo' },
+    { id: 3, name: 'Não somos coach de finanças. Somos só a Mex', value: 'Completo' },
   ];
   return (
     <>
@@ -29,29 +29,30 @@ const Main = ({ listAbout = [
         id="about"
       >
         <div
-          className="grid grid-flow-row lg:grid-flow-col grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 py-6 lg:py-16 max-w-screen-xl mt-24 lg:mt-16 px-8 xl:px-5 mx-auto">
-          <div className="flex flex-col justify-center items-start row-start-2 lg:row-start-1">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
-              Troque suas planilhas com <strong className="text-green-900">complexidades</strong><br />
-              <span className="text-blue-600 font-normal leading-normal">por simplicidade</span>
+          className="grid grid-flow-row lg:grid-flow-col grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 py-6 lg:py-16 max-w-screen-xl mt-10 lg:mt-0 xl:px-5 mx-auto">
+          <div className="flex flex-col justify-center items-start row-start-2 lg:row-start-1 px-8">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 lg:mt-24">
+              Seu dinheiro, suas regras. Só que 
+              sem <strong className="text-blue-600">bagunça.</strong>
             </h1>
             <p className="text-black-500 my-6 text-lg">
               Não temos frases bonitas para impressionar,
               mas o que a gente entende é de simplificar.
-              Primeira assinatura com <strong className="text-green-700 uppercase text-sm">primeiro mês
+              Primeira assinatura com <strong className="text-blue-600 uppercase text-sm">primeiro mês
                 grátis</strong>
             </p>
             <a href="https://app.mexpenses.com.br/#/auth/register/basic">
-              <ButtonPrimary>Experimente agora</ButtonPrimary>
+              <ButtonPrimary>Eu quero ver agora</ButtonPrimary>
             </a>
           </div>
-          <div className="flex w-full">
+          <div className="flex w-full relative">
+            <div className="absolute w-full h-full bg-gradient-to-b lg:bg-gradient-to-l from-transparent via-transparent to-white"/>
             <div className="h-full w-full">
               <img
-                width={700}
-                className="rounded-3xl"
+                width="100%"
+                className="lg:rounded-3xl"
                 alt="Mexpenses Illustration"
-                src={"/assets/thumbnail.jpg"}
+                src={"/assets/thumbnail.png"}
               />
             </div>
           </div>
@@ -60,7 +61,7 @@ const Main = ({ listAbout = [
           <div className="max-w-screen-xl px-8 xl:px-5 mx-auto">
             <h1 className="mb-5 text-4xl text-center text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
             <p className="text-secondary text-xl text-start">
-              Dê uma olhada para ver por que a Mexpenses é um app de finanças pessoais simples, completo e seguro com nossas integrações
+              Aqui ninguém julga se o dinheiro foi pro iFood, pro encontro ou pro boleto.
             </p>
           </div>
           <div className="w-full pt-10 carousel-logos animate-pulse px-5 xl:px-0">
