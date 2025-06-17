@@ -112,9 +112,6 @@ const Footer = () => {
                   Conta digital
                 </li>
               </a>
-              <li className="my-2 hover:text-blue-500 cursor-pointer transition-al">
-                <b className="text-blue-600">Em breve</b> Blog
-              </li>
             </ul>
           </div>
           <div className="flex flex-col">

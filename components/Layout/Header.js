@@ -105,14 +105,14 @@ const Header = () => {
                             href="https://app.mexpenses.com.br/#/auth/login"
                             className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-500 transition-all"
                         >
-                            Login
+                            Fazer login
                         </a>
                         <a href="https://app.mexpenses.com.br/#/auth/register/basic">
                             <ButtonOutline>Criar conta</ButtonOutline>
                         </a>
                     </div>
                 </nav>
-                <div className={`relative bg-black hover:bg-blue-500 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
+                {/* <div className={`relative bg-black hover:bg-blue-500 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>
                     <LinkScroll
                         spy
                         smooth
@@ -146,7 +146,7 @@ const Header = () => {
                         </div>
                         <div className="flex flex-row w-full gap-x-4 gap-y-2 px-6 py-2.5 sm:px-3.5">
                             <p className="text-xs leading-6 text-white w-full flex items-center justify-center">
-                                <strong className="font-semibold whitespace-nowrap">Assine aqui</strong>
+                                <strong className="font-semibold whitespace-nowrap">Eu quero Mex</strong>
                                 <svg
                                     viewBox="0 0 2 2"
                                     aria-hidden="true"
@@ -154,7 +154,7 @@ const Header = () => {
                                 >
                                     <circle cx={1} cy={1} r={1} />
                                 </svg>
-                                <span className="truncate">Funções pequenas com grandes visões</span>
+                                <span className="truncate">O dinheiro é seu. Só falta ele entender isso.</span>
                             </p>
                         </div>
                     </LinkScroll>
@@ -168,7 +168,7 @@ const Header = () => {
                             </svg>
                         </button>
                     </div>
-                </div>
+                </div> */}
                 {/*<div className={`relative bg-green-700 hover:bg-green-800 ${!showBanner ? 'hidden' : 'flex'} items-center overflow-hidden sm:before:flex-1 cursor-pointer select-none`}>*/}
                 {/*    <div className="relative w-full" onClick={() => window.open("https://www.vakinha.com.br/4712837")}>*/}
                 {/*        <div*/}
