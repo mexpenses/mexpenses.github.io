@@ -10,7 +10,7 @@ export const Context = createContext({
 
 export const ContextProvider = ({ children }) => {
     const [showBanner, setShowBanner] = useState(true);
-    const [viewModeApp, setViewModeApp] = useState(true);
+    const [viewModeApp, setViewModeApp] = useState(false);
     const [activeLinkNavbar, setActiveLinkNavbar] = useState(null);
 
     useLayoutEffect(() => {

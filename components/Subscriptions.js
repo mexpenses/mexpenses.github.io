@@ -36,7 +36,7 @@ export const Subscriptions = () => {
                         Free
                     </h3>
                     <p className="text-gray-700 sm:text-lg dark:text-gray-400">
-                        Crie uma conta para conhecer a plataforma
+                        Você usa as ferramentas básicas sem ajustes
                     </p>
                     <div className="flex justify-center items-baseline my-8">
                         <span className="mr-2 text-5xl font-extrabold text-green-600">
@@ -179,11 +179,11 @@ export const Subscriptions = () => {
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Basic&nbsp;
                         <span className="py-1 px-3 bg-blue-500 text-white rounded-xl">
-                            Recomendado
+                            Flexível
                         </span>
                     </h3>
                     <p className="text-gray-700 sm:text-lg dark:text-gray-400">
-                        Evolua financeiramente com sua IA
+                        Peça pequenos ajustes, nós faremos!
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
@@ -296,12 +296,12 @@ export const Subscriptions = () => {
                     <div id="premium" className="absolute" style={{ top: -150 }} />
                     <h3 className="mb-4 text-2xl font-semibold flex items-center flex-row flex-wrap justify-center">
                         Premium&nbsp;
-                        <span className="py-1 px-3 bg-orange-500 text-white rounded-xl">
-                            Super poderes
+                        <span className="py-1 px-3 bg-black text-white rounded-xl">
+                            Poderoso
                         </span>
                     </h3>
                     <p className="text-gray-700 sm:text-lg dark:text-gray-400">
-                        Você no controle sem limites
+                        Necessidade de novas opções? Você é prioridade aqui!
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
@@ -309,14 +309,14 @@ export const Subscriptions = () => {
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
-                        <span className="mr-2 text-5xl font-extrabold text-orange-500">
+                        <span className="mr-2 text-5xl font-extrabold text-black">
                             R$&nbsp;{plans.premium.price}
                         </span>
                         <span className="text-gray-500 dark:text-gray-400 font-medium">
                             /&nbsp;{plans.premium.period}
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-orange-500">Preço de um lanchinho não faz falta</span>
+                    <span className="mb-5 font-extrabold text-black">Preço de um lanchinho não faz falta</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -326,7 +326,7 @@ export const Subscriptions = () => {
                             <span className="py-1 px-3 bg-blue-500 text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Basic
                             </span>
-                            <span className="py-1 px-3 bg-orange-500 text-lg font-bold text-white rounded-xl">
+                            <span className="py-1 px-3 bg-black text-lg font-bold text-white rounded-xl">
                                 +&nbsp;Premium
                             </span>
                         </div>
@@ -395,7 +395,7 @@ export const Subscriptions = () => {
                         <a
                             target="_blank"
                             href={`https://app.mexpenses.com.br/#/auth/register/premium${urlParamsApp}`}
-                            className="mt-auto text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
+                            className="mt-auto text-white bg-black hover:bg-neutral-900 focus:ring-4 focus:ring-primary-200 rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900 font-bold"
                         >
                             Assinar
                         </a>
