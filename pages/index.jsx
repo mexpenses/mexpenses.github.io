@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <Template viewModeApp={viewModeApp}>
             <Head>
-                <title>Mexpenses - Troque suas planilhas com complexidades por simplicidade.</title>
+                <title>Mexpenses - Menos planilha. Mais vida!</title>
             </Head>
             {!viewModeApp &&
                 <>

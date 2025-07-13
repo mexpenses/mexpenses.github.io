@@ -63,17 +63,14 @@ const Main = ({ viewModeApp = false, listAbout = [
         <div className="flex max-w-screen-xl flex-col lg:flex-row gap-8 pt-14 lg:py-16 mt-10 lg:mt-0 mx-auto">
           <div className="flex flex-col justify-center px-8">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600">
-              Seu dinheiro, suas regras. Só que <strong className="text-blue-600">sem bagunça.</strong>
+              Menos planilha. <strong className="text-blue-600">Mais vida!</strong>
             </h1>
             <p className="text-black-500 my-6 text-lg">
-              Não temos frases bonitas para impressionar,
-              mas o que a gente entende é de simplificar.
-              Assine com <strong className="text-blue-600 uppercase text-sm">primeiro mês
-              grátis</strong> e peça o que faltar no nosso App!
+              A gente não impressiona com frases. A gente impressiona simplificando o dinheiro.
             </p>
             <div>
               <a href="https://app.mexpenses.com.br/#/auth/register/basic">
-                <ButtonPrimary>Eu quero ver agora</ButtonPrimary>
+                <ButtonPrimary>Começar simplificar agora</ButtonPrimary>
               </a>
             </div>
           </div>
@@ -102,7 +99,13 @@ const Main = ({ viewModeApp = false, listAbout = [
         </div>
         <div className="w-full flex flex-col items-center justify-center pt-5">
           <div className="max-w-screen-xl px-8 xl:px-5 mx-auto">
-            <h1 className="mb-5 text-4xl text-center text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
+            <h1 className="text-4xl text-center text-gray-900 font-medium">Por que usar a Mexpenses?</h1>
+            <div className="flex items-center justify-center my-4">
+              <div 
+                id="ra-verified-seal"
+                dangerouslySetInnerHTML={{ __html: '<script type="text/javascript" id="ra-embed-verified-seal" src="https://s3.amazonaws.com/raichu-beta/ra-verified/bundle.js" data-id="WS1FRGwxcU8ydjRVcjU5WjptZXhwZW5zZXM=" data-target="ra-verified-seal" data-model="2"></script>' }}
+              />
+            </div>
             <p className="text-secondary text-xl text-start">
               Aqui ninguém julga se o dinheiro foi pro iFood, pro encontro ou pro boleto.
             </p>
@@ -201,14 +204,7 @@ const Main = ({ viewModeApp = false, listAbout = [
                 href="https://app.mexpenses.com.br/#/auth/register/basic"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Assinar <span className="font-bold uppercase">agora</span>
-              </a>
-              <a
-                target="_blank"
-                className="text-sm font-semibold leading-6 text-white"
-                href="https://app.mexpenses.com.br/#/auth/register/free"
-              >
-                Teste gratuitamente&nbsp;<span aria-hidden="true">→</span>
+                Começar <span className="font-bold uppercase">agora</span>
               </a>
             </div>
           </div>

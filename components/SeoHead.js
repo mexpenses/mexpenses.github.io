@@ -1,7 +1,7 @@
 import {Head} from "next/document";
 
 const defaultMeta = {
-    title: 'Mexpenses - Troque suas planilhas com complexidades por simplicidade.',
+    title: 'Mexpenses - Menos planilha. Mais vida!',
     siteName: 'Mexpenses',
     description: 'Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial.',
     url: 'https://www.mexpenses.com.br',
