@@ -60,8 +60,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Cadastro de categorias:</b> Organize suas despesas de forma simples.
+                            <span className="font-semibold dark:text-white">
+                                Entradas e saídas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -70,8 +70,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Calculadora de Impostos:</b> Calcule seus impostos de forma rápida e fácil.
+                            <span className="font-semibold dark:text-white">
+                                Suporte WhatsApp
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -80,8 +80,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Visualização de taxas de juros:</b> Acompanhe as taxas de juros do mercado.
+                            <span className="font-semibold dark:text-white">
+                                Registro de contas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -90,8 +90,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Gerenciamento de bancos:</b>  Controle suas contas bancárias em um só lugar.
+                            <span className="font-semibold dark:text-white">
+                                Categorias de despesas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -100,8 +100,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Análise de dados:</b> Visualize seus dados financeiros de forma clara e intuitiva.
+                            <span className="font-semibold dark:text-white">
+                                Calculadora de Impostos
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -110,8 +110,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Gerenciamento de cartões de crédito:</b> Controle suas faturas de cartão de crédito.
+                            <span className="font-semibold dark:text-white">
+                                Visualização de taxas de juros
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -120,8 +120,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Visualização de criptomoedas:</b> Acompanhe as principais criptomoedas do mercado.
+                            <span className="font-semibold dark:text-white">
+                                Visualização de criptomoedas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -130,8 +130,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Gerenciamento de entradas e saídas:</b> Acompanhe seu dinheiro de forma detalhada.
+                            <span className="font-semibold dark:text-white">
+                                Faturas dos cartões de crédito
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -140,18 +140,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Suporte WhatsApp:</b> Entre em contato com o suporte pelo WhatsApp durante o horário de expediente.
-                            </span>
-                        </li>
-                        <li className="flex items-center space-x-3 text-sm">
-                            <img
-                                src={"/assets/checklist.svg"}
-                                className="w-5"
-                                alt="Badge"
-                            />
-                            <span>
-                                <b>Alertas de faturas:</b> Receba alertas sobre faturas que estão vencendo ou que ultrapassaram sua renda mensal.
+                            <span className="font-semibold dark:text-white">
+                                Avisos sobre vencimentos das faturas
                             </span>
                         </li>
                     </ul>
@@ -161,7 +151,7 @@ export const Subscriptions = () => {
                             href={`https://app.mexpenses.com.br/#/auth/register/free${urlParamsApp}`}
                             className="mt-auto text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
                         >
-                            Teste gratuitamente
+                            Começar Grátis
                         </a>
                     }
                 </div>
@@ -187,7 +177,7 @@ export const Subscriptions = () => {
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
-                            1 mês é grátis!
+                            Seu 1° mês é grátis!
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
@@ -215,8 +205,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Bancos mais próximos:</b> Encontre bancos perto de você.
+                            <span className="font-semibold dark:text-white">
+                                Simulação de cofrinhos
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -225,8 +215,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Cadastro de parcelas:</b> Organize suas despesas em parcelas.
+                            <span className="font-semibold dark:text-white">
+                                Análise de faturas com a Mex
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -235,8 +225,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Cofrinhos:</b> Defina metas financeiras para alcançar seus objetivos.
+                            <span className="font-semibold dark:text-white">
+                                Registre despesas em parcelas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -245,8 +235,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="dark:text-white">
-                                <b>Histórico mensal:</b> Veja o histórico de pagamentos das despesas recorrentes.
+                            <span className="font-semibold dark:text-white">
+                                Bancos físicos mais próximos de você
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -255,8 +245,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="dark:text-white">
-                                <b>Filtro por períodos:</b> Encontre suas transações, despesas e faturas no período desejado.
+                            <span className="font-semibold dark:text-white">
+                                Filtrar por datas suas despesas, receitas e saídas
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -265,8 +255,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Análise de faturas:</b> Economize tempo com a Mex dizendo para você quais decisões poderá tomar sobre seus gastos.
+                            <span className="font-semibold dark:text-white">
+                                Histórico de pagamentos das despesas recorrentes
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -275,8 +265,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Detalhamento de despesas:</b> Veja suas pendências e pagamentos sem precisar navegar por cada categoria.
+                            <span className="font-semibold dark:text-white">
+                                Veja despesas pendentes e pagas apenas com um clique 
                             </span>
                         </li>
                     </ul>
@@ -305,7 +295,7 @@ export const Subscriptions = () => {
                     </p>
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400 my-5">
                         <span className="bg-green-600 text-white rounded-3xl font-medium py-1.5 px-3 uppercase">
-                            1 mês é grátis!
+                            Seu 1° mês é grátis!
                         </span>
                     </p>
                     <div className="flex justify-center items-baseline mb-5">
@@ -336,8 +326,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span className="opacity-70">
-                                <b>Em breve:</b> Você poderá visualizar seu perfil de consumo.
+                            <span className="font-semibold opacity-70">
+                                (Em breve) Perfil de consumo
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -346,8 +336,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>B3 (Bolsa do Brasil):</b> Acompanhe a B3 em tempo real.
+                            <span className="font-semibold dark:text-white">
+                                Suporte WhatsApp 24h
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -356,8 +346,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Dicas da Mex:</b> Receba dicas semanais de acordo com seus dados.
+                            <span className="font-semibold dark:text-white">
+                                Veja a B3 (Bolsa do Brasil)
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -366,8 +356,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Dados financeiros em CSV:</b> Exporte seus dados financeiros para o Excel.
+                            <span className="font-semibold dark:text-white">
+                                Conselhos semanais da Mex
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -376,8 +366,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Suporte WhatsApp 24h:</b> Entre em contato com o suporte pelo WhatsApp a qualquer hora.
+                            <span className="font-semibold dark:text-white">
+                                Exporte dados financeiros em CSV
                             </span>
                         </li>
                         <li className="flex items-center space-x-3 text-sm">
@@ -386,8 +376,8 @@ export const Subscriptions = () => {
                                 className="w-5"
                                 alt="Badge"
                             />
-                            <span>
-                                <b>Mercados de ações em tempo real:</b> Acompanhe os mercados de ações dos EUA e do Brasil em tempo real.
+                            <span className="font-semibold dark:text-white">
+                                Veja o Mercado de ações dos EUA e Brasil
                             </span>
                         </li>
                     </ul>
