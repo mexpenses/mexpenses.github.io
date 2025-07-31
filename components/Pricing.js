@@ -39,14 +39,16 @@ const Pricing = ({ viewModeApp = false }) => {
     return (
         <div className={`bg-gradient-to-b from-white-300 to-white-500 w-full ${viewModeApp ? "pt-5" : ""}`}>
             <div className="flex flex-col w-full" id="pricing">
-                <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
-                        Calma lá! Antes de começar, dá uma olhadinha nos planos.
-                    </h3>
-                    <p className="leading-normal text-left my-2 w-10/12 sm:w-7/12 lg:w-6/12">
-                        Escolhe um, ativa e bora pro modo vida financeira sem perrengue.
-                    </p>
-                </div>
+                {!viewModeApp &&
+                    <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed text-left">
+                            Calma lá! Antes de começar, dá uma olhadinha nos planos.
+                        </h3>
+                        <p className="leading-normal text-left my-2 w-10/12 sm:w-7/12 lg:w-6/12">
+                            Escolhe um, ativa e bora pro modo vida financeira sem perrengue.
+                        </p>
+                    </div>
+                }
                 <Subscriptions />
             </div>
             {!viewModeApp &&

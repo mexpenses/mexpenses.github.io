@@ -123,9 +123,9 @@ const Main = ({ viewModeApp = false, listAbout = [
             {/* <a href="https://pluggy.ai/" target="_blank" className="carousel-logo">
               <img src={"/assets/pluggy_partner.png"} alt="Pluggy" />
             </a> */}
-            <a href="https://vercel.com/" target="_blank" className="carousel-logo">
+            {/* <a href="https://vercel.com/" target="_blank" className="carousel-logo">
               <img src={"/assets/vercel_partner.png"} alt="Vercel" />
-            </a>
+            </a> */}
             {/* <a href="https://openai.com/" target="_blank" className="carousel-logo">
               <img src={"/assets/open_ai_partner.png"} alt="OpenAI" />
             </a> */}
@@ -210,11 +210,9 @@ const Main = ({ viewModeApp = false, listAbout = [
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
-              width={1824}
-              height={1080}
               alt="App screenshot"
               src={"/assets/app.png"}
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              className="absolute mx-auto left-0 right-0 top-0 w-[40rem] lg:w-[54rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             />
           </div>
         </div>
