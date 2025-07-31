@@ -46,7 +46,7 @@ export const Subscriptions = () => {
                             /&nbsp;{plans.free.period}
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-green-600">Não fique aqui para sempre amigo(a)</span>
+                    <span className="mb-5 font-extrabold text-green-600">Muito básico né? Calma que tem mais</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -188,7 +188,7 @@ export const Subscriptions = () => {
                             /&nbsp;{plans.basic.period}
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-blue-500">É baratinho, preço de um pastélzinho</span>
+                    <span className="mb-5 font-extrabold text-blue-500">Recomendado pra VOCÊ</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">
@@ -306,7 +306,7 @@ export const Subscriptions = () => {
                             /&nbsp;{plans.premium.period}
                         </span>
                     </div>
-                    <span className="mb-5 font-extrabold text-black">Preço de um lanchinho não faz falta</span>
+                    <span className="mb-5 font-extrabold text-black">Aqui você é o CARA</span>
                     {/* List */}
                     <ul role="list" className="mb-8 space-y-4 text-left">
                         <div className="w-full flex flex-row items-center flex-wrap gap-2">

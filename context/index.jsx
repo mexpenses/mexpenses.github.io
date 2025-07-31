@@ -10,18 +10,14 @@ export const Context = createContext({
 
 export const ContextProvider = ({ children }) => {
     const [showBanner, setShowBanner] = useState(true);
-    const [viewModeApp, setViewModeApp] = useState(false);
-    const [activeLinkNavbar, setActiveLinkNavbar] = useState(null);
-
-    useLayoutEffect(() => {
-        const urlSearchParams = new URLSearchParams(new URL(window.location.href).search);
-        if (urlSearchParams.get("view_mode") === "app") {
-            console.log("[view_mode: App] => true")
-            setViewModeApp(true);
-        } else {
-            setViewModeApp(false);
+    const [viewModeApp, setViewModeApp] = useState(() => {
+        if (typeof window !== "undefined") {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            return urlSearchParams.get("view_mode") === "app";
         }
-    }, []);
+        return false;
+    });
+    const [activeLinkNavbar, setActiveLinkNavbar] = useState(null);
 
     return (
         <Context.Provider value={{ showBanner, viewModeApp, activeLinkNavbar, setActiveLinkNavbar, setShowBanner }}>

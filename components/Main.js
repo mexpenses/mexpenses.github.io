@@ -210,11 +210,9 @@ const Main = ({ viewModeApp = false, listAbout = [
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
-              width={1824}
-              height={1080}
               alt="App screenshot"
               src={"/assets/app.png"}
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              className="absolute mx-auto left-0 right-0 top-0 w-[40rem] lg:w-[54rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             />
           </div>
         </div>
