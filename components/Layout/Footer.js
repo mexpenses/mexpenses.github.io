@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
             </div>
             <div className="flex flex-col items-start justify-start my-4">
-              <p className="text-gray-600">© 2023-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
+              <p className="text-gray-600">© 2024-{new Date().getFullYear()} Mexpenses Soluções Financeiras Ltda.</p>
               <p className="text-gray-400 text-sm mt-4 font-medium">Inscrita no CNPJ sob o nº 55.552.018/0001-98</p>
               <p className="text-sm">
                 <span className="text-gray-800 font-semibold">Endereço comercial</span>&nbsp;
