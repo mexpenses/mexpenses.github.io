@@ -63,10 +63,10 @@ const Feature = () => {
                       className="bg-blue-100 mb-3 text-blue-500 flex items-center justify-center h-8 w-8 rounded-lg font-bold">
                     4
                   </div>
-                  Bitcoin subiu? Ethereum caiu?
+                  Perdido em achar bancos físicos?
                 </dt>
                 <dd className="mt-2 text-sm text-gray-500">
-                  Acompanhe o sobe e desce das criptos sem aquele papo complicado. Informação limpa, direto, do jeito que deveria ser.
+                  Mostramos no mapa os bancos mais próximos com base no CEP informado em um raio de até 20 km. Em breve também por GPS.
                 </dd>
               </div>
             </dl>
