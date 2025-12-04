@@ -1,0 +1,20 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.mexpenses.com.br</loc>
+    </url>
+    <url>
+        <loc>https://www.mexpenses.com.br/policy</loc>
+    </url>
+    <url>
+        <loc>https://www.mexpenses.com.br/opensearch.xml</loc>
+    </url>
+    <url>
+        <loc>https://app.mexpenses.com.br/#/auth/login</loc>
+    </url>
+    <url>
+        <loc>https://app.mexpenses.com.br/#/auth/register/basic</loc>
+    </url>
+    <url>
+        <loc>https://app.mexpenses.com.br/#/auth/recovery</loc>
+    </url>
+</urlset>

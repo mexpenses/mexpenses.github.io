@@ -1,0 +1,1 @@
+export const desktopHeaderPhrase = ['Seja um dos poucos...', 'Controlar e conquistar.'];
