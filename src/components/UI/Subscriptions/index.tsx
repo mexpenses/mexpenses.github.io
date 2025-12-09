@@ -17,7 +17,7 @@ import {
   ButtonText
 } from "./styles";
 import Lottie from 'react-lottie';
-import { useInView, motion } from 'framer-motion';
+import { useInView, motion, Variants } from 'framer-motion';
 import AnimationRecommended from '../../../../public/animations/animation_recommended.json';
 import { useRef, useState } from "react";
 
@@ -78,7 +78,7 @@ const Subscriptions = () => {
   const [isYearly, setIsYearly] = useState(false);
   const prices = isYearly ? PRICE_YEAR : PRICE_MONTH;
   
-  const animateTitle = {
+  const animateTitle: Variants = {
     initial: {
       y: '100%',
     },
@@ -87,7 +87,7 @@ const Subscriptions = () => {
       transition: { duration: 1, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
     }),
   };
-  const animateFree = {
+  const animateFree: Variants = {
     initial: {
       y: '100%',
     },
@@ -96,7 +96,7 @@ const Subscriptions = () => {
       transition: { duration: 1.5, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
     }),
   };
-  const animateBasic = {
+  const animateBasic: Variants = {
     initial: {
       y: '100%',
     },
@@ -105,7 +105,7 @@ const Subscriptions = () => {
       transition: { duration: 2, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
     }),
   };
-  const animatePremium = {
+  const animatePremium: Variants = {
     initial: {
       y: '100%',
     },

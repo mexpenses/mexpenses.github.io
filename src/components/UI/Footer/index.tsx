@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import mexpenses_logo from '../../../../public/svgs/mexpenses_logo.svg';
-import qr_code from '../../../../public/svgs/qr_code.svg';
+import qr_code from '../../../../public/images/qrcode_app.png';
 import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
 import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
@@ -51,7 +51,7 @@ const Footer = () => {
           <FooterMiddle>
             <QRContainer>
               <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
+                <Image width={130} src={qr_code} alt="qr_code" />
               </QRImageCtn>
               <TextCtn>
                 <p>Escaneie para baixar o app na Google Play ou App Store.</p>

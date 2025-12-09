@@ -1,4 +1,6 @@
-export const menu = {
+import { Variants } from "framer-motion";
+
+export const menu: Variants = {
   open: {
     width: '250px',
     height: '265px',

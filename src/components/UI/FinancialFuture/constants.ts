@@ -23,12 +23,12 @@ export const stats = [
     subtitle: 'Funcionalidades',
   },
   {
-    number: '1.000+',
+    number: '3.000+',
     subtitle: 'Gastos já foram registrados',
   },
   {
-    number: '99%',
-    subtitle: 'Cibersegurança auditada',
+    number: 'Confiança',
+    subtitle: 'Construída no dia a dia',
   },
 ];
 
