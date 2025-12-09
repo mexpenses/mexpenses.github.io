@@ -6,6 +6,9 @@ import { GlobalStyles } from './GlobalStyles';
 import { Footer, Header, Preloader } from '..';
 import { useState } from 'react';
 
+const _window: Window | null = window !== undefined ? window : null;
+const IS_VIEW_MODE_APP = new URLSearchParams(_window?.location.search).get("view_mode") === "app";
+
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [complete, setComplete] = useState(false);
   return (
@@ -17,9 +20,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <GlobalStyles />
         <Preloader setComplete={setComplete} />
         <div className={complete ? 'complete' : 'not_complete'}>
-          <Header />
-          {children}
-          <Footer />
+          {IS_VIEW_MODE_APP 
+            ? children 
+            : 
+            <>
+              <Header />
+              {children}
+              <Footer />
+            </>
+          }
         </div>
       </ReactLenis>
     </StyledComponentsRegistry>

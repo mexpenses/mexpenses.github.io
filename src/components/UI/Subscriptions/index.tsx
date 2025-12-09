@@ -21,6 +21,9 @@ import { useInView, motion } from 'framer-motion';
 import AnimationRecommended from '../../../../public/animations/animation_recommended.json';
 import { useRef, useState } from "react";
 
+const _window: Window | null = window !== undefined ? window : null;
+const IS_VIEW_MODE_APP = new URLSearchParams(_window?.location.search).get("view_mode") === "app";
+
 const defaultOptionsAnimation = {
   loop: true,
   autoplay: true,
@@ -116,16 +119,18 @@ const Subscriptions = () => {
   return (
     <Section ref={body}>
       <Header>
-        <Title>
-          <motion.div
-            variants={animateTitle}
-            initial="initial"
-            animate={isInView ? 'open' : ''}
-            custom={'title'}
-          >
-            Planos populares e transparentes
-          </motion.div>
-        </Title>
+        {!IS_VIEW_MODE_APP && 
+          <Title>
+            <motion.div
+              variants={animateTitle}
+              initial="initial"
+              animate={isInView ? 'open' : ''}
+              custom={'title'}
+            >
+              Planos populares e transparentes
+            </motion.div>
+          </Title>
+        }
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
           <div style={{ 
             display: 'flex', 
@@ -203,11 +208,13 @@ const Subscriptions = () => {
             <PriceWrapper>
               <Price>{prices.free}</Price>
             </PriceWrapper>
-            <ButtonWrapper href="#">
-              <Button>
-                <ButtonText>Começar Grátis</ButtonText>
-              </Button>
-            </ButtonWrapper>
+            {!IS_VIEW_MODE_APP &&
+              <ButtonWrapper href="#">
+                <Button>
+                  <ButtonText>Começar Grátis</ButtonText>
+                </Button>
+              </ButtonWrapper>
+            }
           </PriceCol>
         </PricingGrid>
       </motion.div>
@@ -254,11 +261,13 @@ const Subscriptions = () => {
               <Price>{prices.basic} <span style={{fontSize: '1rem', fontWeight: 'normal'}}>{isYearly ? '/ ano' : '/ mês'}</span></Price>
               <PriceSub>Ganha seu 1° mês grátis</PriceSub>
             </PriceWrapper>
-            <ButtonWrapper href="#">
-              <Button>
-                <ButtonText>Começar Basic</ButtonText>
-              </Button>
-            </ButtonWrapper>
+            {!IS_VIEW_MODE_APP &&
+              <ButtonWrapper href="#">
+                <Button>
+                  <ButtonText>Começar Basic</ButtonText>
+                </Button>
+              </ButtonWrapper>
+            }
           </PriceCol>
         </PricingGrid>
       </motion.div>
@@ -297,11 +306,13 @@ const Subscriptions = () => {
               <Price>{prices.premium} <span style={{fontSize: '1rem', fontWeight: 'normal'}}>{isYearly ? '/ ano' : '/ mês'}</span></Price>
               <PriceSub>Ganha seu 1° mês grátis</PriceSub>
             </PriceWrapper>
-            <ButtonWrapper href="#">
-              <Button>
-                <ButtonText>Começar Premium</ButtonText>
-              </Button>
-            </ButtonWrapper>
+            {!IS_VIEW_MODE_APP &&
+              <ButtonWrapper href="#">
+                <Button>
+                  <ButtonText>Começar Premium</ButtonText>
+                </Button>
+              </ButtonWrapper>
+          }
           </PriceCol>
         </PricingGrid>
       </motion.div>
