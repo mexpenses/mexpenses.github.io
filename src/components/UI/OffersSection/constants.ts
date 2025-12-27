@@ -23,7 +23,7 @@ export const offers = [
     illustration: seamless_payments,
     title: 'Receitas e Saídas',
     details:
-      'Recebeu uma receita ou saída? Dois cliques e atualize seu saldo.',
+      'Teve uma transferência? Dois cliques e atualize seu saldo.',
   },
   {
     illustration: smart_investing,

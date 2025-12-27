@@ -235,7 +235,7 @@ const Policy = () => {
                     </Paragraph>
 
                     <Paragraph mt="1.5rem">
-                        <Link href="mailto:mexpenses.app@gmail.com">
+                        <Link href="mailto:contato@mexpenses.com.br">
                             <ContactLink>
                                 <Icon fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />

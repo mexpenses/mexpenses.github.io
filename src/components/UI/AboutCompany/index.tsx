@@ -9,10 +9,13 @@ const AboutCompany = () => {
             <Header>
                 <Title>Nossa história</Title>
                 <Description>
-                    A Mexpenses surgiu em 2024 pra acabar com aquele drama de "pra onde foi meu dinheiro?". 
-                    Aqui você não vem só pra controlar gasto — vem pra domar o cartão de crédito, fazer o
-                    boleto te respeitar e ainda receber dicas da IA que não fica te julgando.
-                    Liberdade financeira, sem terrorismo, sem corte no iFood e sem culpa.
+                    A Mexpenses nasceu em 2024 com a missão de apoiar o brasileiro na superação dos desafios e da
+                    realidade financeira do país. Nosso propósito é promover a evolução financeira dos nossos
+                    clientes por meio de uma gestão consciente, especialmente no uso do cartão de crédito,
+                    incentivando decisões responsáveis e afastando expectativas irreais. Com base na análise do
+                    cotidiano financeiro de cada usuário, oferecemos insights práticos e aplicáveis, contribuindo
+                    para uma relação mais saudável com o dinheiro, a satisfação do cliente e o cumprimento efetivo
+                    da nossa missão.
                 </Description>
             </Header>
             <video

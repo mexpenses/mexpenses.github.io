@@ -42,9 +42,6 @@ const Header = () => {
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
-          <Link target='_blank' href="https://admin.mexpenses.com.br/#/auth/login">
-            <AnimatedLink title="Admin" />
-          </Link>
           <Link target='_blank' href="https://app.mexpenses.com.br/#/auth/login">
             <AnimatedLink title="Login" />
           </Link>

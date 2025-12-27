@@ -168,7 +168,7 @@ export const Offers = styled.div`
         }
 
         ${TextCtn} {
-          margin-top: 4rem;
+          margin-top: 4.5rem;
         }
       }
 

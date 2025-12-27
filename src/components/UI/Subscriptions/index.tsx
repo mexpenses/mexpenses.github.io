@@ -77,6 +77,19 @@ const FEATURES_PREMIUM = [
 const Subscriptions = () => {
   const [isYearly, setIsYearly] = useState(false);
   const prices = isYearly ? PRICE_YEAR : PRICE_MONTH;
+
+  const redirectSubscription = (type: string) => {
+    const baseURL = "https://app.mexpenses.com.br/#/auth/register"
+    if (type === "free") {
+      window.open(`${baseURL}/free?period=${isYearly ? "year" : "month"}`);
+    }
+    if (type === "basic") {
+      window.open(`${baseURL}/basic?period=${isYearly ? "year" : "month"}`);
+    }
+    if (type === "premium") {
+      window.open(`${baseURL}/premium?period=${isYearly ? "year" : "month"}`);
+    }
+  }
   
   const animateTitle: Variants = {
     initial: {
@@ -209,7 +222,7 @@ const Subscriptions = () => {
               <Price>{prices.free}</Price>
             </PriceWrapper>
             {!IS_VIEW_MODE_APP &&
-              <ButtonWrapper href="#">
+              <ButtonWrapper onClick={() => redirectSubscription("free")}>
                 <Button>
                   <ButtonText>Começar Grátis</ButtonText>
                 </Button>
@@ -262,7 +275,7 @@ const Subscriptions = () => {
               <PriceSub>Ganha seu 1° mês grátis</PriceSub>
             </PriceWrapper>
             {!IS_VIEW_MODE_APP &&
-              <ButtonWrapper href="#">
+              <ButtonWrapper onClick={() => redirectSubscription("basic")}>
                 <Button>
                   <ButtonText>Começar Basic</ButtonText>
                 </Button>
@@ -307,7 +320,7 @@ const Subscriptions = () => {
               <PriceSub>Ganha seu 1° mês grátis</PriceSub>
             </PriceWrapper>
             {!IS_VIEW_MODE_APP &&
-              <ButtonWrapper href="#">
+              <ButtonWrapper onClick={() => redirectSubscription("premium")}>
                 <Button>
                   <ButtonText>Começar Premium</ButtonText>
                 </Button>
