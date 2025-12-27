@@ -1,6 +1,7 @@
 {
   "short_name": "Mexpenses",
-  "name": "Menos planilha. Mais vida!",
+  "name": "Mexpenses",
+  "description": "Menos planilha. Mais tempo!",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -10,6 +11,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ffff",
-  "background_color": "#ffffff"
+  "theme_color": "#070606",
+  "background_color": "#070606"
 }
