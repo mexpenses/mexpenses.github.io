@@ -1,34 +1,56 @@
 'use client';
 
-import { ReactLenis } from '@studio-freight/react-lenis';
+import dynamic from 'next/dynamic';
+import { useEffect, useState, type ReactNode, ReactElement } from 'react';
 import StyledComponentsRegistry from '../../../libs/registry';
 import { GlobalStyles } from './GlobalStyles';
-import { Footer, Header, Preloader } from '..';
-import { useState } from 'react';
 
-const _window: Window | null = window !== undefined ? window : null;
-const IS_VIEW_MODE_APP = new URLSearchParams(_window?.location.search).get("view_mode") === "app";
+type ReactLenisProps = {
+  children: ReactNode;
+  root?: boolean;
+  easing?: (t: number) => number;
+};
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const ReactLenis = dynamic(
+  () =>
+    import('@studio-freight/react-lenis').then(
+      m => m.ReactLenis as unknown as (props: ReactLenisProps) => ReactElement
+    ),
+  { ssr: false }
+);
+
+const Header = dynamic(() => import('../UI/Header'), { ssr: false });
+const Footer = dynamic(() => import('../UI/Footer'), { ssr: false });
+const Preloader = dynamic(() => import('../UI/Preloader'), { ssr: false });
+
+const Layout = ({ children }: { children: ReactNode }) => {
   const [complete, setComplete] = useState(false);
+  const [isViewModeApp, setIsViewModeApp] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setIsViewModeApp(params.get('view_mode') === 'app');
+  }, []);
+
   return (
     <StyledComponentsRegistry>
       <ReactLenis
         root
-        easing={(t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t))}
+        easing={(t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))}
       >
         <GlobalStyles />
         <Preloader setComplete={setComplete} />
+
         <div className={complete ? 'complete' : 'not_complete'}>
-          {IS_VIEW_MODE_APP 
-            ? children 
-            : 
+          {isViewModeApp ? (
+            children
+          ) : (
             <>
               <Header />
               {children}
               <Footer />
             </>
-          }
+          )}
         </div>
       </ReactLenis>
     </StyledComponentsRegistry>

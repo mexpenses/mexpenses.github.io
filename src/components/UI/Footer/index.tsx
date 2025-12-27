@@ -18,6 +18,10 @@ const linksArr = [
     title: 'Contato',
     links: [{ text: 'Entrar em contato por e-mail', target: "_blank", path: "mailto:mexpenses.app@gmail.com" }],
   },
+  {
+    title: 'Portal do administrador',
+    links: [{ text: "Login", target: "_blank", path: "https://admin.mexpenses.com.br/#/auth/login" }],
+  },
 ];
 
 import {

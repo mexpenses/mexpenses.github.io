@@ -31,7 +31,7 @@ export const edges = [
   },
   {
     point: 'Segurança',
-    details: 'Estamos aqui para te dar suporte completo e garantir a proteção dos seus dados.',
+    details: 'Processos e melhorias contínuas voltados à segurança da informação.',
     icon: ic_lock_closed,
   },
 ];
