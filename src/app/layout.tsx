@@ -1,3 +1,4 @@
+// reset cache
 import Layout from '@/components/Layout';
 import './globals.css';
 
