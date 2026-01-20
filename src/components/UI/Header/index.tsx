@@ -20,6 +20,28 @@ import Link from 'next/link';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const STORE_URL = {
+    "ios": "https://apps.apple.com/br/app/mexpenses/id6757622280",
+    "android": "https://play.google.com/store/apps/details?id=com.appmexpenses",
+    "desktop": "https://app.mexpenses.com.br/#/auth"
+  }
+
+    function redirectLogin () {
+      if (typeof window !== 'undefined') {
+          const userAgent = navigator.userAgent;
+          if (/iPad|iPhone|iPod/.test(userAgent)) {
+              return STORE_URL.ios;
+          } else if (/Android/.test(userAgent)) {
+              return STORE_URL.android;
+          } else {
+              return STORE_URL.desktop;
+          }
+      }
+      return "https://app.mexpenses.com.br/#/auth";
+  }
+
+  const redirectLoginHref = redirectLogin();
   return (
     <Wrapper>
       <Inner>
@@ -42,7 +64,7 @@ const Header = () => {
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
-          <Link target='_blank' href="https://app.mexpenses.com.br/#/auth/login">
+          <Link target='_blank' href={redirectLoginHref}>
             <AnimatedLink title="Login" />
           </Link>
           <GetStartedButton padding="0.5rem 0.75rem" />

@@ -18,15 +18,18 @@ const AboutCompany = () => {
                     da nossa missão.
                 </Description>
             </Header>
-            <video
-                loop
-                muted
-                autoPlay
-                ref={refVideo}
-                preload="auto"
-            >
-                <source src="/assets/publicity.mp4" type="video/mp4" />
-            </video>
+            <div style={{ aspectRatio: "16 / 9", padding: 20 }}>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    frameBorder={0}
+                    allowFullScreen
+                    title="YouTube video player"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    src="https://www.youtube.com/embed/Hy_29og0n9g?si=XjMjIGNBPL45KolJ"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                />
+            </div>
         </Section>
     )
 }

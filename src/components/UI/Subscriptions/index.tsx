@@ -50,7 +50,7 @@ const FEATURES_FREE = [
   "Registro de contas",
   "Categorias de despesas",
   "Calculadora de Impostos",
-  "Visualização de taxas de juros",
+  "Visualização de taxas de juros ",
   "Visualização de criptomoedas",
   "Faturas dos cartões de crédito",
   "Avisos sobre vencimentos das faturas"
@@ -58,12 +58,13 @@ const FEATURES_FREE = [
 
 const FEATURES_BASIC = [
   "Simulação de cofrinhos",
-  "Análise de faturas com a Mex",
   "Registre despesas em parcelas",
   "Bancos físicos mais próximos de você",
+  "Análise de faturas com a Mex (Disponível somente na Web)",
   "Filtrar por datas suas despesas, receitas e saídas",
   "Histórico de pagamentos das despesas recorrentes",
-  "Veja despesas pendentes e pagas apenas com um clique"
+  "Veja despesas pendentes e pagas apenas com um clique",
+  "Progresso de economias em tempo real com base na sua Renda (Disponível somente no App)",
 ];
 
 const FEATURES_PREMIUM = [
@@ -74,81 +75,124 @@ const FEATURES_PREMIUM = [
   "Veja o Mercado de ações dos EUA e Brasil"
 ];
 
+const STORE_URL = {
+  "ios": "https://apps.apple.com/br/app/mexpenses/id6757622280",
+  "android": "https://play.google.com/store/apps/details?id=com.appmexpenses",
+  "desktop": "https://app.mexpenses.com.br/"
+}
+
 const Subscriptions = () => {
   const [isYearly, setIsYearly] = useState(false);
   const prices = isYearly ? PRICE_YEAR : PRICE_MONTH;
 
   const redirectSubscription = (type: string) => {
-    const baseURL = "https://app.mexpenses.com.br/#/auth/register"
-    if (type === "free") {
-      window.open(`${baseURL}/free?period=${isYearly ? "year" : "month"}`);
-    }
-    if (type === "basic") {
-      window.open(`${baseURL}/basic?period=${isYearly ? "year" : "month"}`);
-    }
-    if (type === "premium") {
-      window.open(`${baseURL}/premium?period=${isYearly ? "year" : "month"}`);
+    const baseURL = "https://app.mexpenses.com.br/#/auth/register";
+    if (typeof window !== 'undefined') {
+      const userAgent = navigator.userAgent;
+      if (/iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.href = STORE_URL.ios;
+      } else if (/Android/.test(userAgent)) {
+        window.location.href = STORE_URL.android;
+      } else {
+        if (type === "free") {
+          window.open(`${baseURL}/free?period=${isYearly ? "year" : "month"}`);
+        }
+        if (type === "basic") {
+          window.open(`${baseURL}/basic?period=${isYearly ? "year" : "month"}`);
+        }
+        if (type === "premium") {
+          window.open(`${baseURL}/premium?period=${isYearly ? "year" : "month"}`);
+        }
+      }
     }
   }
-  
+
+  const isMobile = window.innerWidth < 768;
+
   const animateTitle: Variants = {
     initial: {
       y: '100%',
+      opacity: 0
     },
-    open: (i: number) => ({
+    open: {
       y: '0%',
-      transition: { duration: 1, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
-    }),
+      opacity: 1,
+      transition: {
+        duration: isMobile ? 0.6 : 1,
+        ease: "easeOut"
+      },
+    },
   };
   const animateFree: Variants = {
     initial: {
-      y: '100%',
+      y: '50px',
+      opacity: 0
     },
-    open: (i: number) => ({
-      y: '0%',
-      transition: { duration: 1.5, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
-    }),
+    open: {
+      y: '0px',
+      opacity: 1,
+      transition: {
+        duration: isMobile ? 0.5 : 0.8,
+        delay: isMobile ? 0.1 : 0.2,
+        ease: "easeOut"
+      },
+    },
   };
   const animateBasic: Variants = {
     initial: {
-      y: '100%',
+      y: '50px',
+      opacity: 0
     },
-    open: (i: number) => ({
-      y: '0%',
-      transition: { duration: 2, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
-    }),
+    open: {
+      y: '0px',
+      opacity: 1,
+      transition: {
+        duration: isMobile ? 0.5 : 0.8,
+        delay: isMobile ? 0.2 : 0.4,
+        ease: "easeOut"
+      },
+    },
   };
   const animatePremium: Variants = {
     initial: {
-      y: '100%',
+      y: '50px',
+      opacity: 0
     },
-    open: (i: number) => ({
-      y: '0%',
-      transition: { duration: 2.5, delay: 0.1 * i, ease: [0.33, 1, 0.68, 1] },
-    }),
+    open: {
+      y: '0px',
+      opacity: 1,
+      transition: {
+        duration: isMobile ? 0.5 : 0.8,
+        delay: isMobile ? 0.3 : 0.6,
+        ease: "easeOut"
+      },
+    },
   };
   const body = useRef(null);
-  const isInView = useInView(body, { once: true, amount: 0.4 });
+  const isInView = useInView(body, {
+    once: true,
+    amount: window.innerWidth < 768 ? 0.1 : 0.4,
+    margin: "-50px 0px -50px 0px"
+  });
   return (
     <Section ref={body}>
       <Header>
-        {!IS_VIEW_MODE_APP && 
+        {!IS_VIEW_MODE_APP &&
           <Title>
             <motion.div
               variants={animateTitle}
               initial="initial"
-              animate={isInView ? 'open' : ''}
-              custom={'title'}
+              animate={isInView ? 'open' : 'initial'}
             >
               Planos populares e transparentes
             </motion.div>
           </Title>
         }
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
-          <div style={{ 
-            display: 'flex', 
-            backgroundColor: '#1a1a1a', 
-            borderRadius: '50px', 
+          <div style={{
+            display: 'flex',
+            backgroundColor: '#1a1a1a',
+            borderRadius: '50px',
             padding: '4px',
             border: '1px solid #3d3d3d'
           }}>
@@ -190,8 +234,7 @@ const Subscriptions = () => {
       <motion.div
         variants={animateFree}
         initial="initial"
-        animate={isInView ? 'open' : ''}
-        custom={'card-free'}
+        animate={isInView ? 'open' : 'initial'}
       >
         <PricingGrid>
           <IncludedWrapper>
@@ -234,8 +277,7 @@ const Subscriptions = () => {
       <motion.div
         variants={animateBasic}
         initial="initial"
-        animate={isInView ? 'open' : ''}
-        custom={'card-basic'}
+        animate={isInView ? 'open' : 'initial'}
       >
         <PricingGrid>
           <div style={{ position: "absolute", right: -40, top: -30 }}>
@@ -271,7 +313,7 @@ const Subscriptions = () => {
           </IncludedWrapper>
           <PriceCol>
             <PriceWrapper>
-              <Price>{prices.basic} <span style={{fontSize: '1rem', fontWeight: 'normal'}}>{isYearly ? '/ ano' : '/ mês'}</span></Price>
+              <Price>{prices.basic} <span style={{ fontSize: '1rem', fontWeight: 'normal' }}>{isYearly ? '/ ano' : '/ mês'}</span></Price>
               <PriceSub>Ganha seu 1° mês grátis</PriceSub>
             </PriceWrapper>
             {!IS_VIEW_MODE_APP &&
@@ -287,8 +329,7 @@ const Subscriptions = () => {
       <motion.div
         variants={animatePremium}
         initial="initial"
-        animate={isInView ? 'open' : ''}
-        custom={'card-premium'}
+        animate={isInView ? 'open' : 'initial'}
       >
         <PricingGrid>
           <IncludedWrapper>
@@ -316,7 +357,7 @@ const Subscriptions = () => {
           </IncludedWrapper>
           <PriceCol>
             <PriceWrapper>
-              <Price>{prices.premium} <span style={{fontSize: '1rem', fontWeight: 'normal'}}>{isYearly ? '/ ano' : '/ mês'}</span></Price>
+              <Price>{prices.premium} <span style={{ fontSize: '1rem', fontWeight: 'normal' }}>{isYearly ? '/ ano' : '/ mês'}</span></Price>
               <PriceSub>Ganha seu 1° mês grátis</PriceSub>
             </PriceWrapper>
             {!IS_VIEW_MODE_APP &&
@@ -325,7 +366,7 @@ const Subscriptions = () => {
                   <ButtonText>Começar Premium</ButtonText>
                 </Button>
               </ButtonWrapper>
-          }
+            }
           </PriceCol>
         </PricingGrid>
       </motion.div>
