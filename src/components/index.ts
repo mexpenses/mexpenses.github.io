@@ -14,4 +14,5 @@ export { default as MaskText } from './Common/MaskText';
 export { default as Subscriptions } from './UI/Subscriptions';
 export { default as Policy } from "./UI/Policy";
 export { default as AboutCompany } from "./UI/AboutCompany";
+export { default as SecurityPartner } from './UI/SecurityPartner';
 export { default as RedirectStore } from './Common/RedirectStore';

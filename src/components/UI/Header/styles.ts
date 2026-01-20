@@ -101,7 +101,7 @@ export const CallToActions = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-    top: 195px;
+    top: 240px;
     z-index: 3;
     right: 25px;
     visibility: hidden;

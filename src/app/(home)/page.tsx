@@ -6,7 +6,7 @@ import {
   HeroSection,
   IntroSection,
   JoinSection,
-  OffersSection,
+  OffersSection
 } from '@/components';
 import { Metadata } from 'next';
 

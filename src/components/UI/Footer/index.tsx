@@ -8,7 +8,7 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 const linksArr = [
   {
     title: 'Sobre nós',
-    links: [{ text: "Empresa", target: null, path: "/about" }, { text: 'Política de privacidade', target: null, path: "/policy" }],
+    links: [{ text: "Empresa", target: null, path: "/about" }, { text: 'Cibersegurança', target: null, path: "/partners" }, { text: 'Política de privacidade', target: null, path: "/policy" }],
   },
   {
     title: 'Pagamentos',
