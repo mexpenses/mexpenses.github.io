@@ -35,10 +35,10 @@ export const links = [
     url: '/about',
     linkTo: 'Sobre nós',
   },
-  {
-    url: '/raffle',
-    linkTo: 'Sorteios Fidelidade',
-  },
+  // {
+  //   url: '/raffle',
+  //   linkTo: 'Sorteios Fidelidade',
+  // },
   {
     url: '/partners',
     linkTo: 'Cibersegurança',

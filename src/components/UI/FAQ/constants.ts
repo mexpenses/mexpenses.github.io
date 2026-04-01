@@ -26,7 +26,7 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'Mexpenses é Gratuito?',
-    answer: 'Temos o plano Gratuito e assinaturas a partir de R$ 9,90 para mais vantagens dentro do app.',
+    answer: 'Temos o plano Gratuito e assinaturas a partir de R$ 9,90 para mais vantagens e recursos dentro do app.',
   },
   {
     question: 'Onde posso usar?',

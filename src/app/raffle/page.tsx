@@ -43,7 +43,8 @@ export default function PageRaffle () {
           <Content>
             <Title>{FEEDBACK_TITLE_RAFFLE.pending}</Title>
             <LastUpdate>
-                Vencedor do último sorteio<AvatarLastUpdate src="https://lh3.googleusercontent.com/a/AGNmyxbjCw399oY9X-Ot0ewbqh_mDoKQ1jgvXAv0PjUx_g=s96-c"/><b>Hector Silva</b>
+                __DEV__ Unavailable
+                {/* Vencedor do último sorteio<AvatarLastUpdate src=""/><b>__DEV_</b> */}
             </LastUpdate>
 
             <CountdownTimer dateRaffle={dateRaffle} />
