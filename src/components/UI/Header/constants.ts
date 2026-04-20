@@ -3,7 +3,7 @@ import { Variants } from "framer-motion";
 export const menu: Variants = {
   open: {
     width: '250px',
-    height: '310px',
+    height: '360px',
     top: '-25px',
     right: '-25px',
     transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
@@ -32,13 +32,13 @@ export const links = [
     linkTo: 'Planos',
   },
   {
+    url: '/raffle',
+    linkTo: 'Sorteios',
+  },
+  {
     url: '/about',
     linkTo: 'Sobre nós',
   },
-  // {
-  //   url: '/raffle',
-  //   linkTo: 'Sorteios Fidelidade',
-  // },
   {
     url: '/partners',
     linkTo: 'Cibersegurança',

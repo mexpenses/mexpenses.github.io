@@ -14,12 +14,16 @@ import {
   PriceSub,
   ButtonWrapper,
   Button,
-  ButtonText
+  ButtonText,
+  ButtonGreen,
+  CinemaOverlay,
+  RailTrack,
+  RailText
 } from "./styles";
 import Lottie from 'react-lottie';
 import { useInView, motion, Variants } from 'framer-motion';
 import AnimationRecommended from '../../../../public/animations/animation_recommended.json';
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const _window: Window | null = window !== undefined ? window : null;
 const IS_VIEW_MODE_APP = new URLSearchParams(_window?.location.search).get("view_mode") === "app";
@@ -59,12 +63,13 @@ const FEATURES_FREE = [
 const FEATURES_BASIC = [
   "Simulação de cofrinhos",
   "Registre despesas em parcelas",
+  "Análise de faturas com a Mex (Web)",
   "Bancos físicos mais próximos de você",
-  "Análise de faturas com a Mex (Disponível somente na Web)",
-  "Filtrar por datas suas despesas, receitas e saídas",
   "Histórico de pagamentos das despesas recorrentes",
+  "Filtrar por datas suas despesas, receitas e saídas",
+  "Progresso em tempo real com base na sua Renda (App)",
   "Veja despesas pendentes e pagas apenas com um clique",
-  "Progresso de economias em tempo real com base na sua Renda (Disponível somente no App)",
+  "🎉 Sorteio de Brindes a cada 3 meses após o primeiro pagamento"
 ];
 
 const FEATURES_PREMIUM = [
@@ -72,7 +77,7 @@ const FEATURES_PREMIUM = [
   "Veja a B3 (Bolsa do Brasil)",
   "Conselhos semanais da Mex",
   "Exporte dados financeiros em CSV",
-  "Veja o Mercado de ações dos EUA e Brasil"
+  "Veja o Mercado de ações dos EUA e Brasil",
 ];
 
 const STORE_URL = {
@@ -83,6 +88,39 @@ const STORE_URL = {
 
 const Subscriptions = () => {
   const [isYearly, setIsYearly] = useState(false);
+  const [specialCode, setSpecialCode] = useState('');
+  const [secretResult, setSecretResult] = useState<{ title: string; text: string } | null>(null);
+  const [isLoadingCode, setIsLoadingCode] = useState(false);
+
+  const railRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = railRef.current;
+    if (!el) return;
+    const onEnd = () => setSecretResult(null);
+    el.addEventListener('animationend', onEnd);
+    return () => el.removeEventListener('animationend', onEnd);
+  }, [secretResult]);
+
+  const handleSendCode = async () => {
+    if (!specialCode.trim() || isLoadingCode) return;
+    setIsLoadingCode(true);
+    try {
+      const res = await fetch('https://web.mexpenses.com.br/api/v1/user/code.secret', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'key-platform': 'bad7ec02-289a-4c54-a7f6-5b540539c1b5-1fe3050f-d6b3-49ee-8812-35b22e0f4544',
+        },
+        body: JSON.stringify({ code: specialCode }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setSecretResult(data);
+      }
+    } catch (_) {}
+    setIsLoadingCode(false);
+  };
   const prices = isYearly ? PRICE_YEAR : PRICE_MONTH;
 
   const redirectSubscription = (type: string) => {
@@ -289,7 +327,7 @@ const Subscriptions = () => {
             />
           </div>
           <IncludedWrapper>
-            <IncludedTitle>Flexível (Recomendado)</IncludedTitle>
+            <IncludedTitle>Flexível <small style={{ fontWeight: "normal" }}># Pacote Basic</small></IncludedTitle>
             <IncludedList>
               {FEATURES_BASIC.map((item) => (
                 <IncludedItem key={item}>
@@ -333,7 +371,7 @@ const Subscriptions = () => {
       >
         <PricingGrid>
           <IncludedWrapper>
-            <IncludedTitle>Poderoso</IncludedTitle>
+            <IncludedTitle>Poderoso <small style={{ fontWeight: "normal" }}># Pacote Basic + Premium</small></IncludedTitle>
             <IncludedList>
               {FEATURES_PREMIUM.map((item) => (
                 <IncludedItem key={item}>
@@ -370,6 +408,47 @@ const Subscriptions = () => {
           </PriceCol>
         </PricingGrid>
       </motion.div>
+      {/* <motion.div
+        variants={animatePremium}
+        initial="initial"
+        animate={isInView ? 'open' : 'initial'}
+      >
+        <PricingGrid>
+          <IncludedWrapper>
+            <IncludedTitle>Apenas para pessoas especiais? 💚</IncludedTitle>
+          </IncludedWrapper>
+          <PriceCol>
+            <input
+              value={specialCode}
+              onChange={(e) => setSpecialCode(e.target.value)}
+              placeholder="Digite seu código"
+              style={{
+                padding: '10px 16px',
+                borderRadius: '8px',
+                border: '1px solid #3d3d3d',
+                backgroundColor: '#1a1a1a',
+                color: '#fff',
+                fontSize: '0.875rem',
+                outline: 'none',
+                width: '100%',
+              }}
+            />
+            <ButtonWrapper onClick={handleSendCode}>
+              <ButtonGreen disabled={isLoadingCode}>
+                <ButtonText>{isLoadingCode ? 'Enviando...' : 'Enviar código'}</ButtonText>
+              </ButtonGreen>
+            </ButtonWrapper>
+          </PriceCol>
+        </PricingGrid>
+      </motion.div>
+      {secretResult && (
+        <CinemaOverlay key={secretResult.title}>
+          <RailTrack ref={railRef} $duration={Math.max((secretResult.title.length + secretResult.text.length) * 0.12, 8)}>
+            <RailText className="title">{secretResult.title}</RailText>
+            <RailText className="description">{secretResult.text}</RailText>
+          </RailTrack>
+        </CinemaOverlay>
+      )} */}
     </Section>
   );
 }

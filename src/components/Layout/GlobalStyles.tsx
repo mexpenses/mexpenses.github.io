@@ -9,6 +9,8 @@ export const GlobalStyles = styled.createGlobalStyle`
     --light-gray: #dcdcdc;
     --link-color: #bdbdbd;
     --blue: #2563eb;
+    --green: #007f55;
+    --green-light: #00b579;
     --blue-light: #5e91ffff;
   }
 

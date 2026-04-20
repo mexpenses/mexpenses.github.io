@@ -61,8 +61,8 @@ const SecurityPartner = () => {
               <img
                 width="100%"
                 height="100%"
+                alt="Cibersegurança"
                 src="/assets/redbyte.png"
-                alt="Redbyte Security Logo"
                 style={{ borderRadius: 10 }}
               />
             </LogoContainer>
