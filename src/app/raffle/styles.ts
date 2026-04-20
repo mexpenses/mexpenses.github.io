@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { styled } from 'styled-components';
 
@@ -47,6 +48,58 @@ export const Title = styled(motion.h1)`
     }
 `;
 
+export const Column = styled(motion.div)`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const Row = styled(motion.div)`
+    display: flex;
+    flex-direction: row;
+`;
+
+export const Line = styled(motion.div)`
+    width: 100%;
+    height: 1px;
+    margin: 15px 0;
+    background-color: #454545;
+`;
+
+export const BackgroundSymbol = styled(motion.div)`
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 99px;
+    justify-content: center;
+    background-color: #252525;
+`;
+
+export const Subtitle = styled(motion.h2)`
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+`;
+
+export const ButtonParticipate = styled(Link)`
+    border: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover {
+        background: var(--blue-light);
+    }
+`;
+
 export const LastUpdate = styled(motion.span)`
     gap: 5px;
     font-size: 15px;
@@ -58,12 +111,14 @@ export const LastUpdate = styled(motion.span)`
     justify-content: center;
 `;
 
-export const AvatarLastUpdate = styled(motion.img)`
+export const BackgroundPhoto = styled(motion.div)`
     width: 25px;
     height: 25px;
-    border-radius: 50%;
-    border: 2px solid #2563eb;
-    box-shadow: 0 0 20px rgba(192, 212, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 99px;
+    justify-content: center;
+    background-color: #0568e0;
 `;
 
 export const ContainerTimer = styled(motion.div)`

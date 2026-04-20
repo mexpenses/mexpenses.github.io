@@ -13,7 +13,7 @@ interface TimeLeft {
 
 const ZERO: TimeLeft = { months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
 
-function calcTimeLeft(dateRaffle: string): TimeLeft {
+function calcTimeLeft(dateRaffle: string, refresh: () => void, setFinallyRaffle: (val: boolean) => void): TimeLeft {
   const now = new Date();
   const target = new Date(dateRaffle);
   const diff = target.getTime() - now.getTime();
@@ -34,6 +34,10 @@ function calcTimeLeft(dateRaffle: string): TimeLeft {
   }
 
   const days = Math.floor((target.getTime() - nowCopy.getTime()) / (1000 * 60 * 60 * 24));
+  if (seconds === 0 && minutes === 0 && hours === 0 && days === 0 && months === 0) {
+    setFinallyRaffle(true);
+    setTimeout(() => refresh(), 5000);
+  }
   return { months, days, hours, minutes, seconds };
 }
 
@@ -84,7 +88,6 @@ function FlipDigit({ value }: { value: string }) {
       height: '1.2em',
       overflow: 'hidden',
     }}>
-      {/* Número anterior — sobe e sai */}
       <span style={{
         ...digitStyle,
         transition: isAnimating ? 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease' : 'none',
@@ -93,7 +96,6 @@ function FlipDigit({ value }: { value: string }) {
       }}>
         {isAnimating ? display.prev : display.current}
       </span>
-      {/* Número novo — desce e entra */}
       {isAnimating && (
         <span style={{
           ...digitStyle,
@@ -124,13 +126,16 @@ const UNITS: { key: keyof TimeLeft; label: string }[] = [
   { key: 'seconds', label: 'Segundos' },
 ];
 
-export default function CountdownTimer({ dateRaffle }: { dateRaffle: string }) {
+export default function CountdownTimer({ setFinallyRaffle, refresh, dateRaffle }: { setFinallyRaffle: (val: boolean) => void; refresh: () => void; dateRaffle: string | null }) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(ZERO);
 
   useEffect(() => {
-    setTimeLeft(calcTimeLeft(dateRaffle));
-    const id = setInterval(() => setTimeLeft(calcTimeLeft(dateRaffle)), 1000);
-    return () => clearInterval(id);
+    let id: NodeJS.Timeout | undefined;
+    if (dateRaffle) {
+      setTimeLeft(calcTimeLeft(dateRaffle, refresh, setFinallyRaffle));
+      id = setInterval(() => setTimeLeft(calcTimeLeft(dateRaffle, refresh, setFinallyRaffle)), 1000);
+    }
+    return () => id && clearInterval(id);
   }, [dateRaffle]);
 
   return (

@@ -146,9 +146,116 @@ export const Button = styled.button`
   }
 `;
 
+export const ButtonGreen = styled.button`
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  position: relative;
+  border-radius: 50px;
+  background-color: black;
+  border: 1px solid #3d3d3d;
+  background-color: var(--green);
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    border-color: var(--green);
+    background-color: var(--green-light);
+  }
+`;
+
 export const ButtonText = styled.span`
   position: relative;
   display: block;
   font-size: 0.875rem !important;
   color: white;
+`;
+
+export const CinemaOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: default;
+  animation: cinema-fade-in 0.6s ease;
+
+  @keyframes cinema-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+`;
+
+export const RailTrack = styled.div<{ $duration: number }>`
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  white-space: nowrap;
+  will-change: transform;
+  animation: rail-slide ${({ $duration }) => $duration}s linear forwards;
+
+  @keyframes rail-slide {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 3rem;
+  }
+`;
+
+export const RailText = styled.span`
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #ff0000 0%,
+    #ff9500 10%,
+    #ffd400 20%,
+    #00b5cc 30%,
+    #0078ff 40%,
+    #8000ff 50%,
+    #ff00ea 60%,
+    #ff0080 70%,
+    #ff6a00 80%,
+    #ff0000 90%,
+    #ff0000 100%
+  );
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-shift 3s ease-in-out infinite;
+
+  &.title {
+    font-size: 5rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &.description {
+    font-size: 3rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 `;
