@@ -1,6 +1,7 @@
 https://www.mexpenses.com.br
 https://www.mexpenses.com.br/subscriptions
 https://www.mexpenses.com.br/about
+https://www.mexpenses.com.br/raffle
 https://www.mexpenses.com.br/partners
 https://www.mexpenses.com.br/policy
 https://www.mexpenses.com.br/opensearch.xml
