@@ -11,7 +11,7 @@ import {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mexpenses - Menos planilha. Mais tempo!'
+  title: 'Mexpenses - Finanças inteligentes + Sorteios excelentes'
 };
 
 export default function Home() {

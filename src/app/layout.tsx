@@ -88,7 +88,7 @@ const favicons = [
 ];
 
 export const metadata = {
-  title: 'Mexpenses - Menos planilha. Mais vida!',
+  title: 'Mexpenses - Finanças inteligentes + Sorteios excelentes',
   siteName: 'Mexpenses',
   description: 'Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial.',
   url: 'https://www.mexpenses.com.br',
