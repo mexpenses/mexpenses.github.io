@@ -2,26 +2,28 @@ import {
   FAQ,
   Featured,
   FinancialFuture,
-  FinancilaFreedom,
+  FinancialFreedom,
   HeroSection,
   IntroSection,
   JoinSection,
+  NewsNotice,
   OffersSection
 } from '@/components';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mexpenses - Menos planilha. Mais tempo!'
+  title: 'Mexpenses está com encerramento definitivo das atividades',
 };
 
 export default function Home() {
   return (
     <>
       <main>
+        <NewsNotice />
         <HeroSection />
         <Featured />
         <OffersSection />
-        <FinancilaFreedom />
+        <FinancialFreedom />
         <FinancialFuture />
         <IntroSection />
         <JoinSection />

@@ -88,7 +88,7 @@ const favicons = [
 ];
 
 export const metadata = {
-  title: 'Mexpenses - Menos planilha. Mais vida!',
+  title: 'Mexpenses - Finanças inteligentes + Sorteios excelentes',
   siteName: 'Mexpenses',
   description: 'Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial.',
   url: 'https://www.mexpenses.com.br',
@@ -124,6 +124,7 @@ export default function RootLayout({
         <meta name="title" content={metadata.title} />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" />
         <meta name="description" content="Estamos aqui para te proporcionar algo além do controle financeiro. Estamos revolucionando o modo de como você cuida dos seus gastos, através de nossa Inteligência Artificial." />
         <meta name="keywords" content="gestão financeira com chatgpt,chatgpt,mexpenses com chat chatgpt,chatgpt no mexpenses,login chatgpt,gestão financeira gratuita,controle financeiro gratuito,finanças grátis,site de finanças grátis,finanças brasileiras,gestão financeira dos brasileiros,mexpenses,mexpenses controle financeiro,mexpenses website,site mexpenses,aplicação mexpenses,controle financeiro,controlar dinheiro,fatec garça,fatec,tcc controle financeiro,tcc fatec garça,tcc mexpenses,hector mexpenses,maycon mexpenses,yara mexpenses" />
         {/* Twitter */}
