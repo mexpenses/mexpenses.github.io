@@ -1295,81 +1295,129 @@
 `,d=()=>{let t=window.innerWidth<768,a={initial:{y:"50px",opacity:0},open:{y:"0px",opacity:1,transition:{duration:t?.5:.8,delay:t?.1:.2,ease:"easeOut"}}},d={initial:{y:"50px",opacity:0},open:{y:"0px",opacity:1,transition:{duration:t?.5:.8,delay:t?.2:.4,ease:"easeOut"}}},m=(0,i.useRef)(null),g=(0,r.useInView)(m,{once:!0,amount:window.innerWidth<768?.1:.4,margin:"-50px 0px -50px 0px"});return(0,e.jsx)(n,{ref:m,children:(0,e.jsx)(o,{children:(0,e.jsxs)(h,{children:[(0,e.jsx)(s.motion.div,{variants:a,initial:"initial",animate:g?"open":"initial",children:(0,e.jsx)(l,{children:(0,e.jsx)("img",{width:"100%",height:"100%",alt:"Cibersegurança",src:"/assets/redbyte.png",style:{borderRadius:10}})})}),(0,e.jsx)(s.motion.div,{variants:d,initial:"initial",animate:g?"open":"initial",children:(0,e.jsxs)(p,{children:[(0,e.jsx)("h1",{children:"Cibersegurança com Redbyte Security"}),(0,e.jsx)("a",{href:"https://redbytesecurity.com.br",target:"_blank",children:(0,e.jsx)("span",{style:{color:"#ff6c68"},children:"⇢ redbytesecurity.com.br"})}),(0,e.jsx)(c,{children:"Parceira especializada em cibersegurança, a Redbyte Security protege organizações contra ameaças digitais e vulnerabilidades. Com expertise em pentest e análise de vulnerabilidades, garantem que os dados estejam seguros."}),(0,e.jsx)(f,{children:(0,e.jsx)(u,{children:"A Mexpenses já participou de um Bug Bounty com a Redbyte Security, que realiza auditorias contínuas em nossa plataforma. Priorizamos a segurança e levamos a sério a privacidade dos nossos usuários."})})]})})]})})})};t.s(["default",0,d],65553)},4189,t=>{"use strict";var e=t.i(43476);let i="https://apps.apple.com/br/app/mexpenses/id6757622280",r="https://play.google.com/store/apps/details?id=com.appmexpenses",s="https://app.mexpenses.com.br/";function a(){{let t=navigator.userAgent;/iPad|iPhone|iPod/.test(t)?window.location.href=i:/Android/.test(t)?window.location.href=r:window.location.href=s}return(0,e.jsx)("span",{children:"Redirecionando..."})}t.s(["default",0,a])},38816,t=>{"use strict";var e=t.i(97053);let i=e.styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 3rem 1.5rem 2.5rem;
-  max-width: 42rem;
+  gap: 1.25rem;
+  padding: 2.5rem 2.75rem;
+  width: 100%;
   margin: 0 auto;
-  gap: 1rem;
-`,r=e.styled.span`
-  display: inline-block;
-  background: #c0392b;
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  padding: 0.4rem 1.25rem;
-  border-radius: 6.25rem;
-`,s=e.styled.h1`
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.2;
-  margin: 0;
+  background: #f7f8fa;
+  border: 1px solid #c8cdd6;
+  border-top: 4px solid #1a3a5c;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
 
-  @media (max-width: 480px) {
-    font-size: 1.75rem;
+  @media (max-width: 600px) {
+    padding: 1.75rem 1.25rem;
   }
-`,a=e.styled.p`
-  color: #e74c3c;
-  font-weight: 600;
-  font-size: 1rem;
-  margin: 0;
-`,n=e.styled.div`
+`,r=e.styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+`,s=e.styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  color: #e0e0e0;
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-top: 0.5rem;
+  gap: 0.2rem;
+`,a=e.styled.span`
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.72rem;
+  color: #4a5568;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+`,n=e.styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #dfe2e7;
+  color: #fff;
+  padding: 0.35rem 0.85rem;
+  flex-shrink: 0;
+`,o=e.styled.span`
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem;
+  color: black;
+`,h=e.styled.h1`
+  font-family: 'Source Serif 4', 'Source Serif Pro', serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #1a3a5c;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: -0.01em;
 
-  p {
-    margin: 0;
+  @media (max-width: 480px) {
+    font-size: 1.25rem;
+  }
+`,l=e.styled.p`
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin: -0.75rem 0 0;
+  font-style: italic;
+`,p=e.styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+`,c=e.styled.p`
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.97rem;
+  color: #2d3748;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+
+  strong {
+    color: #1a3a5c;
+    font-weight: 700;
   }
 
   @media (max-width: 480px) {
     font-size: 0.9rem;
   }
-`,o=e.styled.strong`
-  color: #e74c3c;
-  font-size: 1.25rem;
-  font-weight: 700;
-
-  @media (max-width: 480px) {
-    font-size: 1.1rem;
-  }
-`,h=e.styled.hr`
-  width: 60%;
+`,f=e.styled.hr`
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  margin: 0.5rem 0;
-`,l=e.styled.div`
+  border-top: 1px solid #c8cdd6;
+  margin: 0;
+`,u=e.styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+`,d=e.styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  color: #e0e0e0;
+  gap: 0.15rem;
 
   strong {
-    font-size: 1rem;
-    color: #fff;
+    font-size: 0.9rem;
+    color: #1a3a5c;
   }
 
   span {
-    font-size: 0.85rem;
-    color: #9e9e9e;
+    font-size: 0.78rem;
+    color: #718096;
+    font-family: 'Source Sans 3', sans-serif;
   }
-`;t.s(["Badge",0,r,"Body",0,n,"CompanyName",0,a,"DateHighlight",0,o,"Divider",0,h,"Signature",0,l,"Title",0,s,"Wrapper",0,i])},33999,t=>{"use strict";t.s([],33999),t.i(38144),t.i(5859),t.i(76676),t.i(89476),t.i(85220),t.i(79736),t.i(98146),t.i(52629),t.i(28707),t.i(53177),t.i(79303),t.i(35314),t.i(40153),t.i(94067),t.i(90930),t.i(62728),t.i(65553),t.i(4189),t.i(43476),t.i(38816)},38144,t=>{"use strict";t.s(["default",()=>S],38144);var e=t.i(43476),i=t.i(57688),r=t.i(47251),s=t.i(69120),a=t.i(96435);t.i(33999);var n=t.i(86673),o=e,h=t.i(71645),l=t.i(46932),p=t.i(97053);let c=(0,p.styled)(l.motion.div)`
+`,m=e.styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+
+  span {
+    font-size: 0.72rem;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+
+  strong {
+    font-size: 0.9rem;
+    color: #1a3a5c;
+  }
+`;t.s(["Body",0,p,"BodyParagraph",0,c,"Divider",0,f,"Footer",0,u,"FooterLeft",0,d,"FooterRight",0,m,"Header",0,r,"HeaderMeta",0,s,"ProtocolLine",0,a,"Seal",0,n,"SealText",0,o,"Subtitle",0,l,"Title",0,h,"Wrapper",0,i])},33999,t=>{"use strict";t.s([],33999),t.i(38144),t.i(5859),t.i(76676),t.i(89476),t.i(85220),t.i(79736),t.i(98146),t.i(52629),t.i(28707),t.i(53177),t.i(79303),t.i(35314),t.i(40153),t.i(94067),t.i(90930),t.i(62728),t.i(65553),t.i(4189),t.i(43476),t.i(38816)},38144,t=>{"use strict";t.s(["default",()=>S],38144);var e=t.i(43476),i=t.i(57688),r=t.i(47251),s=t.i(69120),a=t.i(96435);t.i(33999);var n=t.i(86673),o=e,h=t.i(71645),l=t.i(46932),p=t.i(97053);let c=(0,p.styled)(l.motion.div)`
   position: relative;
   cursor: pointer;
   display: flex;
