@@ -1320,10 +1320,8 @@
   gap: 0.2rem;
 `,a=e.styled.span`
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.80rem;
   color: #4a5568;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 `,n=e.styled.div`
   display: flex;
   align-items: center;
@@ -1408,8 +1406,6 @@
   span {
     font-size: 0.72rem;
     color: #718096;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
     font-family: 'Source Sans 3', sans-serif;
   }
 
